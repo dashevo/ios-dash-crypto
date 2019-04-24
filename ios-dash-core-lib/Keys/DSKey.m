@@ -11,7 +11,6 @@
 #import "NSString+Bitcoin.h"
 #import "NSData+Bitcoin.h"
 #import "NSMutableData+Dash.h"
-#import "DSChain.h"
 
 @implementation DSKey
 
@@ -20,7 +19,7 @@
     return self.publicKeyData.hash160;
 }
 
-+ (NSString *)addressWithPublicKeyData:(NSData*)data forChain:(DSChain*)chain
++ (NSString *)addressWithPublicKeyData:(NSData*)data forChain:(id<DSChainProtocol>)chain
 {
     NSParameterAssert(data);
     NSParameterAssert(chain);
@@ -40,14 +39,14 @@
     return [NSString base58checkWithData:d];
 }
 
-- (NSString *)addressForChain:(DSChain*)chain
+- (NSString *)addressForChain:(id<DSChainProtocol>)chain
 {
     NSParameterAssert(chain);
     
     return [DSKey addressWithPublicKeyData:self.publicKeyData forChain:chain];
 }
 
-+ (NSString *)randomAddressForChain:(DSChain*)chain {
++ (NSString *)randomAddressForChain:(id<DSChainProtocol>)chain {
     NSParameterAssert(chain);
     
     UInt160 randomNumber = UINT160_ZERO;
@@ -58,7 +57,7 @@
     return [[NSData dataWithUInt160:randomNumber] addressFromHash160DataForChain:chain];
 }
 
-- (NSString *)privateKeyStringForChain:(DSChain*)chain {
+- (NSString *)privateKeyStringForChain:(id<DSChainProtocol>)chain {
     return nil;
 }
 

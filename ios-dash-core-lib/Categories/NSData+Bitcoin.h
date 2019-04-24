@@ -27,11 +27,11 @@
 //  THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
+
 #import "BigIntTypes.h"
+#import "DSChainProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-#define SEC_ATTR_SERVICE    @"org.dashfoundation.dash"
 
 #define useDarkCoinSeed 0 //the darkcoin seed was retired quite a while ago
 
@@ -77,20 +77,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 #define OP_SHAPESHIFT  0xb1 //not a bitcoin op code, used to identify shapeshift when placed after OP_RETURN
 #define OP_SHAPESHIFT_SCRIPT 0xb3
-
-//Keychain
-
-BOOL setKeychainData(NSData * _Nullable data, NSString *key, BOOL authenticated);
-BOOL hasKeychainData(NSString *key, NSError **error);
-NSData *getKeychainData(NSString *key, NSError **error);
-BOOL setKeychainInt(int64_t i, NSString *key, BOOL authenticated);
-int64_t getKeychainInt(NSString *key, NSError **error);
-BOOL setKeychainString(NSString *s, NSString *key, BOOL authenticated);
-NSString *getKeychainString(NSString *key, NSError **error);
-BOOL setKeychainDict(NSDictionary *dict, NSString *key, BOOL authenticated);
-NSDictionary *getKeychainDict(NSString *key, NSError **error);
-BOOL setKeychainArray(NSArray *array, NSString *key, BOOL authenticated);
-NSArray *getKeychainArray(NSString *key, NSError **error);
 
 //Compact Size
 
@@ -142,8 +128,6 @@ size_t chacha20Poly1305AEADEncrypt(void *_Nullable out, size_t outLen, const voi
 size_t chacha20Poly1305AEADDecrypt(void *_Nullable out, size_t outLen, const void * key32,
                                    const void * nonce12, const void * data, size_t dataLen,
                                    const void * ad, size_t adLen);
-
-@class DSChain;
 
 @interface NSData (Bitcoin)
 
@@ -198,9 +182,9 @@ size_t chacha20Poly1305AEADDecrypt(void *_Nullable out, size_t outLen, const voi
     
 + (NSData * _Nullable)merkleRootFromHashes:(NSArray*)hashes;
 
-- (NSString*)addressFromHash160DataForChain:(DSChain*)chain;
+- (NSString*)addressFromHash160DataForChain:(id<DSChainProtocol>)chain;
 
-+ (NSData*)scriptPubKeyForAddress:(NSString*)address forChain:(DSChain*)chain;
++ (NSData*)scriptPubKeyForAddress:(NSString*)address forChain:(id<DSChainProtocol>)chain;
 
 @end
 

@@ -48,23 +48,16 @@
 
 @interface NSString (Dash)
 
-+ (NSString *)addressWithScriptPubKey:(NSData *)script onChain:(DSChain*)chain;
-+ (NSString *)addressWithScriptSig:(NSData *)script onChain:(DSChain*)chain;
++ (NSString *)addressWithScriptPubKey:(NSData *)script onChain:(id<DSChainProtocol>)chain;
++ (NSString *)addressWithScriptSig:(NSData *)script onChain:(id<DSChainProtocol>)chain;
 
-- (NSAttributedString*)attributedStringForDashSymbol;
-- (NSAttributedString*)attributedStringForDashSymbolWithTintColor:(UIColor*)color;
-- (NSAttributedString*)attributedStringForDashSymbolWithTintColor:(UIColor*)color dashSymbolSize:(CGSize)dashSymbolSize;
-+ (NSAttributedString*)dashSymbolAttributedStringWithTintColor:(UIColor*)color forDashSymbolSize:(CGSize)dashSymbolSize;
-
-- (BOOL)isValidDashAddressOnChain:(DSChain*)chain;
-- (BOOL)isValidDashPrivateKeyOnChain:(DSChain*)chain;
+- (BOOL)isValidDashAddressOnChain:(id<DSChainProtocol>)chain;
+- (BOOL)isValidDashPrivateKeyOnChain:(id<DSChainProtocol>)chain;
 - (BOOL)isValidDashDevnetAddress;
 - (BOOL)isValidDashDevnetPrivateKey;
 - (BOOL)isValidDashBIP38Key; // BIP38 encrypted keys: https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki
-- (BOOL)isValidDashExtendedPublicKeyOnChain:(DSChain*)chain;
+- (BOOL)isValidDashExtendedPublicKeyOnChain:(id<DSChainProtocol>)chain;
 
 -(NSInteger)indexOfCharacter:(unichar)character;
-
-+(NSString*)waitTimeFromNow:(NSTimeInterval)wait;
 
 @end

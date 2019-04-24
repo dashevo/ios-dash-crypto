@@ -27,9 +27,9 @@
 
 #import "DSECDSAKey.h"
 
-NS_ASSUME_NONNULL_BEGIN
+#import "DSChainProtocol.h"
 
-@class DSChain;
+NS_ASSUME_NONNULL_BEGIN
 
 // BIP38 is a method for encrypting private keys with a passphrase
 // https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki
@@ -37,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DSECDSAKey (BIP38)
 
 // decrypts a BIP38 key using the given passphrase or retuns nil if passphrase is incorrect
-+ (instancetype _Nullable)keyWithBIP38Key:(NSString *)key andPassphrase:(NSString *)passphrase onChain:(DSChain *)chain;
++ (instancetype _Nullable)keyWithBIP38Key:(NSString *)key andPassphrase:(NSString *)passphrase onChain:(id<DSChainProtocol>)chain;
 
 // generates an "intermediate code" for an EC multiply mode key, salt should be 64bits of random data
 + (NSString * _Nullable)BIP38IntermediateCodeWithSalt:(uint64_t)salt andPassphrase:(NSString *)passphrase;
@@ -48,12 +48,12 @@ NS_ASSUME_NONNULL_BEGIN
 passphrase:(NSString *)passphrase;
 
 // generates a BIP38 key from an "intermediate code" and 24 bytes of cryptographically random data (seedb),
-+ (NSString * _Nullable)BIP38KeyWithIntermediateCode:(NSString *)code seedb:(NSData *)seedb onChain:(DSChain* _Nonnull)chain;
++ (NSString * _Nullable)BIP38KeyWithIntermediateCode:(NSString *)code seedb:(NSData *)seedb onChain:(id<DSChainProtocol> _Nonnull)chain;
 
-- (nullable instancetype)initWithBIP38Key:(NSString *)key andPassphrase:(NSString *)passphrase onChain:(DSChain *)chain;
+- (nullable instancetype)initWithBIP38Key:(NSString *)key andPassphrase:(NSString *)passphrase onChain:(id<DSChainProtocol>)chain;
 
 // encrypts receiver with passphrase and returns BIP38 key
-- (NSString * _Nullable)BIP38KeyWithPassphrase:(NSString *)passphrase onChain:(DSChain*)chain;
+- (NSString * _Nullable)BIP38KeyWithPassphrase:(NSString *)passphrase onChain:(id<DSChainProtocol>)chain;
 
 @end
 

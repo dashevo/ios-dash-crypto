@@ -6,11 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+
+#import "DSChainProtocol.h"
 #import "BigIntTypes.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-@class DSChain;
 
 @interface DSKey : NSObject
 
@@ -18,10 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) UInt160 hash160;
 @property (nonatomic,readonly) NSString * secretKeyString;
 
-- (NSString *)addressForChain:(DSChain*)chain;
-+ (NSString *)randomAddressForChain:(DSChain*)chain;
-+ (NSString *)addressWithPublicKeyData:(NSData*)data forChain:(DSChain*)chain;
-- (NSString * _Nullable)privateKeyStringForChain:(DSChain*)chain;
+- (NSString *)addressForChain:(id<DSChainProtocol>)chain;
++ (NSString *)randomAddressForChain:(id<DSChainProtocol>)chain;
++ (NSString *)addressWithPublicKeyData:(NSData*)data forChain:(id<DSChainProtocol>)chain;
+- (NSString * _Nullable)privateKeyStringForChain:(id<DSChainProtocol>)chain;
 
 @end
 

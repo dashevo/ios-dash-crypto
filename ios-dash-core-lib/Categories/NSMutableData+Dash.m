@@ -29,7 +29,6 @@
 #import "NSMutableData+Dash.h"
 #import "NSData+Dash.h"
 #import "NSString+Dash.h"
-#import "DSChain.h"
 
 static void *secureAllocate(CFIndex allocSize, CFOptionFlags hint, void *info)
 {
@@ -280,7 +279,7 @@ CFAllocatorRef SecureAllocator()
     [self appendData:d];
 }
 
-- (void)appendScriptPubKeyForAddress:(NSString *)address forChain:(DSChain*)chain
+- (void)appendScriptPubKeyForAddress:(NSString *)address forChain:(id<DSChainProtocol>)chain
 {
     uint8_t pubkeyAddress, scriptAddress;
     NSData *d = address.base58checkToData;
@@ -333,7 +332,7 @@ CFAllocatorRef SecureAllocator()
 }
 
 
-- (void)appendBitcoinScriptPubKeyForAddress:(NSString *)address forChain:(DSChain*)chain
+- (void)appendBitcoinScriptPubKeyForAddress:(NSString *)address forChain:(id<DSChainProtocol>)chain
 {
     uint8_t pubkeyAddress, scriptAddress;
     NSData *d = address.base58checkToData;
@@ -375,7 +374,7 @@ CFAllocatorRef SecureAllocator()
     [self appendScriptPushData:hashMutableData];
 }
 
-- (void)appendMessage:(NSData *)message type:(NSString *)type forChain:(DSChain*)chain
+- (void)appendMessage:(NSData *)message type:(NSString *)type forChain:(id<DSChainProtocol>)chain
 {
     [self appendUInt32:chain.magicNumber];
     [self appendNullPaddedString:type length:12];

@@ -29,11 +29,8 @@
 #import "NSString+Dash.h"
 #import "NSData+Dash.h"
 #import "NSMutableData+Dash.h"
-#import "UIImage+DSUtils.h"
-#import "DSPriceManager.h"
-#import "DSChain.h"
-#import "DSDerivationPath.h"
 #import "DSECDSAKey.h"
+#import "DashCoreLogging.h"
 
 @implementation NSString (Dash)
 
@@ -41,7 +38,7 @@
 // miss a receive transaction, only that transaction's funds are missed, however if we accept a receive transaction that
 // we are unable to correctly sign later, then the entire wallet balance after that point would become stuck with the
 // current coin selection code
-+ (NSString *)addressWithScriptPubKey:(NSData *)script onChain:(DSChain*)chain
++ (NSString *)addressWithScriptPubKey:(NSData *)script onChain:(id<DSChainProtocol>)chain
 {
     if (script == (id)[NSNull null]) return nil;
     
@@ -82,7 +79,7 @@
     return [self base58checkWithData:d];
 }
 
-+ (NSString *)addressWithScriptSig:(NSData *)script onChain:(DSChain*)chain
++ (NSString *)addressWithScriptSig:(NSData *)script onChain:(id<DSChainProtocol>)chain
 {
     if (script == (id)[NSNull null]) return nil;
     
@@ -121,14 +118,14 @@
         return nil;
     }
     else {
-        DSDLog(@"Unknown script type");
+        DSCDLog(@"Unknown script type");
         return nil; // unknown script type
     }
     
     return [self base58checkWithData:d];
 }
 
-- (BOOL)isValidDashAddressOnChain:(DSChain *)chain
+- (BOOL)isValidDashAddressOnChain:(id<DSChainProtocol>)chain
 {
     if (self.length > 35) return NO;
     
@@ -156,7 +153,7 @@
     return (version == DASH_PUBKEY_ADDRESS_TEST || version == DASH_SCRIPT_ADDRESS_TEST) ? YES : NO;
 }
 
-- (BOOL)isValidDashPrivateKeyOnChain:(DSChain *)chain
+- (BOOL)isValidDashPrivateKeyOnChain:(id<DSChainProtocol>)chain
 {
     if (![self isValidBase58]) return FALSE;
     NSData *d = self.base58checkToData;
@@ -181,7 +178,7 @@
     else return (self.hexToData.length == 32) ? YES : NO; // hex encoded key
 }
 
-- (BOOL)isValidDashExtendedPublicKeyOnChain:(DSChain*)chain
+- (BOOL)isValidDashExtendedPublicKeyOnChain:(id<DSChainProtocol>)chain
 {
     if (![self isValidBase58]) return FALSE;
     NSData * allData = self.base58ToData;
@@ -216,43 +213,6 @@
     else return NO; // invalid prefix
 }
 
-- (NSAttributedString*)attributedStringForDashSymbol {
-    return [self attributedStringForDashSymbolWithTintColor:[UIColor blackColor]];
-}
-
-- (NSAttributedString*)attributedStringForDashSymbolWithTintColor:(UIColor*)color {
-    return [self attributedStringForDashSymbolWithTintColor:color dashSymbolSize:CGSizeMake(12, 12)];
-}
-
-+(NSAttributedString*)dashSymbolAttributedStringWithTintColor:(UIColor*)color forDashSymbolSize:(CGSize)dashSymbolSize {
-    NSTextAttachment *dashSymbol = [[NSTextAttachment alloc] init];
-    
-    dashSymbol.bounds = CGRectMake(0, 0, dashSymbolSize.width, dashSymbolSize.height);
-    dashSymbol.image = [[UIImage imageNamed:@"Dash-Light"] ds_imageWithTintColor:color];
-    return [NSAttributedString attributedStringWithAttachment:dashSymbol];
-}
-
-
-- (NSAttributedString*)attributedStringForDashSymbolWithTintColor:(UIColor*)color dashSymbolSize:(CGSize)dashSymbolSize {
-    
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]
-                                                   initWithString:[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
-    
-    NSRange range = [attributedString.string rangeOfString:DASH];
-    if (range.location == NSNotFound) {
-        [attributedString insertAttributedString:[[NSAttributedString alloc] initWithString:@" "] atIndex:0];
-        [attributedString insertAttributedString:[NSString dashSymbolAttributedStringWithTintColor:color forDashSymbolSize:dashSymbolSize] atIndex:0];
-        
-        [attributedString addAttribute:NSForegroundColorAttributeName value:color range:NSMakeRange(0, attributedString.length)];
-    } else {
-        [attributedString replaceCharactersInRange:range
-                              withAttributedString:[NSString dashSymbolAttributedStringWithTintColor:color forDashSymbolSize:dashSymbolSize]];
-        [attributedString addAttribute:NSForegroundColorAttributeName value:color range:NSMakeRange(0, attributedString.length)];
-    }
-    return attributedString;
-}
-
-
 -(NSInteger)indexOfCharacter:(unichar)character {
     for (int i = 0;i < self.length; i++) {
         if ([self characterAtIndex:i] == character) return i;
@@ -260,37 +220,5 @@
     return NSNotFound;
 }
 
-// MARK: time
-
-+(NSString*)waitTimeFromNow:(NSTimeInterval)wait {
-    NSUInteger seconds = wait;
-    NSUInteger hours = seconds / 360;
-    seconds %= 360;
-    NSUInteger minutes = seconds /60;
-    seconds %=60;
-    
-    NSString * hoursUnit = hours!=1?DSLocalizedString(@"hours",nil):DSLocalizedString(@"hour",nil);
-    NSString * minutesUnit = minutes!=1?DSLocalizedString(@"minutes",nil):DSLocalizedString(@"minute",nil);
-    NSString * secondsUnit = seconds!=1?DSLocalizedString(@"seconds",nil):DSLocalizedString(@"second",nil);
-    NSMutableString * tryAgainTime = [@"" mutableCopy];
-    if (hours) {
-        [tryAgainTime appendString:[NSString stringWithFormat:@"%ld %@",(unsigned long)hours,hoursUnit]];
-        if (minutes && seconds) {
-            [tryAgainTime appendString:DSLocalizedString(@", ",nil)];
-        } else if (minutes || seconds) {
-            [tryAgainTime appendString:DSLocalizedString(@" and ",nil)];
-        }
-    }
-    if (minutes) {
-        [tryAgainTime appendString:[NSString stringWithFormat:@"%ld %@",(unsigned long)minutes,minutesUnit]];
-        if (seconds) {
-            [tryAgainTime appendString:DSLocalizedString(@" and ",nil)];
-        }
-    }
-    if (seconds) {
-        [tryAgainTime appendString:[NSString stringWithFormat:@"%ld %@",(unsigned long)seconds,secondsUnit]];
-    }
-    return [NSString stringWithString:tryAgainTime];
-}
 
 @end

@@ -29,7 +29,7 @@
 #import "NSString+Bitcoin.h"
 #import "NSData+Bitcoin.h"
 #import "NSMutableData+Dash.h"
-#import "DSChain.h"
+#import "DashCoreLogging.h"
 
 // BIP38 is a method for encrypting private keys with a passphrase
 // https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki
@@ -302,7 +302,7 @@ static NSData *point_mul(NSData *point, UInt256 factor)
 @implementation DSECDSAKey (BIP38)
 
 // decrypts a BIP38 key using the given passphrase or retuns nil if passphrase is incorrect
-+ (instancetype)keyWithBIP38Key:(NSString *)key andPassphrase:(NSString *)passphrase onChain:(DSChain*)chain
++ (instancetype)keyWithBIP38Key:(NSString *)key andPassphrase:(NSString *)passphrase onChain:(id<DSChainProtocol>)chain
 {
     return [[self alloc] initWithBIP38Key:key andPassphrase:passphrase onChain:chain];
 }
@@ -349,7 +349,7 @@ passphrase:(NSString *)passphrase
 
 // generates a BIP38 key from an "intermediate code" and 24 bytes of cryptographically random data (seedb),
 // compressed indicates if compressed pubKey format should be used for the dash address
-+ (NSString *)BIP38KeyWithIntermediateCode:(NSString *)code seedb:(NSData *)seedb onChain:(DSChain*)chain
++ (NSString *)BIP38KeyWithIntermediateCode:(NSString *)code seedb:(NSData *)seedb onChain:(id<DSChainProtocol>)chain
 {
     NSData *d = code.base58checkToData; // d = 0x2C 0xE9 0xB3 0xE1 0xFF 0x39 0xE2 0x51|0x53 + entropy + passpoint
 
@@ -389,7 +389,7 @@ passphrase:(NSString *)passphrase
     return [NSString base58checkWithData:key];
 }
 
-- (instancetype)initWithBIP38Key:(NSString *)key andPassphrase:(NSString *)passphrase onChain:(DSChain *)chain
+- (instancetype)initWithBIP38Key:(NSString *)key andPassphrase:(NSString *)passphrase onChain:(id<DSChainProtocol>)chain
 {
     NSParameterAssert(key);
     NSParameterAssert(passphrase);
@@ -455,7 +455,7 @@ passphrase:(NSString *)passphrase
     NSData *address = [[self addressForChain:chain] dataUsingEncoding:NSUTF8StringEncoding];
 
     if (! address || address.SHA256_2.u32[0] != addresshash) {
-        DSDLog(@"BIP38 bad passphrase");
+        DSCDLog(@"BIP38 bad passphrase");
         return nil;
     }
 
@@ -463,7 +463,7 @@ passphrase:(NSString *)passphrase
 }
 
 // encrypts receiver with passphrase and returns BIP38 key
-- (NSString *)BIP38KeyWithPassphrase:(NSString *)passphrase onChain:(DSChain*)chain
+- (NSString *)BIP38KeyWithPassphrase:(NSString *)passphrase onChain:(id<DSChainProtocol>)chain
 {
     NSParameterAssert(passphrase);
     NSParameterAssert(chain);

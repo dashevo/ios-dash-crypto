@@ -32,7 +32,7 @@
 #import "NSString+Bitcoin.h"
 #import "NSData+Bitcoin.h"
 #import "NSMutableData+Dash.h"
-#import "DSChain.h"
+#import "DashCoreLogging.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wconversion"
@@ -109,7 +109,7 @@ int DSSecp256k1PointMul(DSECPoint *p, const UInt256 *i)
 
 @implementation DSECDSAKey
 
-+ (instancetype)keyWithPrivateKey:(NSString *)privateKey onChain:(DSChain*)chain
++ (instancetype)keyWithPrivateKey:(NSString *)privateKey onChain:(id<DSChainProtocol>)chain
 {
     return [[self alloc] initWithPrivateKey:privateKey onChain:chain];
 }
@@ -144,7 +144,7 @@ int DSSecp256k1PointMul(DSECPoint *p, const UInt256 *i)
     return (secp256k1_ec_seckey_verify(_ctx, _seckey.u8)) ? self : nil;
 }
 
-- (instancetype)initWithPrivateKey:(NSString *)privateKey onChain:(DSChain*)chain
+- (instancetype)initWithPrivateKey:(NSString *)privateKey onChain:(id<DSChainProtocol>)chain
 {
     NSParameterAssert(privateKey);
     NSParameterAssert(chain);
@@ -223,7 +223,7 @@ int DSSecp256k1PointMul(DSECPoint *p, const UInt256 *i)
     return nil;
 }
 
-- (nullable NSString *)privateKeyStringForChain:(DSChain*)chain
+- (nullable NSString *)privateKeyStringForChain:(id<DSChainProtocol>)chain
 {
     NSParameterAssert(chain);
     
@@ -274,7 +274,7 @@ int DSSecp256k1PointMul(DSECPoint *p, const UInt256 *i)
 - (NSData *)sign:(UInt256)md
 {
     if (uint256_is_zero(_seckey)) {
-        DSDLog(@"%s: can't sign with a public key", __func__);
+        DSCDLog(@"%s: can't sign with a public key", __func__);
         return nil;
     }
 
@@ -320,7 +320,7 @@ int DSSecp256k1PointMul(DSECPoint *p, const UInt256 *i)
 - (NSData *)compactSign:(UInt256)md
 {
     if (uint256_is_zero(_seckey)) {
-        DSDLog(@"%s: can't sign with a public key", __func__);
+        DSCDLog(@"%s: can't sign with a public key", __func__);
         return nil;
     }
     

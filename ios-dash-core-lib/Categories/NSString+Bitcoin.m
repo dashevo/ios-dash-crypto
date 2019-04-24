@@ -29,7 +29,6 @@
 #import "NSString+Bitcoin.h"
 #import "NSData+Bitcoin.h"
 #import "NSMutableData+Dash.h"
-#import "DSChain.h"
 
 static const UniChar base58chars[] = {
     '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P',
@@ -102,7 +101,7 @@ static const UniChar base58chars[] = {
 // miss a receive transaction, only that transaction's funds are missed, however if we accept a receive transaction that
 // we are unable to correctly sign later, then the entire wallet balance after that point would become stuck with the
 // current coin selection code
-+ (NSString *)bitcoinAddressWithScriptPubKey:(NSData *)script forChain:(DSChain*)chain
++ (NSString *)bitcoinAddressWithScriptPubKey:(NSData *)script forChain:(id<DSChainProtocol>)chain
 {
     if (script == (id)[NSNull null]) return nil;
 
@@ -144,7 +143,7 @@ static const UniChar base58chars[] = {
     return [self base58checkWithData:d];
 }
 
-+ (NSString *)bitcoinAddressWithScriptSig:(NSData *)script forChain:(DSChain*)chain
++ (NSString *)bitcoinAddressWithScriptSig:(NSData *)script forChain:(id<DSChainProtocol>)chain
 {
     if (script == (id)[NSNull null]) return nil;
 
@@ -326,7 +325,7 @@ static const UniChar base58chars[] = {
     return (d.length == 160/8 + 1) ? [d subdataWithRange:NSMakeRange(1, d.length - 1)] : nil;
 }
 
-- (BOOL)isValidBitcoinAddressOnChain:(DSChain*)chain
+- (BOOL)isValidBitcoinAddressOnChain:(id<DSChainProtocol>)chain
 {
     if (self.length > 35) return NO;
     
@@ -344,7 +343,7 @@ static const UniChar base58chars[] = {
     
 }
 
-- (BOOL)isValidBitcoinPrivateKeyOnChain:(DSChain*)chain
+- (BOOL)isValidBitcoinPrivateKeyOnChain:(id<DSChainProtocol>)chain
 {
     NSData *d = self.base58checkToData;
     
