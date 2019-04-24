@@ -1,6 +1,7 @@
-use_frameworks!
 target 'ios-dash-core-lib_Tests' do
-  pod 'ios-dash-core-lib', :path => '../'
   
+  platform :ios, '10.0'
+  
+  pod 'ios-dash-core-lib', :path => '../'
   
 end

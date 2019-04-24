@@ -9,34 +9,27 @@
 Pod::Spec.new do |s|
   s.name             = 'ios-dash-core-lib'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ios-dash-core-lib.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Dash iOS Core Library'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Contains BigInt, X11 implementation, secp256k1 and BLS signatures dependencies, DSKey implementation and blockchain-related categories on Foundation objects
                        DESC
 
   s.homepage         = 'https://github.com/Andrew Podkovyrin/ios-dash-core-lib'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Andrew Podkovyrin' => 'podkovyrin@gmail.com' }
   s.source           = { :git => 'https://github.com/Andrew Podkovyrin/ios-dash-core-lib.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/dahspay'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'ios-dash-core-lib/Classes/**/*'
+  s.source_files = 'ios-dash-core-lib/**/*.{h,m,mm}'
+  s.public_header_files = 'ios-dash-core-lib/**/*.h'
+  s.private_header_files = 'ios-dash-core-lib/crypto/x11/*.h'
   
-  # s.resource_bundles = {
-  #   'ios-dash-core-lib' => ['ios-dash-core-lib/Assets/*.png']
-  # }
+  s.framework = 'Foundation'
+  s.compiler_flags = '-Wno-comma'
+  s.dependency 'secp256k1_dash', '0.1.2'
+  s.dependency 'bls-signatures-pod', '0.2.9'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
