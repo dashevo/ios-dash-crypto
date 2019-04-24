@@ -1,0 +1,19 @@
+﻿---
+BasedOnStyle: LLVM
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+BraceWrapping:
+  BeforeElse: true
+BreakBeforeBraces: Custom
+ColumnLimit: 0
+Cpp11BracedListStyle: false
+IndentCaseLabels: true
+IndentWidth: 4
+Language: ObjC
+MaxEmptyLinesToKeep: 2
+ObjCBlockIndentWidth: 4
+ObjCSpaceAfterProperty: true
+ObjCSpaceBeforeProtocolList: true
+SpaceBeforeCpp11BracedList: true
+...
