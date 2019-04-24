@@ -1,0 +1,6 @@
+framework module ios_dash_core_lib {
+  umbrella header "ios-dash-core-lib-umbrella.h"
+
+  export *
+  module * { export * }
+}

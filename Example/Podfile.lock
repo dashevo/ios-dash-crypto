@@ -1,0 +1,16 @@
+PODS:
+  - ios-dash-core-lib (0.1.0)
+
+DEPENDENCIES:
+  - ios-dash-core-lib (from `../`)
+
+EXTERNAL SOURCES:
+  ios-dash-core-lib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ios-dash-core-lib: c89c1912f11b407c3438ada659462f8f3b991717
+
+PODFILE CHECKSUM: 3b48f104085956dbf002d1ad17db7f3fb8f60765
+
+COCOAPODS: 1.6.1
