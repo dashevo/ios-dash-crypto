@@ -32,6 +32,8 @@
  * @author   Thomas Pornin <thomas.pornin@cryptolog.com>
  */
 
+// clang-format off
+
 #include "sph_types.h"
 
 
@@ -523,4 +525,4 @@ sph_cubehash512_close(void *cc, void *dst)
 }
 
 
-
+// clang-format on

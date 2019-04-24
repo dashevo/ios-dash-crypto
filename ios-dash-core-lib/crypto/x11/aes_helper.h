@@ -43,6 +43,8 @@
  * @author   Thomas Pornin <thomas.pornin@cryptolog.com>
  */
 
+// clang-format off
+
 #include "sph_types.h"
 #ifndef SPH_TYPES
 #define SPH_TYPES 1
@@ -345,3 +347,5 @@ static const sph_u32 AES3[256] = {
 };
 
 #endif
+
+// clang-format on

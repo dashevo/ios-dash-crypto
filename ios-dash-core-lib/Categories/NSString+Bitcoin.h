@@ -30,6 +30,7 @@
 
 #import "DSChainProtocol.h"
 
+// clang-format off
 #define BITCOIN_PUBKEY_ADDRESS      0
 #define BITCOIN_SCRIPT_ADDRESS      5
 #define BITCOIN_PUBKEY_ADDRESS_TEST 111
@@ -43,6 +44,7 @@
 #define BIP38_COMPRESSED_FLAG  0x20
 #define BIP38_LOTSEQUENCE_FLAG 0x04
 #define BIP38_INVALID_FLAG     (0x10 | 0x08 | 0x02 | 0x01)
+// clang-format on
 
 @interface NSString (Bitcoin)
 

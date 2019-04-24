@@ -1,4 +1,4 @@
-//  
+//
 //  Created by Andrew Podkovyrin
 //  Copyright © 2019 Dash Core Group. All rights reserved.
 //
@@ -21,12 +21,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (DSDashSync)
 
-- (NSAttributedString*)attributedStringForDashSymbol;
-- (NSAttributedString*)attributedStringForDashSymbolWithTintColor:(UIColor*)color;
-- (NSAttributedString*)attributedStringForDashSymbolWithTintColor:(UIColor*)color dashSymbolSize:(CGSize)dashSymbolSize;
-+ (NSAttributedString*)dashSymbolAttributedStringWithTintColor:(UIColor*)color forDashSymbolSize:(CGSize)dashSymbolSize;
+- (NSAttributedString *)attributedStringForDashSymbol;
+- (NSAttributedString *)attributedStringForDashSymbolWithTintColor:(UIColor *)color;
+- (NSAttributedString *)attributedStringForDashSymbolWithTintColor:(UIColor *)color dashSymbolSize:(CGSize)dashSymbolSize;
++ (NSAttributedString *)dashSymbolAttributedStringWithTintColor:(UIColor *)color forDashSymbolSize:(CGSize)dashSymbolSize;
 
-+(NSString*)waitTimeFromNow:(NSTimeInterval)wait;
++ (NSString *)waitTimeFromNow:(NSTimeInterval)wait;
 
 @end
 

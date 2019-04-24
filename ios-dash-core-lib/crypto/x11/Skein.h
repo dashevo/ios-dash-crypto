@@ -32,6 +32,8 @@
  * @author   Thomas Pornin <thomas.pornin@cryptolog.com>
  */
 
+// clang-format off
+
 #include "sph_types.h"
 
 /**
@@ -1072,4 +1074,4 @@ sph_skein512_close(void *cc, void *dst)
     sph_skein512_addbits_and_close(cc, 0, 0, dst);
 }
 
-
+// clang-format on

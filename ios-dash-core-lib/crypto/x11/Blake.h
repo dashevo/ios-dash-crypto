@@ -34,6 +34,7 @@
  * @author   Thomas Pornin <thomas.pornin@cryptolog.com>
  */
 
+// clang-format off
 
 #include "sph_types.h"
 
@@ -511,4 +512,4 @@ sph_blake512_close(void *cc, void *dst)
 
 #endif
 
-
+// clang-format on

@@ -33,6 +33,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// clang-format off
 #define useDarkCoinSeed 0 //the darkcoin seed was retired quite a while ago
 
 #if useDarkCoinSeed
@@ -77,6 +78,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #define OP_SHAPESHIFT  0xb1 //not a bitcoin op code, used to identify shapeshift when placed after OP_RETURN
 #define OP_SHAPESHIFT_SCRIPT 0xb3
+// clang-format on
 
 //Compact Size
 
@@ -89,45 +91,45 @@ UInt256 uInt256Neg(UInt256 a);
 UInt256 uInt256Subtract(UInt256 a, UInt256 b);
 UInt256 uInt256ShiftLeft(UInt256 a, uint8_t bits);
 UInt256 uInt256ShiftRight(UInt256 a, uint8_t bits);
-UInt256 uInt256Divide (UInt256 a,UInt256 b);
-UInt256 uInt256MultiplyUInt32 (UInt256 a,uint32_t b);
+UInt256 uInt256Divide(UInt256 a, UInt256 b);
+UInt256 uInt256MultiplyUInt32(UInt256 a, uint32_t b);
 
 //Serialization
 
 // helper function for serializing BIP32 master public/private keys to standard export format
-NSString *serialize(uint8_t depth, uint32_t fingerprint, uint32_t child, UInt256 chain, NSData *key,BOOL mainnet);
+NSString *serialize(uint8_t depth, uint32_t fingerprint, uint32_t child, UInt256 chain, NSData *key, BOOL mainnet);
 // helper function for deserializing BIP32 master public/private keys to standard export format
-BOOL deserialize(NSString * string, uint8_t * depth, uint32_t * fingerprint, uint32_t * child, UInt256 * chain, NSData * _Nonnull * _Nonnull key,BOOL mainnet);
+BOOL deserialize(NSString *string, uint8_t *depth, uint32_t *fingerprint, uint32_t *child, UInt256 *chain, NSData *_Nonnull *_Nonnull key, BOOL mainnet);
 
 //Hashing
 
-void SHA1(void * md, const void * data, size_t len);
-void SHA256(void * md, const void * data, size_t len);
-void SHA512(void * md, const void * data, size_t len);
-void RMD160(void * md, const void * data, size_t len);
-void MD5(void * md, const void * data, size_t len);
-void HMAC(void * md, void (* hash)(void * , const void * , size_t), size_t hlen,
-          const void * key, size_t klen, const void * data, size_t dlen);
-void PBKDF2(void * dk, size_t dklen, void (* hash)(void * , const void * , size_t),
-            size_t hlen, const void * pw, size_t pwlen, const void * salt, size_t slen,
+void SHA1(void *md, const void *data, size_t len);
+void SHA256(void *md, const void *data, size_t len);
+void SHA512(void *md, const void *data, size_t len);
+void RMD160(void *md, const void *data, size_t len);
+void MD5(void *md, const void *data, size_t len);
+void HMAC(void *md, void (*hash)(void *, const void *, size_t), size_t hlen,
+          const void *key, size_t klen, const void *data, size_t dlen);
+void PBKDF2(void *dk, size_t dklen, void (*hash)(void *, const void *, size_t),
+            size_t hlen, const void *pw, size_t pwlen, const void *salt, size_t slen,
             unsigned rounds);
 
 // poly1305 authenticator: https://tools.ietf.org/html/rfc7539
 // must use constant time mem comparison when verifying mac to defend against timing attacks
-void poly1305(void * mac16, const void * key32, const void * data, size_t len);
+void poly1305(void *mac16, const void *key32, const void *data, size_t len);
 
 // chacha20 stream cypher: https://cr.yp.to/chacha.html
-void chacha20(void * out, const void * key32, const void * iv8, const void * data,
+void chacha20(void *out, const void *key32, const void *iv8, const void *data,
               size_t len, uint64_t counter);
 
 // chacha20-poly1305 authenticated encryption with associated data (AEAD): https://tools.ietf.org/html/rfc7539
-size_t chacha20Poly1305AEADEncrypt(void *_Nullable out, size_t outLen, const void * key32,
-                                   const void * nonce12, const void * data, size_t dataLen,
-                                   const void * ad, size_t adLen);
+size_t chacha20Poly1305AEADEncrypt(void *_Nullable out, size_t outLen, const void *key32,
+                                   const void *nonce12, const void *data, size_t dataLen,
+                                   const void *ad, size_t adLen);
 
-size_t chacha20Poly1305AEADDecrypt(void *_Nullable out, size_t outLen, const void * key32,
-                                   const void * nonce12, const void * data, size_t dataLen,
-                                   const void * ad, size_t adLen);
+size_t chacha20Poly1305AEADDecrypt(void *_Nullable out, size_t outLen, const void *key32,
+                                   const void *nonce12, const void *data, size_t dataLen,
+                                   const void *ad, size_t adLen);
 
 @interface NSData (Bitcoin)
 
@@ -135,12 +137,12 @@ size_t chacha20Poly1305AEADDecrypt(void *_Nullable out, size_t outLen, const voi
 + (instancetype)dataWithUInt512:(UInt512)n;
 + (instancetype)dataWithUInt384:(UInt384)n;
 + (instancetype)dataWithUInt256:(UInt256)n;
-+ (instancetype)dataWithUInt256Value:(NSValue*)value;
++ (instancetype)dataWithUInt256Value:(NSValue *)value;
 + (instancetype)dataWithUInt160:(UInt160)n;
-+ (instancetype)dataWithUInt160Value:(NSValue*)value;
++ (instancetype)dataWithUInt160Value:(NSValue *)value;
 + (instancetype)dataWithUInt128:(UInt128)n;
 + (instancetype)dataWithBase58String:(NSString *)b58str;
-+ (NSData*)opReturnScript;
++ (NSData *)opReturnScript;
 
 - (UInt160)SHA1;
 - (UInt256)SHA256;
@@ -168,23 +170,23 @@ size_t chacha20Poly1305AEADDecrypt(void *_Nullable out, size_t outLen, const voi
 - (UInt512)UInt512;
 - (UInt768)UInt768;
 - (DSUTXO)transactionOutpoint;
-- (uint64_t)varIntAtOffset:(NSUInteger)offset length:(NSNumber * _Nullable * _Nullable)length;
+- (uint64_t)varIntAtOffset:(NSUInteger)offset length:(NSNumber *_Nullable *_Nullable)length;
 - (UInt256)hashAtOffset:(NSUInteger)offset;
-- (NSString * _Nullable)stringAtOffset:(NSUInteger)offset length:(NSNumber * _Nullable * _Nullable)length;
-- (NSData *)dataAtOffset:(NSUInteger)offset length:(NSNumber * _Nullable * _Nullable)length;
+- (NSString *_Nullable)stringAtOffset:(NSUInteger)offset length:(NSNumber *_Nullable *_Nullable)length;
+- (NSData *)dataAtOffset:(NSUInteger)offset length:(NSNumber *_Nullable *_Nullable)length;
 
 - (NSArray *)scriptElements; // an array of NSNumber and NSData objects representing each script element
-- (int)intValue; // returns the opcode used to store the receiver in a script (i.e. OP_PUSHDATA1)
+- (int)intValue;             // returns the opcode used to store the receiver in a script (i.e. OP_PUSHDATA1)
 
 - (NSString *)base58String;
 - (NSString *)shortHexString;
 - (NSString *)hexString;
-    
-+ (NSData * _Nullable)merkleRootFromHashes:(NSArray*)hashes;
 
-- (NSString*)addressFromHash160DataForChain:(id<DSChainProtocol>)chain;
++ (NSData *_Nullable)merkleRootFromHashes:(NSArray *)hashes;
 
-+ (NSData*)scriptPubKeyForAddress:(NSString*)address forChain:(id<DSChainProtocol>)chain;
+- (NSString *)addressFromHash160DataForChain:(id<DSChainProtocol>)chain;
+
++ (NSData *)scriptPubKeyForAddress:(NSString *)address forChain:(id<DSChainProtocol>)chain;
 
 @end
 

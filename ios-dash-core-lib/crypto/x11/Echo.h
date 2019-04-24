@@ -32,6 +32,8 @@
  * @author   Thomas Pornin <thomas.pornin@cryptolog.com>
  */
 
+// clang-format off
+
 #include "sph_types.h"
 
 typedef struct {
@@ -400,3 +402,4 @@ sph_echo512_addbits_and_close(void *cc, unsigned ub, unsigned n, void *dst)
     echo_big_close(cc, ub, n, dst, 16);
 }
 
+// clang-format on

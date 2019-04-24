@@ -27,6 +27,7 @@
 //  THE SOFTWARE.
 
 #import "NSString+Bitcoin.h"
+
 #import "NSData+Bitcoin.h"
 #import "NSMutableData+Dash.h"
 
@@ -38,15 +39,14 @@ static const UniChar base58chars[] = {
 
 @implementation NSString (Bitcoin)
 
-+ (NSString *)base58WithData:(NSData *)d
-{
-    if (! d) return nil;
-    
++ (NSString *)base58WithData:(NSData *)d {
+    if (!d) return nil;
+
     size_t i, z = 0;
-    
+
     while (z < d.length && ((const uint8_t *)d.bytes)[z] == 0) z++; // count leading zeroes
-    
-    uint8_t buf[(d.length - z)*138/100 + 1]; // log(256)/log(58), rounded up
+
+    uint8_t buf[(d.length - z) * 138 / 100 + 1]; // log(256)/log(58), rounded up
 
     memset(buf, 0, sizeof(buf));
 
@@ -58,7 +58,7 @@ static const UniChar base58chars[] = {
             buf[j - 1] = carry % 58;
             carry /= 58;
         }
-        
+
         memset(&carry, 0, sizeof(carry));
     }
 
@@ -66,34 +66,32 @@ static const UniChar base58chars[] = {
     while (i < sizeof(buf) && buf[i] == 0) i++; // skip leading zeroes
 
     CFMutableStringRef s = CFStringCreateMutable(SecureAllocator(), z + sizeof(buf) - i);
-    
+
     while (z-- > 0) CFStringAppendCharacters(s, &base58chars[0], 1);
     while (i < sizeof(buf)) CFStringAppendCharacters(s, &base58chars[buf[i++]], 1);
     memset(buf, 0, sizeof(buf));
     return CFBridgingRelease(s);
 }
 
-+ (NSString *)base58checkWithData:(NSData *)d
-{
-    if (! d) return nil;
-    
++ (NSString *)base58checkWithData:(NSData *)d {
+    if (!d) return nil;
+
     NSMutableData *data = [NSMutableData secureDataWithData:d];
 
     [data appendBytes:d.SHA256_2.u32 length:4];
     return [self base58WithData:data];
 }
 
-+ (NSString *)hexWithData:(NSData *)d
-{
-    if (! d) return nil;
-    
++ (NSString *)hexWithData:(NSData *)d {
+    if (!d) return nil;
+
     const uint8_t *bytes = d.bytes;
-    NSMutableString *hex = CFBridgingRelease(CFStringCreateMutable(SecureAllocator(), d.length*2));
-    
+    NSMutableString *hex = CFBridgingRelease(CFStringCreateMutable(SecureAllocator(), d.length * 2));
+
     for (NSUInteger i = 0; i < d.length; i++) {
         [hex appendFormat:@"%02x", bytes[i]];
     }
-    
+
     return hex;
 }
 
@@ -101,8 +99,7 @@ static const UniChar base58chars[] = {
 // miss a receive transaction, only that transaction's funds are missed, however if we accept a receive transaction that
 // we are unable to correctly sign later, then the entire wallet balance after that point would become stuck with the
 // current coin selection code
-+ (NSString *)bitcoinAddressWithScriptPubKey:(NSData *)script forChain:(id<DSChainProtocol>)chain
-{
++ (NSString *)bitcoinAddressWithScriptPubKey:(NSData *)script forChain:(id<DSChainProtocol>)chain {
     if (script == (id)[NSNull null]) return nil;
 
     NSArray *elem = [script scriptElements];
@@ -112,7 +109,8 @@ static const UniChar base58chars[] = {
 
     if ([chain isMainnet]) {
         v = BITCOIN_PUBKEY_ADDRESS;
-    } else {
+    }
+    else {
         v = BITCOIN_PUBKEY_ADDRESS_TEST;
     }
 
@@ -124,10 +122,11 @@ static const UniChar base58chars[] = {
     }
     else if (l == 3 && [elem[0] intValue] == OP_HASH160 && [elem[1] intValue] == 20 && [elem[2] intValue] == OP_EQUAL) {
         // pay-to-script-hash scriptPubKey
-        
+
         if ([chain isMainnet]) {
             v = BITCOIN_SCRIPT_ADDRESS;
-        } else {
+        }
+        else {
             v = BITCOIN_SCRIPT_ADDRESS_TEST;
         }
         [d appendBytes:&v length:1];
@@ -138,23 +137,24 @@ static const UniChar base58chars[] = {
         [d appendBytes:&v length:1];
         [d appendBytes:[elem[0] hash160].u8 length:sizeof(UInt160)];
     }
-    else return nil; // unknown script type
+    else
+        return nil; // unknown script type
 
     return [self base58checkWithData:d];
 }
 
-+ (NSString *)bitcoinAddressWithScriptSig:(NSData *)script forChain:(id<DSChainProtocol>)chain
-{
++ (NSString *)bitcoinAddressWithScriptSig:(NSData *)script forChain:(id<DSChainProtocol>)chain {
     if (script == (id)[NSNull null]) return nil;
 
     NSArray *elem = [script scriptElements];
     NSUInteger l = elem.count;
     NSMutableData *d = [NSMutableData data];
     uint8_t v;
-    
+
     if ([chain isMainnet]) {
         v = BITCOIN_PUBKEY_ADDRESS;
-    } else {
+    }
+    else {
         v = BITCOIN_PUBKEY_ADDRESS_TEST;
     }
 
@@ -167,24 +167,26 @@ static const UniChar base58chars[] = {
              [elem[l - 1] intValue] <= OP_PUSHDATA4 && [elem[l - 1] intValue] > 0) { // pay-to-script-hash scriptSig
         if ([chain isMainnet]) {
             v = BITCOIN_SCRIPT_ADDRESS;
-        } else {
+        }
+        else {
             v = BITCOIN_SCRIPT_ADDRESS_TEST;
         }
         [d appendBytes:&v length:1];
         [d appendBytes:[elem[l - 1] hash160].u8 length:sizeof(UInt160)];
     }
-    else if (l >= 1 && [elem[l - 1] intValue] <= OP_PUSHDATA4 && [elem[l - 1] intValue] > 0) {// pay-to-pubkey scriptSig
+    else if (l >= 1 && [elem[l - 1] intValue] <= OP_PUSHDATA4 && [elem[l - 1] intValue] > 0) { // pay-to-pubkey scriptSig
         //TODO: implement Peter Wullie's pubKey recovery from signature
         return nil;
     }
-    else return nil; // unknown script type
-    
+    else
+        return nil; // unknown script type
+
     return [self base58checkWithData:d];
 }
 
--(BOOL)isValidBase58 {
-    static NSString * base58characters = @"123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
-    NSCharacterSet * characterSet = [NSCharacterSet characterSetWithCharactersInString:base58characters];
+- (BOOL)isValidBase58 {
+    static NSString *base58characters = @"123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
+    NSCharacterSet *characterSet = [NSCharacterSet characterSetWithCharactersInString:base58characters];
     size_t i, z = 0;
     while (z < self.length && [self characterAtIndex:z] == base58chars[0]) z++; // count leading zeroes
     BOOL r = TRUE;
@@ -195,66 +197,114 @@ static const UniChar base58chars[] = {
     return r;
 }
 
-- (NSData *)base58ToData
-{
+- (NSData *)base58ToData {
     size_t i, z = 0;
-    
+
     while (z < self.length && [self characterAtIndex:z] == base58chars[0]) z++; // count leading zeroes
-    
-    unsigned long buffersize = (self.length - z)*733/1000 + 1;
-    
+
+    unsigned long buffersize = (self.length - z) * 733 / 1000 + 1;
+
     if (buffersize > USHRT_MAX) return nil;
-    
+
     uint8_t buf[buffersize]; // log(58)/log(256), rounded up
-    
+
     memset(buf, 0, sizeof(buf));
-    
+
     for (i = z; i < self.length; i++) {
         uint32_t carry = [self characterAtIndex:i];
 
         switch (carry) {
-            case '1': case '2': case '3': case '4': case '5': case '6': case '7': case '8': case '9':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
                 carry -= '1';
                 break;
 
-            case 'A': case 'B': case 'C': case 'D': case 'E': case 'F': case 'G': case 'H':
+            case 'A':
+            case 'B':
+            case 'C':
+            case 'D':
+            case 'E':
+            case 'F':
+            case 'G':
+            case 'H':
                 carry += 9 - 'A';
                 break;
 
-            case 'J': case 'K': case 'L': case 'M': case 'N':
+            case 'J':
+            case 'K':
+            case 'L':
+            case 'M':
+            case 'N':
                 carry += 17 - 'J';
                 break;
 
-            case 'P': case 'Q': case 'R': case 'S': case 'T': case 'U': case 'V': case 'W': case 'X': case 'Y':
+            case 'P':
+            case 'Q':
+            case 'R':
+            case 'S':
+            case 'T':
+            case 'U':
+            case 'V':
+            case 'W':
+            case 'X':
+            case 'Y':
             case 'Z':
                 carry += 22 - 'P';
                 break;
 
-            case 'a': case 'b': case 'c': case 'd': case 'e': case 'f': case 'g': case 'h': case 'i': case 'j':
+            case 'a':
+            case 'b':
+            case 'c':
+            case 'd':
+            case 'e':
+            case 'f':
+            case 'g':
+            case 'h':
+            case 'i':
+            case 'j':
             case 'k':
                 carry += 33 - 'a';
                 break;
 
-            case 'm': case 'n': case 'o': case 'p': case 'q': case 'r': case 's': case 't': case 'u': case 'v':
-            case 'w': case 'x': case 'y': case 'z':
+            case 'm':
+            case 'n':
+            case 'o':
+            case 'p':
+            case 'q':
+            case 'r':
+            case 's':
+            case 't':
+            case 'u':
+            case 'v':
+            case 'w':
+            case 'x':
+            case 'y':
+            case 'z':
                 carry += 44 - 'm';
                 break;
 
             default:
                 carry = UINT32_MAX;
         }
-        
+
         if (carry >= 58) break; // invalid base58 digit
-        
+
         for (size_t j = sizeof(buf); j > 0; j--) {
-            carry += (uint32_t)buf[j - 1]*58;
+            carry += (uint32_t)buf[j - 1] * 58;
             buf[j - 1] = carry & 0xff;
             carry >>= 8;
         }
-        
+
         memset(&carry, 0, sizeof(carry));
     }
-    
+
     i = 0;
     while (i < sizeof(buf) && buf[i] == 0) i++; // skip leading zeroes
 
@@ -266,10 +316,9 @@ static const UniChar base58chars[] = {
     return d;
 }
 
-- (NSData *)base58checkToData
-{
+- (NSData *)base58checkToData {
     NSData *d = self.base58ToData;
-    
+
     if (d.length < 4) return nil;
 
     NSData *data = CFBridgingRelease(CFDataCreate(SecureAllocator(), d.bytes, d.length - 4));
@@ -279,78 +328,95 @@ static const UniChar base58chars[] = {
     return data;
 }
 
-- (NSData *)hexToData
-{
+- (NSData *)hexToData {
     if (self.length % 2) return nil;
-    
-    NSMutableData *d = [NSMutableData secureDataWithCapacity:self.length/2];
+
+    NSMutableData *d = [NSMutableData secureDataWithCapacity:self.length / 2];
     uint8_t b = 0;
-    
+
     for (NSUInteger i = 0; i < self.length; i++) {
         unichar c = [self characterAtIndex:i];
-        
+
         switch (c) {
-            case '0': case '1': case '2': case '3': case '4': case '5': case '6': case '7': case '8': case '9':
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
                 b += c - '0';
                 break;
 
-            case 'A': case 'B': case 'C': case 'D': case 'E': case 'F':
+            case 'A':
+            case 'B':
+            case 'C':
+            case 'D':
+            case 'E':
+            case 'F':
                 b += c + 10 - 'A';
                 break;
 
-            case 'a': case 'b': case 'c': case 'd': case 'e': case 'f':
+            case 'a':
+            case 'b':
+            case 'c':
+            case 'd':
+            case 'e':
+            case 'f':
                 b += c + 10 - 'a';
                 break;
 
             default:
                 return d;
         }
-        
+
         memset(&c, 0, sizeof(c));
-        
+
         if (i % 2) {
             [d appendBytes:&b length:1];
             memset(&b, 0, sizeof(b));
         }
-        else b *= 16;
+        else
+            b *= 16;
     }
-    
+
     return d;
 }
 
-- (NSData *)addressToHash160
-{
+- (NSData *)addressToHash160 {
     NSData *d = self.base58checkToData;
 
-    return (d.length == 160/8 + 1) ? [d subdataWithRange:NSMakeRange(1, d.length - 1)] : nil;
+    return (d.length == 160 / 8 + 1) ? [d subdataWithRange:NSMakeRange(1, d.length - 1)] : nil;
 }
 
-- (BOOL)isValidBitcoinAddressOnChain:(id<DSChainProtocol>)chain
-{
+- (BOOL)isValidBitcoinAddressOnChain:(id<DSChainProtocol>)chain {
     if (self.length > 35) return NO;
-    
+
     NSData *d = self.base58checkToData;
-    
+
     if (d.length != 21) return NO;
-    
+
     uint8_t version = *(const uint8_t *)d.bytes;
-    
+
     if ([chain isMainnet]) {
         return (version == BITCOIN_PUBKEY_ADDRESS || version == BITCOIN_SCRIPT_ADDRESS) ? YES : NO;
-    } else {
+    }
+    else {
         return (version == BITCOIN_PUBKEY_ADDRESS_TEST || version == BITCOIN_SCRIPT_ADDRESS_TEST) ? YES : NO;
     }
-    
 }
 
-- (BOOL)isValidBitcoinPrivateKeyOnChain:(id<DSChainProtocol>)chain
-{
+- (BOOL)isValidBitcoinPrivateKeyOnChain:(id<DSChainProtocol>)chain {
     NSData *d = self.base58checkToData;
-    
+
     if (d.length == 33 || d.length == 34) { // wallet import format: https://en.bitcoin.it/wiki/Wallet_import_format
         if ([chain isMainnet]) {
             return (*(const uint8_t *)d.bytes == BITCOIN_PRIVKEY) ? YES : NO;
-        } else{
+        }
+        else {
             return (*(const uint8_t *)d.bytes == BITCOIN_PRIVKEY_TEST) ? YES : NO;
         }
     }
@@ -358,17 +424,22 @@ static const UniChar base58chars[] = {
         NSMutableData *d = [NSMutableData secureDataWithCapacity:self.length + 1];
 
         d.length = self.length;
-        [self getBytes:d.mutableBytes maxLength:d.length usedLength:NULL encoding:NSUTF8StringEncoding options:0
-         range:NSMakeRange(0, self.length) remainingRange:NULL];
+        [self getBytes:d.mutableBytes
+                 maxLength:d.length
+                usedLength:NULL
+                  encoding:NSUTF8StringEncoding
+                   options:0
+                     range:NSMakeRange(0, self.length)
+            remainingRange:NULL];
         [d appendBytes:"?" length:1];
         return (d.SHA256.u8[0] == 0) ? YES : NO;
     }
-    else return (self.hexToData.length == 32) ? YES : NO; // hex encoded key
+    else
+        return (self.hexToData.length == 32) ? YES : NO; // hex encoded key
 }
 
 // BIP38 encrypted keys: https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki
-- (BOOL)isValidBitcoinBIP38Key
-{
+- (BOOL)isValidBitcoinBIP38Key {
     NSData *d = self.base58checkToData;
 
     if (d.length != 39) return NO; // invalid length
@@ -378,12 +449,15 @@ static const UniChar base58chars[] = {
 
     if (prefix == BIP38_NOEC_PREFIX) { // non EC multiplied key
         return ((flag & BIP38_NOEC_FLAG) == BIP38_NOEC_FLAG && (flag & BIP38_LOTSEQUENCE_FLAG) == 0 &&
-                (flag & BIP38_INVALID_FLAG) == 0) ? YES : NO;
+                (flag & BIP38_INVALID_FLAG) == 0)
+                   ? YES
+                   : NO;
     }
     else if (prefix == BIP38_EC_PREFIX) { // EC multiplied key
         return ((flag & BIP38_NOEC_FLAG) == 0 && (flag & BIP38_INVALID_FLAG) == 0) ? YES : NO;
     }
-    else return NO; // invalid prefix
+    else
+        return NO; // invalid prefix
 }
 
 @end

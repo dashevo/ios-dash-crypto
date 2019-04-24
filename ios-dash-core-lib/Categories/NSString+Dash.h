@@ -27,9 +27,10 @@
 //  THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+
 #import "NSString+Bitcoin.h"
 
+// clang-format off
 #define DASH_PUBKEY_ADDRESS      76
 #define DASH_SCRIPT_ADDRESS      16
 #define DASH_PUBKEY_ADDRESS_TEST 140
@@ -45,6 +46,7 @@
 #define BIP38_COMPRESSED_FLAG  0x20
 #define BIP38_LOTSEQUENCE_FLAG 0x04
 #define BIP38_INVALID_FLAG     (0x10 | 0x08 | 0x02 | 0x01)
+// clang-format on
 
 @interface NSString (Dash)
 
@@ -58,6 +60,6 @@
 - (BOOL)isValidDashBIP38Key; // BIP38 encrypted keys: https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki
 - (BOOL)isValidDashExtendedPublicKeyOnChain:(id<DSChainProtocol>)chain;
 
--(NSInteger)indexOfCharacter:(unichar)character;
+- (NSInteger)indexOfCharacter:(unichar)character;
 
 @end

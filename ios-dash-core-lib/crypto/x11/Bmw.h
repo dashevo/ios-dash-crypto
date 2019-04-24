@@ -34,6 +34,8 @@
  * @author   Thomas Pornin <thomas.pornin@cryptolog.com>
  */
 
+// clang-format off
+
 #include "sph_types.h"
 
 #ifndef X11_BMW
@@ -544,3 +546,5 @@ sph_bmw512_close(void *cc, void *dst)
 }
 
 #endif
+
+// clang-format on

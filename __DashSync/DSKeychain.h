@@ -1,4 +1,4 @@
-//  
+//
 //  Created by Andrew Podkovyrin
 //  Copyright © 2019 Dash Core Group. All rights reserved.
 //
@@ -19,7 +19,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-BOOL setKeychainData(NSData * _Nullable data, NSString *key, BOOL authenticated);
+BOOL setKeychainData(NSData *_Nullable data, NSString *key, BOOL authenticated);
 BOOL hasKeychainData(NSString *key, NSError **error);
 NSData *getKeychainData(NSString *key, NSError **error);
 BOOL setKeychainInt(int64_t i, NSString *key, BOOL authenticated);

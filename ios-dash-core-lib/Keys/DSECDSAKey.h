@@ -29,8 +29,8 @@
 #import <Foundation/Foundation.h>
 
 #import "BigIntTypes.h"
-#import "DSKey.h"
 #import "DSChainProtocol.h"
+#import "DSKey.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -40,23 +40,23 @@ typedef struct {
 
 // adds 256bit big endian ints a and b (mod secp256k1 order) and stores the result in a
 // returns true on success
-int DSSecp256k1ModAdd(UInt256 * a, const UInt256 * b);
+int DSSecp256k1ModAdd(UInt256 *a, const UInt256 *b);
 
 // multiplies 256bit big endian ints a and b (mod secp256k1 order) and stores the result in a
 // returns true on success
-int DSSecp256k1ModMul(UInt256 * a, const UInt256 * b);
+int DSSecp256k1ModMul(UInt256 *a, const UInt256 *b);
 
 // multiplies secp256k1 generator by 256bit big endian int i and stores the result in p
 // returns true on success
-int DSSecp256k1PointGen(DSECPoint * p, const UInt256 * i);
+int DSSecp256k1PointGen(DSECPoint *p, const UInt256 *i);
 
 // multiplies secp256k1 generator by 256bit big endian int i and adds the result to ec-point p
 // returns true on success
-int DSSecp256k1PointAdd(DSECPoint * p, const UInt256 * i);
+int DSSecp256k1PointAdd(DSECPoint *p, const UInt256 *i);
 
 // multiplies secp256k1 ec-point p by 256bit big endian int i and stores the result in p
 // returns true on success
-int DSSecp256k1PointMul(DSECPoint * p, const UInt256 * i);
+int DSSecp256k1PointMul(DSECPoint *p, const UInt256 *i);
 
 @interface DSECDSAKey : DSKey
 
@@ -72,13 +72,13 @@ int DSSecp256k1PointMul(DSECPoint * p, const UInt256 * i);
 - (nullable instancetype)initWithPublicKey:(NSData *)publicKey;
 - (nullable instancetype)initWithCompactSig:(NSData *)compactSig andMessageDigest:(UInt256)md;
 
-- (NSData * _Nullable)sign:(UInt256)md;
+- (NSData *_Nullable)sign:(UInt256)md;
 - (BOOL)verify:(UInt256)md signature:(NSData *)sig;
 
-- (NSString * _Nullable)privateKeyStringForChain:(id<DSChainProtocol>)chain;
+- (NSString *_Nullable)privateKeyStringForChain:(id<DSChainProtocol>)chain;
 // Pieter Wuille's compact signature encoding used for bitcoin message signing
 // to verify a compact signature, recover a public key from the signature and verify that it matches the signer's pubkey
-- (NSData * _Nullable)compactSign:(UInt256)md;
+- (NSData *_Nullable)compactSign:(UInt256)md;
 
 @end
 

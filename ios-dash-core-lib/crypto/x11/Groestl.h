@@ -34,6 +34,8 @@
  * @author   Thomas Pornin <thomas.pornin@cryptolog.com>
  */
 
+// clang-format off
+
 #include "sph_types.h"
 
 typedef struct {
@@ -2902,3 +2904,4 @@ H[u] ^= x[u]; \
         groestl_big_close(cc, ub, n, dst, 64);
     }
 
+// clang-format on

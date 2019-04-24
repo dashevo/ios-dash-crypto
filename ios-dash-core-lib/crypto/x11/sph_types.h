@@ -44,6 +44,8 @@
  * @author   Thomas Pornin <thomas.pornin@cryptolog.com>
  */
 
+// clang-format off
+
 #ifndef SPH_TYPES_H__
 #define SPH_TYPES_H__
 
@@ -1976,3 +1978,5 @@ sph_dec64le_aligned(const void *src)
 #endif /* Doxygen excluded block */
 
 #endif
+
+// clang-format on

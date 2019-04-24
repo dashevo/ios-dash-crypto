@@ -32,6 +32,8 @@
  * @author   Thomas Pornin <thomas.pornin@cryptolog.com>
  */
 
+// clang-format off
+
 #include "sph_types.h"
 
 typedef struct {
@@ -1009,3 +1011,4 @@ sph_shavite512_addbits_and_close(void *cc, unsigned ub, unsigned n, void *dst)
     shavite_big_init(cc, SHAVITE_IV512);
 }
 
+// clang-format on

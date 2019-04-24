@@ -28,9 +28,9 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol DSKeySequence<NSObject>
+@protocol DSKeySequence <NSObject>
 
-@property (nonatomic,readonly) NSIndexPath * derivationPath;
+@property (nonatomic, readonly) NSIndexPath *derivationPath;
 
 @optional
 - (NSData *)deprecatedIncorrectExtendedPublicKeyFromSeed:(NSData *)seed;

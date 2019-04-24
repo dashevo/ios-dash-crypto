@@ -1,4 +1,4 @@
-//  
+//
 //  Created by Andrew Podkovyrin
 //  Copyright © 2019 Dash Core Group. All rights reserved.
 //
@@ -17,40 +17,41 @@
 
 #import "NSString+DSDashAttributedStrings.h"
 
-#import "UIImage+DSUtils.h"
 #import "DSPriceManager.h"
+#import "UIImage+DSUtils.h"
 
 @implementation NSString (DSDashSync)
 
-- (NSAttributedString*)attributedStringForDashSymbol {
+- (NSAttributedString *)attributedStringForDashSymbol {
     return [self attributedStringForDashSymbolWithTintColor:[UIColor blackColor]];
 }
 
-- (NSAttributedString*)attributedStringForDashSymbolWithTintColor:(UIColor*)color {
+- (NSAttributedString *)attributedStringForDashSymbolWithTintColor:(UIColor *)color {
     return [self attributedStringForDashSymbolWithTintColor:color dashSymbolSize:CGSizeMake(12, 12)];
 }
 
-+(NSAttributedString*)dashSymbolAttributedStringWithTintColor:(UIColor*)color forDashSymbolSize:(CGSize)dashSymbolSize {
++ (NSAttributedString *)dashSymbolAttributedStringWithTintColor:(UIColor *)color forDashSymbolSize:(CGSize)dashSymbolSize {
     NSTextAttachment *dashSymbol = [[NSTextAttachment alloc] init];
-    
+
     dashSymbol.bounds = CGRectMake(0, 0, dashSymbolSize.width, dashSymbolSize.height);
     dashSymbol.image = [[UIImage imageNamed:@"Dash-Light"] ds_imageWithTintColor:color];
     return [NSAttributedString attributedStringWithAttachment:dashSymbol];
 }
 
 
-- (NSAttributedString*)attributedStringForDashSymbolWithTintColor:(UIColor*)color dashSymbolSize:(CGSize)dashSymbolSize {
-    
+- (NSAttributedString *)attributedStringForDashSymbolWithTintColor:(UIColor *)color dashSymbolSize:(CGSize)dashSymbolSize {
+
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]
-                                                   initWithString:[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
-    
+        initWithString:[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
+
     NSRange range = [attributedString.string rangeOfString:DASH];
     if (range.location == NSNotFound) {
         [attributedString insertAttributedString:[[NSAttributedString alloc] initWithString:@" "] atIndex:0];
         [attributedString insertAttributedString:[NSString dashSymbolAttributedStringWithTintColor:color forDashSymbolSize:dashSymbolSize] atIndex:0];
-        
+
         [attributedString addAttribute:NSForegroundColorAttributeName value:color range:NSMakeRange(0, attributedString.length)];
-    } else {
+    }
+    else {
         [attributedString replaceCharactersInRange:range
                               withAttributedString:[NSString dashSymbolAttributedStringWithTintColor:color forDashSymbolSize:dashSymbolSize]];
         [attributedString addAttribute:NSForegroundColorAttributeName value:color range:NSMakeRange(0, attributedString.length)];
@@ -60,36 +61,36 @@
 
 // MARK: time
 
-+(NSString*)waitTimeFromNow:(NSTimeInterval)wait {
++ (NSString *)waitTimeFromNow:(NSTimeInterval)wait {
     NSUInteger seconds = wait;
     NSUInteger hours = seconds / 360;
     seconds %= 360;
-    NSUInteger minutes = seconds /60;
-    seconds %=60;
-    
-    NSString * hoursUnit = hours!=1?DSLocalizedString(@"hours",nil):DSLocalizedString(@"hour",nil);
-    NSString * minutesUnit = minutes!=1?DSLocalizedString(@"minutes",nil):DSLocalizedString(@"minute",nil);
-    NSString * secondsUnit = seconds!=1?DSLocalizedString(@"seconds",nil):DSLocalizedString(@"second",nil);
-    NSMutableString * tryAgainTime = [@"" mutableCopy];
+    NSUInteger minutes = seconds / 60;
+    seconds %= 60;
+
+    NSString *hoursUnit = hours != 1 ? DSLocalizedString(@"hours", nil) : DSLocalizedString(@"hour", nil);
+    NSString *minutesUnit = minutes != 1 ? DSLocalizedString(@"minutes", nil) : DSLocalizedString(@"minute", nil);
+    NSString *secondsUnit = seconds != 1 ? DSLocalizedString(@"seconds", nil) : DSLocalizedString(@"second", nil);
+    NSMutableString *tryAgainTime = [@"" mutableCopy];
     if (hours) {
-        [tryAgainTime appendString:[NSString stringWithFormat:@"%ld %@",(unsigned long)hours,hoursUnit]];
+        [tryAgainTime appendString:[NSString stringWithFormat:@"%ld %@", (unsigned long)hours, hoursUnit]];
         if (minutes && seconds) {
-            [tryAgainTime appendString:DSLocalizedString(@", ",nil)];
-        } else if (minutes || seconds) {
-            [tryAgainTime appendString:DSLocalizedString(@" and ",nil)];
+            [tryAgainTime appendString:DSLocalizedString(@", ", nil)];
+        }
+        else if (minutes || seconds) {
+            [tryAgainTime appendString:DSLocalizedString(@" and ", nil)];
         }
     }
     if (minutes) {
-        [tryAgainTime appendString:[NSString stringWithFormat:@"%ld %@",(unsigned long)minutes,minutesUnit]];
+        [tryAgainTime appendString:[NSString stringWithFormat:@"%ld %@", (unsigned long)minutes, minutesUnit]];
         if (seconds) {
-            [tryAgainTime appendString:DSLocalizedString(@" and ",nil)];
+            [tryAgainTime appendString:DSLocalizedString(@" and ", nil)];
         }
     }
     if (seconds) {
-        [tryAgainTime appendString:[NSString stringWithFormat:@"%ld %@",(unsigned long)seconds,secondsUnit]];
+        [tryAgainTime appendString:[NSString stringWithFormat:@"%ld %@", (unsigned long)seconds, secondsUnit]];
     }
     return [NSString stringWithString:tryAgainTime];
 }
 
 @end
-
