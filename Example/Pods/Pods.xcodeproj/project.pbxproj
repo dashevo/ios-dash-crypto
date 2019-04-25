@@ -15,305 +15,304 @@
 			dependencies = (
 			);
 			name = "bls-signatures-pod";
-			productName = "bls-signatures-pod";
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		048AF00AB536ABF00DA1B24DD6F17A82 /* group_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FDA07146A6D6985493826EB466630AB /* group_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		04FA8BDE654B06AECF149BAC7C4DAB33 /* scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E80390878AAB0CB2EF1C6D8E01BAFC /* scalar.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0D03FFE3A3BE48DAFB6587F7619FF574 /* secp256k1_recovery.h in Headers */ = {isa = PBXBuildFile; fileRef = D9802A8AAE8A1A806A07CA3700CFF290 /* secp256k1_recovery.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0D4AFE236C54DAD84FCC1FE6D47C41DD /* field_10x26_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = CF2A122608034743EF2E78E78137F58C /* field_10x26_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0F401460B329C56675F7641B30254C6E /* ecmult_gen.h in Headers */ = {isa = PBXBuildFile; fileRef = F2D589AC6DB5F001ACA6F39E23C00B93 /* ecmult_gen.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0F68250599D254DBCE2D1FC070D7AA83 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB69465F92412C4EB0A6D93A25F90C9 /* util.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		125A07BAA2AF1A7CE62DAA12A032AD83 /* NSMutableData+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = 8231B4E965C7E9E9E88E61273117F4CA /* NSMutableData+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		130787E4238A53F7A1D0C8856ADC706A /* main_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = E129C29214FFD23F598C8084403622DE /* main_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1340B11EDDCB588DD4D6C38B28F8C129 /* DSChainProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E9690D89F17146FDFBA95CE1D899443 /* DSChainProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1D6B6DB7CBFB1803A2CDCC45C4098F83 /* NSCoder+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A3219392530FEA3D343DE4BBBB0A41 /* NSCoder+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1E33DD2BE3D6C434E699EF93C698C364 /* DSKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5B975BB0F8CE7753849BA36EB27B42 /* DSKey.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		203855FC82673AEFD05F08AA72F81293 /* DSKeySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 4148CAF8856075504E5875E831BCDFBE /* DSKeySequence.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		21BC05B7F2FD8DEE7B9CC049A92CF2C6 /* eckey.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E84E48F66D15142B2847602AC8957EA /* eckey.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		227A180B3CDD20B78A9F5EFB77279A4C /* group.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E44A1F51BBB8A00B0C1A18A63F5BA1D /* group.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2D38CB80E7CFD177C1FFF648C3D178AC /* NSData+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = A46AFBE5C99C287BB3A0803481A87EBF /* NSData+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2EB0CB5005DE39CD9C8381C502CF6242 /* DSKey+BIP38.m in Sources */ = {isa = PBXBuildFile; fileRef = F39A5EE2B7FCB6FD49606275D14DA272 /* DSKey+BIP38.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		33ECE93130A7C91706A196248A8EE628 /* DSKey+BIP38.h in Headers */ = {isa = PBXBuildFile; fileRef = A2A84FBCFCACBC2EBA6BE1EC4AB15B5A /* DSKey+BIP38.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3521D203F53E7A896C14FBB8A86B7C08 /* NSData+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2C204012C5E6236DFA5882DEB667A /* NSData+Bitcoin.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		3594F93C77138FC7907431ECA105CC15 /* Pods-ios-dashcore-lib_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DAA028A6379DAC9DA22E18F5341466 /* Pods-ios-dashcore-lib_Tests-dummy.m */; };
-		3848BC62443025ADBD811692B93E4E76 /* Shavite.h in Headers */ = {isa = PBXBuildFile; fileRef = 77DF4DC2C8A274D6B71D1153F97C997D /* Shavite.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3ACDA76B0A812B55A502A2ABC52C5849 /* NSString+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAF78796DB3B9ABB1DDD315B09DD41E /* NSString+Bitcoin.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		3B86A639D85CE4E10B3A763F79125823 /* Groestl.h in Headers */ = {isa = PBXBuildFile; fileRef = D112812E674FFEDAE953A00BBFB1927E /* Groestl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		45DB22971F96B41E0D1A866150D19E33 /* field_5x52_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9DC0B777B21D84D0D89C3ECDD31E05 /* field_5x52_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		47499AC196D8DF07F38B0D441F5764E6 /* NSData+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F8EB38933B93142B8887176CA9EE4B /* NSData+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		49BF795FB63A1DD39E607102414A4FE5 /* NSString+Bitcoin.h in Headers */ = {isa = PBXBuildFile; fileRef = D794CA58367F9274EA5B4F21BBBE4C8A /* NSString+Bitcoin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4B35787B4A34F37CAC1900F7D9F86E2A /* DashCoreLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = A2A4889F883657DF8F3578958982B645 /* DashCoreLogging.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4F726644413D487A999E97BE047434B9 /* NSString+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = E363E8B5BC2D9576D00DF72C8E953881 /* NSString+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		508B583C6D73427BAB9EF896F52F950B /* field_5x52.h in Headers */ = {isa = PBXBuildFile; fileRef = 4538BEADCC9FE38BFDB014A462BA47BC /* field_5x52.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		53651A582270B8A9774D422A71E8588E /* CubeHash.h in Headers */ = {isa = PBXBuildFile; fileRef = FCF16CF2768DCDA34307DE20714F2878 /* CubeHash.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		54D87AE3DEDEC3EF14001973A22047DC /* num.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B597382B69D9492CFFE5B549B57011F /* num.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		58854E49D76FB74B30EC36343CB96ACD /* num_gmp_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 56A54397CB70588E77E23478CB307E29 /* num_gmp_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		64F580290B2BE9FE9EEC52CA269F26A8 /* scalar_low.h in Headers */ = {isa = PBXBuildFile; fileRef = 910C1EA8A216C5BBDFD03B54F527030B /* scalar_low.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		691A55A2CD831070CC6AD7FCA04710E6 /* Luffa.h in Headers */ = {isa = PBXBuildFile; fileRef = 39CD46D04CB7925EF2FE6B8BAEDF8EEE /* Luffa.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6A03E61F5804C37AC85133F98CBC0E8A /* ecmult.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E199CB3F9BBC759B503B8F2ECEF3F01 /* ecmult.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6BBECFA4896B91645150729982BBF87C /* ecdsa_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BA5D3A316D7C003FF84068DD0AD27C /* ecdsa_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6D7661686FE9EB758364595198A86054 /* scalar_low_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 462B9AF61EC065677150386A7859EE3A /* scalar_low_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		73EF159438299E4ECD6CEA02DEA8AEC8 /* Echo.h in Headers */ = {isa = PBXBuildFile; fileRef = 105D69FE13B794C97A1D58DDC79846BD /* Echo.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		74BE9D6F3D2B70A697F6404BB5E7F7A1 /* DSBLSKey.mm in Sources */ = {isa = PBXBuildFile; fileRef = 05567B84F9D68A3D24AD14B3E4902FE2 /* DSBLSKey.mm */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		77217AF609D1A0009FACB49811DE73F7 /* scalar_8x32.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D4B9C58C22C2D0883F2D949789B0FCB /* scalar_8x32.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		78FE49320ADCF70EBDDB61FBC709EE61 /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE68AE960EC8CE6BD31B4B70509581B /* ecdsa.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7BAB6D760DDE142F78DE34F239EDE4DA /* Bmw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1209993F2A3F2D10BFB11B758A7E382F /* Bmw.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7E2E74F209D883CA5C5EC13DCD1C8CB0 /* NSIndexPath+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = 358CED81B720F4E345A31C1FBFEB17C9 /* NSIndexPath+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		7EB2E1D9B9201D70A132DF5F2AAB2FC5 /* field.h in Headers */ = {isa = PBXBuildFile; fileRef = EE31D5E565BB16218808958646926388 /* field.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8AC12334C215970871FCF9E2AD1DCF01 /* scalar_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D4D5EE534EE4804DF81C33222B9FC2 /* scalar_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8B8A5B89803CE97FD5BB0EF816E37CC3 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 119EC9CD38AE313653B23021D1FB68EC /* NSDate+Utils.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		8C33C8BECFB97527BC869C35FC16AE83 /* field_5x52_asm_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 01AF639F103CB9AA77CA7971DA96136D /* field_5x52_asm_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9362FA372ED3B80BB90B91D87694CC47 /* hash_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A07DED90778CF73EAF1422BF705D5F63 /* hash_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		96B4721E8983825E7C8276F1283FC0CF /* Simd.h in Headers */ = {isa = PBXBuildFile; fileRef = 486918DCA6ADAA5102E5E19DE99E1AC1 /* Simd.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		988317E92F654FF859043D51227B2879 /* DSECDSAKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 242023AA9EFE89A6A3E11F157B28C8A6 /* DSECDSAKey.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		99DD822EEC47C86B8EABFC5DF70ABF97 /* secp256k1_dash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C1C706E2EA7AADD6A0550C60675F7A /* secp256k1_dash-dummy.m */; };
-		A5BE998A96C01675C5A445206296E21C /* secp256k1_ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = A55B037AC3A977749881DE8AD9A5740F /* secp256k1_ecdh.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AA1075890DF0C79BF3FB59A9AA465211 /* aes_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E7786EAA3B61E84C059E4F6A04208D7 /* aes_helper.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AE8B613AA1A27173DDC1E9454385CEDC /* NSCoder+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F0DEE3E49A27F149D53700883C5D5E /* NSCoder+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		AEE78A7DEA3D9C84FCFEDD6409232C6B /* secp256k1.c in Sources */ = {isa = PBXBuildFile; fileRef = 9531D1B951A7E33CF4737CD57C54C5F9 /* secp256k1.c */; };
-		B0266156F13D008E31BD66C9888A1AD2 /* field_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C69C4AB4B154BA4D509E71ACC8CCE16 /* field_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B30C9B591A9266C0725DD4AD17544390 /* ecmult_const_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CA04F536618B3D369C6465F109BC6F /* ecmult_const_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B435FBE0F7A4E594913AD9886D4880C6 /* Skein.h in Headers */ = {isa = PBXBuildFile; fileRef = E113D70AB62411ADE116604CF0B7FC07 /* Skein.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B78181E1208A947E0C6BA52EB617E809 /* NSMutableData+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF9BC1C473FD370C538FF306882C95 /* NSMutableData+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		BA66C48D2E4AEF8831352DB145A920E3 /* field_5x52_int128_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F472D2B175508B9ED56E6F2782F2F52 /* field_5x52_int128_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BE976D72EBDB1C63D58C590CD0811845 /* num_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A2C19F0306257054C5757397BC3CEC8A /* num_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C01C06FB73648BAC903D2B2E7031EA0B /* Jh.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F91DD65D4237857FA47670BD70526D /* Jh.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C076DC8CFB8F2F334E019DC68EBBC041 /* scalar_4x64.h in Headers */ = {isa = PBXBuildFile; fileRef = B5539E0DE78DE43FF48B8757D752763B /* scalar_4x64.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C10B068D93A9E5CEF1634993DA9206CC /* ecmult_gen_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E65160D204C3768F1CEC751597514F0 /* ecmult_gen_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C11ED85177404BB37376B1425CE6F725 /* Blake.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE76C205822CB9A8C819A776015868A /* Blake.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C4E111CC2F8B90BBBA2798EEE23F3E98 /* BigIntTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 95823907E0A9410A2F4B9E88E29418D9 /* BigIntTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C7B998C19D4EE44BB95311669123EC95 /* scalar_8x32_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = C07CC7461E64810494FEC2CA57B5056E /* scalar_8x32_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C8090C73930F7B9F724B0C1ABBDB7E0E /* NSString+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A9578CD290B6CB8BFC7BF0D6026570 /* NSString+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		C8B06B58F23C7572B55EA5CE0B817945 /* NSIndexPath+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = 5594F2942B9E28FED00CCB37CA47868D /* NSIndexPath+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C942232D219F3F184E6BF60BAC68E271 /* main_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EB543D968BDB9DC4244ACABF9885BE /* main_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C95FAD9670BE569C02BCFBA1F25F3069 /* Keccak.h in Headers */ = {isa = PBXBuildFile; fileRef = 14392767663C70C7AF8B4F382D83099D /* Keccak.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CAD8545AA9C29DAEDA24B8BB59792BBB /* NSData+Bitcoin.h in Headers */ = {isa = PBXBuildFile; fileRef = 08874E51BC9D22B8DC2245672F99EC7F /* NSData+Bitcoin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CD6A3A06584D8FE2896D92E285E4B62A /* ios-dashcore-lib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED31BE6340A981A5EE400A20BD47E314 /* ios-dashcore-lib-dummy.m */; };
-		CE90AA2DE6100A7C29409A5D3A28380B /* ecmult_const.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D44DC25FB318F0484B9D7F67EA7562 /* ecmult_const.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CE94AAAEDE2ACC4291A6DF4794CF3BBE /* sph_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E74DC3ADFE26F4298BF714177386ADE /* sph_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D0EC96F476194A2DAC9DE72B90E2A778 /* basic-config.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DB92C782F675A6CAB00A9050D23BAAC /* basic-config.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D117C38A92027A18ECB3FD3C5D927B01 /* scalar_4x64_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F722BB3BFB5D2714603E7D57514792 /* scalar_4x64_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D58141263A8B2ABD1543C3526EB2AAB7 /* DSECDSAKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 532CB541CB3444574A54B94EF512B3B6 /* DSECDSAKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D8741F59AE605EA79E81844530726899 /* NSDate+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A303197106BEAC7C4A68779F1BA53F7 /* NSDate+Utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D8CED79BDE33F2414878AF421E734426 /* DSKey.h in Headers */ = {isa = PBXBuildFile; fileRef = B174CD12632144A7D2441A1E6F3A9A6A /* DSKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E930A408109B0819349295FE43C202B5 /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 37FFA638871DA9E000CE7E9912133340 /* hash.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EC8C0F574EE1DE29B7BA8CD8C2EB1B1C /* num_gmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A4809F6795E4A8230CB4061C00B88C /* num_gmp.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F162470ECFCC205FF1B8ABC8C47CA6A8 /* DSBLSKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C2617BD7B73D234AAA0B49A74DBAF8E /* DSBLSKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F3BD8A1D5D80691DE0C9E4CB42824E28 /* field_10x26.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C187FCA627E05DA4939786038836A9E /* field_10x26.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F548835F97830BF5D5ECBFFF3E8EA03B /* secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C59F4023BD56F4C2190862E0C7257C4 /* secp256k1.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F9E7E641F97489C1D3FDFB3E00C0B5A0 /* eckey_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8734F9468524805616FFFA96EC723F1B /* eckey_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FDB0BDE18710D31E9937A7D4AB409017 /* ecmult_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = F0E91ADFEAC34F0DD6F5558F375E5FC4 /* ecmult_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		017BE8B8288E04390CE57D25487CAC21 /* group.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E44A1F51BBB8A00B0C1A18A63F5BA1D /* group.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		05098BB641FF52C1B115125DE575966F /* DSChainProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E80474BC1AF86447EB5CF19F6B2FF1 /* DSChainProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		060C1F240256116AFBB2E0D72C1D9724 /* scalar_low_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 462B9AF61EC065677150386A7859EE3A /* scalar_low_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		081D5834168A46F978DBD535D89ECD0D /* Keccak.h in Headers */ = {isa = PBXBuildFile; fileRef = 03807D95E63B85CD4CB54B797E1AA0AA /* Keccak.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0C07621D779F911D6898AF759A701AA3 /* num_gmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A4809F6795E4A8230CB4061C00B88C /* num_gmp.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		17673267608C04C3B0BAF49A5331EDCE /* aes_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 718E0382EC918C1CF90BBBC2D17D1F3A /* aes_helper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		185749B9C0961D3F298634DEB8ACDF41 /* sph_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 50831E20DE6AB33138A4495E60656E1F /* sph_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		19660695687BA655696663D0475B11CB /* NSData+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243D3B4A5DA567ABFDB0F10E3A07D16 /* NSData+Bitcoin.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		1F0DCEBC29835A12D6200018FBF40530 /* Groestl.h in Headers */ = {isa = PBXBuildFile; fileRef = 22660D3A90C078804A469809369733FA /* Groestl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		20AF188F521B7245B0334B2F67EB7C42 /* DSKey+BIP38.m in Sources */ = {isa = PBXBuildFile; fileRef = 060EF922F3DF4A15BB3029FF73B88AF8 /* DSKey+BIP38.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		22DFA4E7DC4228CA6F3351CD90BF9602 /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE68AE960EC8CE6BD31B4B70509581B /* ecdsa.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		23FBB9CA23861DE101A974DD46258C59 /* num_gmp_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 56A54397CB70588E77E23478CB307E29 /* num_gmp_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28D5E1B384EC2CC34EBE8B4AD2C352A0 /* scalar_8x32.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D4B9C58C22C2D0883F2D949789B0FCB /* scalar_8x32.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		327886DE3EE873F50793FF4D2690A787 /* CubeHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D5685C4DA1FC11D8403516555DF3AFD /* CubeHash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		33438DCF9E1C427B478BC3F006F31170 /* ecmult_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = F0E91ADFEAC34F0DD6F5558F375E5FC4 /* ecmult_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		35E6113237786DBD7BA55E636E575937 /* NSData+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = CE522405375BC642C6FA93A691203987 /* NSData+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		36E7D8B70B6398DA362B7470A8FD0135 /* ecmult_gen_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E65160D204C3768F1CEC751597514F0 /* ecmult_gen_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		39D419FAABE537003EC3EFD99A379897 /* main_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = E129C29214FFD23F598C8084403622DE /* main_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3A283D6811C930B01D986586870E5B12 /* NSIndexPath+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D6F4E3972F48032CB31A7E0849CFD2A /* NSIndexPath+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3B5E265A58F903249BEEDCA4B22F0AEE /* NSMutableData+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8493246617929F64BA9BA61C4FD0FA /* NSMutableData+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		3E1CC2FD09A057512BFBB2D77D71E071 /* Shavite.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE3F70AA648625169D2DCE048F653A0 /* Shavite.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4089C37C31232E65670DFE304502793F /* ecmult_gen.h in Headers */ = {isa = PBXBuildFile; fileRef = F2D589AC6DB5F001ACA6F39E23C00B93 /* ecmult_gen.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		432AE635936179750F31798765259C8D /* NSString+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEA4BE94C428F51A455A9442184832 /* NSString+Bitcoin.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		439B4FE99796F9DC5D56FD6057D9F57A /* NSData+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = 285CB0F005D1AF14DB09D0EAD9F51FDA /* NSData+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		478D2F74B5982C25314CBA09C8A7A7B9 /* group_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FDA07146A6D6985493826EB466630AB /* group_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4886C767C08D967E59591C5E5BBE92DA /* main_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EB543D968BDB9DC4244ACABF9885BE /* main_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		48BE23B019B3E9DA92A65E1B52E558C9 /* Bmw.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EBB67EC3E69ED364F8AFB70092029B /* Bmw.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		48CE05326CCBE38D535F8625479A5D46 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB69465F92412C4EB0A6D93A25F90C9 /* util.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4A6BC80C46D6C1EF71CAFD946D11ACB7 /* DSBLSKey.mm in Sources */ = {isa = PBXBuildFile; fileRef = 118EA325DB24E7700F6D1F13316F7AA4 /* DSBLSKey.mm */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		4C3C8BF61DD0A25DD965CE9F72AFC2B2 /* Blake.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A26DA1449E9F7F5EA1BC963AFFC9C20 /* Blake.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4F093655C37097244CD8BFC92235956A /* field_5x52.h in Headers */ = {isa = PBXBuildFile; fileRef = 4538BEADCC9FE38BFDB014A462BA47BC /* field_5x52.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		53E3D99553C911AECD054FAF7AAC59FD /* NSString+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FF5CE705277F868BF125698B3B16CF /* NSString+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		57A3C06B53E9CF998F8F5C472CFEE2A9 /* secp256k1_ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = A55B037AC3A977749881DE8AD9A5740F /* secp256k1_ecdh.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		58A3793DED98BBD4F93C25DFBEF5B862 /* eckey.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E84E48F66D15142B2847602AC8957EA /* eckey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		61694932EAB4716B6744D48928562DD5 /* secp256k1_dash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C1C706E2EA7AADD6A0550C60675F7A /* secp256k1_dash-dummy.m */; };
+		62DEA987AD99F52D6877F7F1E1B34985 /* Pods-ios-dash-crypto_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B23614D8077BC026EB12459255DA5D53 /* Pods-ios-dash-crypto_Tests-dummy.m */; };
+		6AE67E18DE5215C406DD9F3C8DC6E56E /* NSMutableData+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = 03551713839F9D807A156B8DBA6333B2 /* NSMutableData+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6AFFE76EE09760E091730CC01E345640 /* secp256k1_recovery.h in Headers */ = {isa = PBXBuildFile; fileRef = D9802A8AAE8A1A806A07CA3700CFF290 /* secp256k1_recovery.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6EC3921C09979ADFEAF4303DF540D0A8 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DC511A056C90EABB4E5213C25C264 /* NSDate+Utils.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		6F8C3E51467C5BF016B0D73E9E0C93A4 /* Jh.h in Headers */ = {isa = PBXBuildFile; fileRef = 886F75D16D94386F8AEB44EBAC613D26 /* Jh.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		705FFC5BC2C0DD25989C06D712B75239 /* Luffa.h in Headers */ = {isa = PBXBuildFile; fileRef = C335F8F53E0ACA39A4905CA76B0A8A9F /* Luffa.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		70C41F886C0F2543446545FFD1D44EF4 /* NSCoder+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DF12877FA0F2E54B0BFBC8ECE0C035 /* NSCoder+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		721CB21B1385DBF213A36DAA52E657B6 /* DSKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E436EE4CFCB1603145149CECA0C41CF /* DSKey.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		7791E3BC940C6E4C1DFBD169FEF92CD7 /* basic-config.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DB92C782F675A6CAB00A9050D23BAAC /* basic-config.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		86594B96162AE78D61D1C9927820E82D /* scalar_4x64.h in Headers */ = {isa = PBXBuildFile; fileRef = B5539E0DE78DE43FF48B8757D752763B /* scalar_4x64.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		899CE2C8613CE9FCF869A5A86F4F4AF8 /* Echo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BEDD06AC2D94AC2DBC61A75F4B19062 /* Echo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8F52CC790B000EEAF63AB1476950C9F0 /* field.h in Headers */ = {isa = PBXBuildFile; fileRef = EE31D5E565BB16218808958646926388 /* field.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8FDD691C46B24BD71391F45E8A38AF33 /* DSECDSAKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 337EDE8D2BD2F0D129970095962FEA09 /* DSECDSAKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90E1024496E4CCAEE295FC0DE2BA984B /* num.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B597382B69D9492CFFE5B549B57011F /* num.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A2C9823A80652158DBDB2C69A3D55A08 /* NSData+Bitcoin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B9F0182D52F40A37A6CF1340BF96FD6 /* NSData+Bitcoin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A52FC47858CBB01F2F7D2CA29EF5CA34 /* secp256k1.c in Sources */ = {isa = PBXBuildFile; fileRef = 9531D1B951A7E33CF4737CD57C54C5F9 /* secp256k1.c */; };
+		A63A542844610E1679E78463BEA5C9FA /* num_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A2C19F0306257054C5757397BC3CEC8A /* num_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A64789F8D1E695C0CACA3B987868A53E /* ecmult_const_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CA04F536618B3D369C6465F109BC6F /* ecmult_const_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ADD481F0D23A2C73E03ADF336C25E9AD /* NSString+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = BE320B7460F7CED006AF74FC4C25B1C6 /* NSString+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B123C8FED538E75B582176DEA62A6499 /* DSKeySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A55F5D0AFFFF8BAA9C2B0F7DFE6CECD /* DSKeySequence.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B25AB55C2892E4BC60D6205FEC34D614 /* scalar_8x32_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = C07CC7461E64810494FEC2CA57B5056E /* scalar_8x32_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BAE86CE45C961A70CBD54AD06A2ECF39 /* field_10x26.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C187FCA627E05DA4939786038836A9E /* field_10x26.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD51052ADF01197F3C269BB95AC143CE /* NSIndexPath+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = AED279D2082CCC2326DBE192DEE17EE3 /* NSIndexPath+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		C095BEA481910F60AE3C9B634E35F718 /* ecmult.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E199CB3F9BBC759B503B8F2ECEF3F01 /* ecmult.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C1250C500A8618BE0C57B9CE36F008C9 /* Skein.h in Headers */ = {isa = PBXBuildFile; fileRef = 421AFDF06CCBB5C68F380D740BB49E6D /* Skein.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C2DD015943A6C9E3543775DFFE21EBDE /* field_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C69C4AB4B154BA4D509E71ACC8CCE16 /* field_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C5CB8C19AEF157BE198A49946C364A97 /* hash_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A07DED90778CF73EAF1422BF705D5F63 /* hash_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C5F6121AAE0103C77AC1D47C0D75230A /* scalar_low.h in Headers */ = {isa = PBXBuildFile; fileRef = 910C1EA8A216C5BBDFD03B54F527030B /* scalar_low.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C63128F7D075E2B95A0307753327EC1A /* scalar_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D4D5EE534EE4804DF81C33222B9FC2 /* scalar_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C68828815A87B84B667322D40C642A6E /* eckey_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8734F9468524805616FFFA96EC723F1B /* eckey_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA7EA347066C03A7EEC68D618AC6D8B8 /* BigIntTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 75AA9AB2CA04E8BE719A1A90E89852DF /* BigIntTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CCF6BAF088BD88A6009BFBFB4B4FC964 /* NSCoder+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F3FA441893492E030B30CC989488CD5 /* NSCoder+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CE0169C639332D6A555EE221704AF4F3 /* DSECDSAKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CBE22911C33CF36763CC3390637F4C /* DSECDSAKey.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		D09602769D4CDEB1AA5681C1AB6DE56F /* scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E80390878AAB0CB2EF1C6D8E01BAFC /* scalar.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D19F3D9795E42F07E56552964AD725C8 /* field_5x52_int128_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F472D2B175508B9ED56E6F2782F2F52 /* field_5x52_int128_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D42ADE7778B99256024F7FFEAACEB7F2 /* secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C59F4023BD56F4C2190862E0C7257C4 /* secp256k1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D91127BA0489C20D22C150DD67EE25D4 /* DSKey+BIP38.h in Headers */ = {isa = PBXBuildFile; fileRef = D242508B65BA881870CC974048DE88D0 /* DSKey+BIP38.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DCD248B7843CBEDB7A048E476A4BFD36 /* scalar_4x64_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F722BB3BFB5D2714603E7D57514792 /* scalar_4x64_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DDFFE915745B941C4C5DBA2D0A007CB5 /* ios-dash-crypto-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F87D9812DC3896897F85938DCB441 /* ios-dash-crypto-dummy.m */; };
+		E0C26750B5139C27F738F82B31BD8B3E /* Simd.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB621AA601F3F074730BF5BB3891B4C /* Simd.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E1A460AF4D95354D55F169472F13B0D5 /* field_5x52_asm_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 01AF639F103CB9AA77CA7971DA96136D /* field_5x52_asm_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E2E42525EFBFF16F12CDA8DB1BBE5BFD /* DSKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EDAD69DA3FC5BDB4F3ED7A2CD811E3C /* DSKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E38BEEE55288A4CDB2C9A552C6AFD657 /* ecmult_const.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D44DC25FB318F0484B9D7F67EA7562 /* ecmult_const.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E4B944AE6A1340FCE2FEF7E4DBF2BA45 /* NSString+Bitcoin.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DE143B8EA5583D4209FC84A4D517845 /* NSString+Bitcoin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EC1493FA48126D5689BA38B5C765CD0B /* DSBLSKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 608732649EC1D94E87F57156BAB98793 /* DSBLSKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EF553547546383C4D8BFA10CC2611711 /* DashCoreLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = D781816A4886BE6FBB0DC07E0E9506EF /* DashCoreLogging.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EFBB686ABE53B19452C91F377E8379A7 /* ecdsa_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BA5D3A316D7C003FF84068DD0AD27C /* ecdsa_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F90C29CC44333C97D54B526585716A4B /* NSDate+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 71BDF9C9679B2A3E7A11D75E40B00667 /* NSDate+Utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB9E4756C2069B22623C1D619880DD0B /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 37FFA638871DA9E000CE7E9912133340 /* hash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FC906905A7EC64581DCE7D060AD7B44C /* field_5x52_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9DC0B777B21D84D0D89C3ECDD31E05 /* field_5x52_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FE1AED1479A52CB305D048651808CAEE /* field_10x26_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = CF2A122608034743EF2E78E78137F58C /* field_10x26_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		32BFA0BEFD0B5A1E5AA0402D15C45BD8 /* PBXContainerItemProxy */ = {
+		62C7076CF8FCC08797EBCD8E2CC34768 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 374D3AC14C1DC8FDF7C394F9DA6ADF4A;
+			remoteGlobalIDString = B335D9CE8D8E9CE7A87A0885EDB9F3E9;
 			remoteInfo = secp256k1_dash;
 		};
-		573C9D936222DA5177FC973D81821051 /* PBXContainerItemProxy */ = {
+		7AC3716013B7F05A05350CA864024BD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3DACFD970E6C797C9E56D91994943CCE;
-			remoteInfo = "ios-dashcore-lib";
-		};
-		5B6CA1966A6A8CCEACB7DA0D7EC7231E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 374D3AC14C1DC8FDF7C394F9DA6ADF4A;
+			remoteGlobalIDString = B335D9CE8D8E9CE7A87A0885EDB9F3E9;
 			remoteInfo = secp256k1_dash;
 		};
-		9A57E87845473CCB73C20E992AAF9FDC /* PBXContainerItemProxy */ = {
+		B73BC1B1D2C97BEACC23583C111AD068 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4AE84B88A4FBE6CD3921FDCEF49392B4;
 			remoteInfo = "bls-signatures-pod";
 		};
-		DF53E3F6AADD85BF658ED1665F167B45 /* PBXContainerItemProxy */ = {
+		F2264C4E72D9D32A9D51D629A8FB5DFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4AE84B88A4FBE6CD3921FDCEF49392B4;
 			remoteInfo = "bls-signatures-pod";
+		};
+		FB5128C60BB068C4E694DD632A470864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E078DB431AFFB5F9501B14B7D77CBD3;
+			remoteInfo = "ios-dash-crypto";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		01AF639F103CB9AA77CA7971DA96136D /* field_5x52_asm_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_5x52_asm_impl.h; path = src/field_5x52_asm_impl.h; sourceTree = "<group>"; };
-		02A9578CD290B6CB8BFC7BF0D6026570 /* NSString+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Dash.m"; sourceTree = "<group>"; };
-		03BD96EAB60930C04D6F9824670C816A /* chaincode.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = chaincode.hpp; path = src/chaincode.hpp; sourceTree = "<group>"; };
+		03551713839F9D807A156B8DBA6333B2 /* NSMutableData+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+Dash.h"; sourceTree = "<group>"; };
+		03807D95E63B85CD4CB54B797E1AA0AA /* Keccak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Keccak.h; sourceTree = "<group>"; };
+		03BD96EAB60930C04D6F9824670C816A /* chaincode.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = chaincode.hpp; path = src/chaincode.hpp; sourceTree = "<group>"; };
 		04CA04F536618B3D369C6465F109BC6F /* ecmult_const_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecmult_const_impl.h; path = src/ecmult_const_impl.h; sourceTree = "<group>"; };
-		05567B84F9D68A3D24AD14B3E4902FE2 /* DSBLSKey.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = DSBLSKey.mm; sourceTree = "<group>"; };
-		08874E51BC9D22B8DC2245672F99EC7F /* NSData+Bitcoin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+Bitcoin.h"; sourceTree = "<group>"; };
-		08DE9B885FF6701EEC370C3BAEAC9EF2 /* privatekey.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = privatekey.hpp; path = src/privatekey.hpp; sourceTree = "<group>"; };
+		060EF922F3DF4A15BB3029FF73B88AF8 /* DSKey+BIP38.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DSKey+BIP38.m"; sourceTree = "<group>"; };
+		08DE9B885FF6701EEC370C3BAEAC9EF2 /* privatekey.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = privatekey.hpp; path = src/privatekey.hpp; sourceTree = "<group>"; };
 		09135310BB7B352B43B897DC7578F3CB /* relic_err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_err.h; path = contrib/relic/include/relic_err.h; sourceTree = "<group>"; };
-		0B5B975BB0F8CE7753849BA36EB27B42 /* DSKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DSKey.m; sourceTree = "<group>"; };
+		09269C4013D5C276D47A6397BA2953F6 /* ios-dash-crypto.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ios-dash-crypto.xcconfig"; sourceTree = "<group>"; };
+		0B9F0182D52F40A37A6CF1340BF96FD6 /* NSData+Bitcoin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+Bitcoin.h"; sourceTree = "<group>"; };
+		0BEDD06AC2D94AC2DBC61A75F4B19062 /* Echo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Echo.h; sourceTree = "<group>"; };
 		0D9764B5005EC2953B915CCAD18D70AA /* relic_bn_low.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_bn_low.h; path = contrib/relic/include/low/relic_bn_low.h; sourceTree = "<group>"; };
 		0DB92C782F675A6CAB00A9050D23BAAC /* basic-config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "basic-config.h"; path = "src/basic-config.h"; sourceTree = "<group>"; };
 		0E199CB3F9BBC759B503B8F2ECEF3F01 /* ecmult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecmult.h; path = src/ecmult.h; sourceTree = "<group>"; };
 		0E44A1F51BBB8A00B0C1A18A63F5BA1D /* group.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = group.h; path = src/group.h; sourceTree = "<group>"; };
-		105D69FE13B794C97A1D58DDC79846BD /* Echo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Echo.h; sourceTree = "<group>"; };
-		119EC9CD38AE313653B23021D1FB68EC /* NSDate+Utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utils.m"; sourceTree = "<group>"; };
-		1209993F2A3F2D10BFB11B758A7E382F /* Bmw.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Bmw.h; sourceTree = "<group>"; };
-		132331FAA7ACE87A9C9C71260785713A /* extendedprivatekey.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = extendedprivatekey.hpp; path = src/extendedprivatekey.hpp; sourceTree = "<group>"; };
-		14392767663C70C7AF8B4F382D83099D /* Keccak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Keccak.h; sourceTree = "<group>"; };
+		118EA325DB24E7700F6D1F13316F7AA4 /* DSBLSKey.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = DSBLSKey.mm; sourceTree = "<group>"; };
+		132331FAA7ACE87A9C9C71260785713A /* extendedprivatekey.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = extendedprivatekey.hpp; path = src/extendedprivatekey.hpp; sourceTree = "<group>"; };
 		14E80390878AAB0CB2EF1C6D8E01BAFC /* scalar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar.h; path = src/scalar.h; sourceTree = "<group>"; };
 		1777C11D2785C9D536D0BF50622B2C4E /* relic_ed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_ed.h; path = contrib/relic/include/relic_ed.h; sourceTree = "<group>"; };
 		1D2152D9C06C474E38EB3F0D7947700E /* relic_fp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_fp.h; path = contrib/relic/include/relic_fp.h; sourceTree = "<group>"; };
-		1E9690D89F17146FDFBA95CE1D899443 /* DSChainProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSChainProtocol.h; path = "ios-dashcore-lib/DSChainProtocol.h"; sourceTree = "<group>"; };
-		242023AA9EFE89A6A3E11F157B28C8A6 /* DSECDSAKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DSECDSAKey.m; sourceTree = "<group>"; };
+		1D6F4E3972F48032CB31A7E0849CFD2A /* NSIndexPath+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Dash.h"; sourceTree = "<group>"; };
+		1DFEA4BE94C428F51A455A9442184832 /* NSString+Bitcoin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Bitcoin.m"; sourceTree = "<group>"; };
+		2243D3B4A5DA567ABFDB0F10E3A07D16 /* NSData+Bitcoin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+Bitcoin.m"; sourceTree = "<group>"; };
+		22660D3A90C078804A469809369733FA /* Groestl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Groestl.h; sourceTree = "<group>"; };
 		24F722BB3BFB5D2714603E7D57514792 /* scalar_4x64_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_4x64_impl.h; path = src/scalar_4x64_impl.h; sourceTree = "<group>"; };
 		260AFCD2FCF0066733AB6211D6DD1DC7 /* relic_dv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_dv.h; path = contrib/relic/include/relic_dv.h; sourceTree = "<group>"; };
-		273D63B1BBC690BACC120C2FFAB3D9C4 /* Pods-ios-dashcore-lib_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ios-dashcore-lib_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2AF4D5492B9E213C5B9F1337DCB02785 /* ios-dashcore-lib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ios-dashcore-lib.xcconfig"; sourceTree = "<group>"; };
+		26CBE22911C33CF36763CC3390637F4C /* DSECDSAKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DSECDSAKey.m; sourceTree = "<group>"; };
+		285CB0F005D1AF14DB09D0EAD9F51FDA /* NSData+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+Dash.h"; sourceTree = "<group>"; };
 		2C0C7A9EAABA408E4A9059C3CC0E33ED /* relic_pc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_pc.h; path = contrib/relic/include/relic_pc.h; sourceTree = "<group>"; };
 		2D4B9C58C22C2D0883F2D949789B0FCB /* scalar_8x32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_8x32.h; path = src/scalar_8x32.h; sourceTree = "<group>"; };
+		2EDAD69DA3FC5BDB4F3ED7A2CD811E3C /* DSKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSKey.h; sourceTree = "<group>"; };
 		2F472D2B175508B9ED56E6F2782F2F52 /* field_5x52_int128_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_5x52_int128_impl.h; path = src/field_5x52_int128_impl.h; sourceTree = "<group>"; };
 		2FDA07146A6D6985493826EB466630AB /* group_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = group_impl.h; path = src/group_impl.h; sourceTree = "<group>"; };
 		327510DA220D577F192B1CB7D8C86612 /* relic_md.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_md.h; path = contrib/relic/include/relic_md.h; sourceTree = "<group>"; };
-		358CED81B720F4E345A31C1FBFEB17C9 /* NSIndexPath+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Dash.m"; sourceTree = "<group>"; };
-		36F91DD65D4237857FA47670BD70526D /* Jh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Jh.h; sourceTree = "<group>"; };
-		37DAA028A6379DAC9DA22E18F5341466 /* Pods-ios-dashcore-lib_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ios-dashcore-lib_Tests-dummy.m"; sourceTree = "<group>"; };
+		32EBB67EC3E69ED364F8AFB70092029B /* Bmw.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Bmw.h; sourceTree = "<group>"; };
+		337EDE8D2BD2F0D129970095962FEA09 /* DSECDSAKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSECDSAKey.h; sourceTree = "<group>"; };
 		37FFA638871DA9E000CE7E9912133340 /* hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash.h; path = src/hash.h; sourceTree = "<group>"; };
-		39CD46D04CB7925EF2FE6B8BAEDF8EEE /* Luffa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Luffa.h; sourceTree = "<group>"; };
-		3E74DC3ADFE26F4298BF714177386ADE /* sph_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sph_types.h; sourceTree = "<group>"; };
-		4148CAF8856075504E5875E831BCDFBE /* DSKeySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSKeySequence.h; sourceTree = "<group>"; };
+		421AFDF06CCBB5C68F380D740BB49E6D /* Skein.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Skein.h; sourceTree = "<group>"; };
 		4538BEADCC9FE38BFDB014A462BA47BC /* field_5x52.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_5x52.h; path = src/field_5x52.h; sourceTree = "<group>"; };
 		462B9AF61EC065677150386A7859EE3A /* scalar_low_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_low_impl.h; path = src/scalar_low_impl.h; sourceTree = "<group>"; };
-		486918DCA6ADAA5102E5E19DE99E1AC1 /* Simd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Simd.h; sourceTree = "<group>"; };
 		4944F9512BFEBAC3A89BB7E9B50811C0 /* libgmp_ios.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libgmp_ios.a; path = artefacts/libgmp_ios.a; sourceTree = "<group>"; };
 		49C2D5F2D1583F70E6B3F130822F1260 /* libbls_ios.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libbls_ios.a; path = artefacts/libbls_ios.a; sourceTree = "<group>"; };
 		49D44DC25FB318F0484B9D7F67EA7562 /* ecmult_const.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecmult_const.h; path = src/ecmult_const.h; sourceTree = "<group>"; };
 		4E65160D204C3768F1CEC751597514F0 /* ecmult_gen_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecmult_gen_impl.h; path = src/ecmult_gen_impl.h; sourceTree = "<group>"; };
-		4EC5501EEC6FDFC7757CB77A30E0E9CE /* aggregationinfo.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = aggregationinfo.hpp; path = src/aggregationinfo.hpp; sourceTree = "<group>"; };
+		4EC5501EEC6FDFC7757CB77A30E0E9CE /* aggregationinfo.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = aggregationinfo.hpp; path = src/aggregationinfo.hpp; sourceTree = "<group>"; };
+		4EFBE5821074E710443F475EEB8166BE /* libsecp256k1_dash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libsecp256k1_dash.a; path = libsecp256k1_dash.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		50552426D68475EDFEB745701B8B368B /* relic_bench.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_bench.h; path = contrib/relic/include/relic_bench.h; sourceTree = "<group>"; };
-		532CB541CB3444574A54B94EF512B3B6 /* DSECDSAKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSECDSAKey.h; sourceTree = "<group>"; };
-		53B4D725227C0CA7A2264C0A5432ACFA /* libios-dashcore-lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-dashcore-lib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5594F2942B9E28FED00CCB37CA47868D /* NSIndexPath+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Dash.h"; sourceTree = "<group>"; };
+		50831E20DE6AB33138A4495E60656E1F /* sph_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sph_types.h; sourceTree = "<group>"; };
 		55D4D5EE534EE4804DF81C33222B9FC2 /* scalar_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_impl.h; path = src/scalar_impl.h; sourceTree = "<group>"; };
 		56A54397CB70588E77E23478CB307E29 /* num_gmp_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = num_gmp_impl.h; path = src/num_gmp_impl.h; sourceTree = "<group>"; };
-		5CFF9BC1C473FD370C538FF306882C95 /* NSMutableData+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+Dash.m"; sourceTree = "<group>"; };
-		5EE4D83DBE9FD90138A3E05BD9E11488 /* publickey.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = publickey.hpp; path = src/publickey.hpp; sourceTree = "<group>"; };
+		5EE4D83DBE9FD90138A3E05BD9E11488 /* publickey.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = publickey.hpp; path = src/publickey.hpp; sourceTree = "<group>"; };
+		608732649EC1D94E87F57156BAB98793 /* DSBLSKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSBLSKey.h; sourceTree = "<group>"; };
 		61A520020D4B2764BB41105F1FBFC0DC /* relic_ep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_ep.h; path = contrib/relic/include/relic_ep.h; sourceTree = "<group>"; };
-		62F0DEE3E49A27F149D53700883C5D5E /* NSCoder+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+Dash.m"; sourceTree = "<group>"; };
-		62F672C5462C6D0FF933B49D97B70624 /* Pods-ios-dashcore-lib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios-dashcore-lib_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		61DF12877FA0F2E54B0BFBC8ECE0C035 /* NSCoder+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+Dash.m"; sourceTree = "<group>"; };
 		65BB40BE384C3813E04C68FA1D333419 /* relic_pool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_pool.h; path = contrib/relic/include/relic_pool.h; sourceTree = "<group>"; };
 		65F586F8EB93B22C30ED2289892A3E41 /* relic_cp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_cp.h; path = contrib/relic/include/relic_cp.h; sourceTree = "<group>"; };
 		6743E68CEC55193C9FAA6FCC14628775 /* librelic_ios.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = librelic_ios.a; path = artefacts/librelic_ios.a; sourceTree = "<group>"; };
+		69E80474BC1AF86447EB5CF19F6B2FF1 /* DSChainProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSChainProtocol.h; path = "ios-dash-crypto/DSChainProtocol.h"; sourceTree = "<group>"; };
 		6C187FCA627E05DA4939786038836A9E /* field_10x26.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_10x26.h; path = src/field_10x26.h; sourceTree = "<group>"; };
 		6C673591973F78E7B8F244990A8E0BD4 /* relic_fpx_low.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_fpx_low.h; path = contrib/relic/include/low/relic_fpx_low.h; sourceTree = "<group>"; };
 		6DA2A7859F4BE09F1861E724A1C17E0D /* relic_bc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_bc.h; path = contrib/relic/include/relic_bc.h; sourceTree = "<group>"; };
-		6E7786EAA3B61E84C059E4F6A04208D7 /* aes_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aes_helper.h; sourceTree = "<group>"; };
 		6EE68AE960EC8CE6BD31B4B70509581B /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = src/ecdsa.h; sourceTree = "<group>"; };
-		728A17B6528E4F44737901C6F884BC09 /* bls.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = bls.hpp; path = src/bls.hpp; sourceTree = "<group>"; };
+		718E0382EC918C1CF90BBBC2D17D1F3A /* aes_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aes_helper.h; sourceTree = "<group>"; };
+		71BDF9C9679B2A3E7A11D75E40B00667 /* NSDate+Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utils.h"; sourceTree = "<group>"; };
+		726F87D9812DC3896897F85938DCB441 /* ios-dash-crypto-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ios-dash-crypto-dummy.m"; sourceTree = "<group>"; };
+		728A17B6528E4F44737901C6F884BC09 /* bls.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = bls.hpp; path = src/bls.hpp; sourceTree = "<group>"; };
 		735AD478A8F93E09AADB775ACAC47882 /* relic_fpx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_fpx.h; path = contrib/relic/include/relic_fpx.h; sourceTree = "<group>"; };
+		75AA9AB2CA04E8BE719A1A90E89852DF /* BigIntTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BigIntTypes.h; sourceTree = "<group>"; };
 		7681ADAD908E9E76464CE9E29A45110F /* relic_pp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_pp.h; path = contrib/relic/include/relic_pp.h; sourceTree = "<group>"; };
 		76E995B4123C8A9BE9239F1A8CC84969 /* relic_fb_low.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_fb_low.h; path = contrib/relic/include/low/relic_fb_low.h; sourceTree = "<group>"; };
-		77DF4DC2C8A274D6B71D1153F97C997D /* Shavite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Shavite.h; sourceTree = "<group>"; };
+		78EEDE0E8DF21CA72530D0374E8726DD /* Pods-ios-dash-crypto_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios-dash-crypto_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7A26DA1449E9F7F5EA1BC963AFFC9C20 /* Blake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Blake.h; sourceTree = "<group>"; };
+		7A9DC511A056C90EABB4E5213C25C264 /* NSDate+Utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utils.m"; sourceTree = "<group>"; };
 		7B597382B69D9492CFFE5B549B57011F /* num.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = num.h; path = src/num.h; sourceTree = "<group>"; };
-		7F2B8D9D92F6B60D41FBDC4B2A66C13E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		8231B4E965C7E9E9E88E61273117F4CA /* NSMutableData+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+Dash.h"; sourceTree = "<group>"; };
-		83C6DAD765B530913177C1F3BED45831 /* signature.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = signature.hpp; path = src/signature.hpp; sourceTree = "<group>"; };
+		7D5685C4DA1FC11D8403516555DF3AFD /* CubeHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CubeHash.h; sourceTree = "<group>"; };
+		7DE143B8EA5583D4209FC84A4D517845 /* NSString+Bitcoin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+Bitcoin.h"; sourceTree = "<group>"; };
+		7E436EE4CFCB1603145149CECA0C41CF /* DSKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DSKey.m; sourceTree = "<group>"; };
+		7F3D6D31C1A70BEFFAB88D5BC71A0DEB /* libPods-ios-dash-crypto_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ios-dash-crypto_Tests.a"; path = "libPods-ios-dash-crypto_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F8493246617929F64BA9BA61C4FD0FA /* NSMutableData+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+Dash.m"; sourceTree = "<group>"; };
+		83C6DAD765B530913177C1F3BED45831 /* signature.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = signature.hpp; path = src/signature.hpp; sourceTree = "<group>"; };
 		8427A466ADD6E89806F4D7E8DD6F5BD3 /* secp256k1_dash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = secp256k1_dash.xcconfig; sourceTree = "<group>"; };
-		85EF74E46D6CCEBCCB589E2E8C141807 /* ios-dashcore-lib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ios-dashcore-lib-prefix.pch"; sourceTree = "<group>"; };
+		86E34759DF7E410D28762FA64EBCC256 /* ios-dash-crypto-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ios-dash-crypto-prefix.pch"; sourceTree = "<group>"; };
 		8734F9468524805616FFFA96EC723F1B /* eckey_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = eckey_impl.h; path = src/eckey_impl.h; sourceTree = "<group>"; };
 		87A4809F6795E4A8230CB4061C00B88C /* num_gmp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = num_gmp.h; path = src/num_gmp.h; sourceTree = "<group>"; };
-		8BE76C205822CB9A8C819A776015868A /* Blake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Blake.h; sourceTree = "<group>"; };
-		8C2617BD7B73D234AAA0B49A74DBAF8E /* DSBLSKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSBLSKey.h; sourceTree = "<group>"; };
+		886F75D16D94386F8AEB44EBAC613D26 /* Jh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Jh.h; sourceTree = "<group>"; };
 		8C69C4AB4B154BA4D509E71ACC8CCE16 /* field_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_impl.h; path = src/field_impl.h; sourceTree = "<group>"; };
 		8E84E48F66D15142B2847602AC8957EA /* eckey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = eckey.h; path = src/eckey.h; sourceTree = "<group>"; };
-		8EC2C204012C5E6236DFA5882DEB667A /* NSData+Bitcoin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+Bitcoin.m"; sourceTree = "<group>"; };
+		8F3FA441893492E030B30CC989488CD5 /* NSCoder+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSCoder+Dash.h"; sourceTree = "<group>"; };
+		8F9862F146640A307BDC959E680F7FC7 /* libios-dash-crypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libios-dash-crypto.a"; path = "libios-dash-crypto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		910C1EA8A216C5BBDFD03B54F527030B /* scalar_low.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_low.h; path = src/scalar_low.h; sourceTree = "<group>"; };
 		9280D069804472B6236F08367C03EEA0 /* relic_epx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_epx.h; path = contrib/relic/include/relic_epx.h; sourceTree = "<group>"; };
-		9531D1B951A7E33CF4737CD57C54C5F9 /* secp256k1.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = secp256k1.c; path = src/secp256k1.c; sourceTree = "<group>"; };
-		95823907E0A9410A2F4B9E88E29418D9 /* BigIntTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BigIntTypes.h; sourceTree = "<group>"; };
-		962618C333B0D27F46AA161D67BCA5AD /* libsecp256k1_dash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsecp256k1_dash.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		99B3EAA81D272C522450E19318A6C056 /* Pods-ios-dashcore-lib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios-dashcore-lib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9A303197106BEAC7C4A68779F1BA53F7 /* NSDate+Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utils.h"; sourceTree = "<group>"; };
+		93DA18CA864D7B383E4F0F463732F843 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9531D1B951A7E33CF4737CD57C54C5F9 /* secp256k1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = secp256k1.c; path = src/secp256k1.c; sourceTree = "<group>"; };
+		95FF5CE705277F868BF125698B3B16CF /* NSString+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Dash.m"; sourceTree = "<group>"; };
+		9A55F5D0AFFFF8BAA9C2B0F7DFE6CECD /* DSKeySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSKeySequence.h; sourceTree = "<group>"; };
 		9B5DD0713DD8480EAB7574184866231B /* relic_label.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_label.h; path = contrib/relic/include/relic_label.h; sourceTree = "<group>"; };
 		9C59F4023BD56F4C2190862E0C7257C4 /* secp256k1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = secp256k1.h; path = include/secp256k1.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A07DED90778CF73EAF1422BF705D5F63 /* hash_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash_impl.h; path = src/hash_impl.h; sourceTree = "<group>"; };
-		A2A4889F883657DF8F3578958982B645 /* DashCoreLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DashCoreLogging.h; sourceTree = "<group>"; };
-		A2A84FBCFCACBC2EBA6BE1EC4AB15B5A /* DSKey+BIP38.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DSKey+BIP38.h"; sourceTree = "<group>"; };
 		A2C19F0306257054C5757397BC3CEC8A /* num_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = num_impl.h; path = src/num_impl.h; sourceTree = "<group>"; };
 		A412AB93827A09D9889006F005FFA2A1 /* relic_rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_rand.h; path = contrib/relic/include/relic_rand.h; sourceTree = "<group>"; };
-		A46AFBE5C99C287BB3A0803481A87EBF /* NSData+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+Dash.h"; sourceTree = "<group>"; };
 		A55B037AC3A977749881DE8AD9A5740F /* secp256k1_ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = secp256k1_ecdh.h; path = include/secp256k1_ecdh.h; sourceTree = "<group>"; };
+		A64B8AC6DDB39DA68D5327EA2758EA0D /* Pods-ios-dash-crypto_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ios-dash-crypto_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A6C1C706E2EA7AADD6A0550C60675F7A /* secp256k1_dash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "secp256k1_dash-dummy.m"; sourceTree = "<group>"; };
 		AB077D257B7FA3B605F9D5FE9F20BF5C /* relic_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_util.h; path = contrib/relic/include/relic_util.h; sourceTree = "<group>"; };
-		ABAF78796DB3B9ABB1DDD315B09DD41E /* NSString+Bitcoin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Bitcoin.m"; sourceTree = "<group>"; };
 		AE54663EF3ABB783F75E57A666DB9ADD /* relic_arch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_arch.h; path = contrib/relic/include/relic_arch.h; sourceTree = "<group>"; };
+		AED279D2082CCC2326DBE192DEE17EE3 /* NSIndexPath+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Dash.m"; sourceTree = "<group>"; };
 		B041B4699234BD271573CD5FC167079F /* relic_trace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_trace.h; path = contrib/relic/include/relic_trace.h; sourceTree = "<group>"; };
-		B174CD12632144A7D2441A1E6F3A9A6A /* DSKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSKey.h; sourceTree = "<group>"; };
+		B23614D8077BC026EB12459255DA5D53 /* Pods-ios-dash-crypto_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ios-dash-crypto_Tests-dummy.m"; sourceTree = "<group>"; };
 		B5539E0DE78DE43FF48B8757D752763B /* scalar_4x64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_4x64.h; path = src/scalar_4x64.h; sourceTree = "<group>"; };
-		B5A3219392530FEA3D343DE4BBBB0A41 /* NSCoder+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSCoder+Dash.h"; sourceTree = "<group>"; };
 		B89BEC9628BD96333054312439679DEB /* relic_bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_bn.h; path = contrib/relic/include/relic_bn.h; sourceTree = "<group>"; };
+		BB3E3E84AE0FB350DB55BA7B71588BBB /* Pods-ios-dash-crypto_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ios-dash-crypto_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BCC41E8060AFCA56F2E82221865E3D39 /* relic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic.h; path = contrib/relic/include/relic.h; sourceTree = "<group>"; };
+		BE320B7460F7CED006AF74FC4C25B1C6 /* NSString+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+Dash.h"; sourceTree = "<group>"; };
 		BF9DC0B777B21D84D0D89C3ECDD31E05 /* field_5x52_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_5x52_impl.h; path = src/field_5x52_impl.h; sourceTree = "<group>"; };
 		C07CC7461E64810494FEC2CA57B5056E /* scalar_8x32_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_8x32_impl.h; path = src/scalar_8x32_impl.h; sourceTree = "<group>"; };
 		C0E8E9C841800C378F79F3921E6502D1 /* relic_dv_low.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_dv_low.h; path = contrib/relic/include/low/relic_dv_low.h; sourceTree = "<group>"; };
 		C13E47CEF0677DB5C840CBE6AB49F2F4 /* relic_eb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_eb.h; path = contrib/relic/include/relic_eb.h; sourceTree = "<group>"; };
-		C3726452495741374E98648D0333FB17 /* util.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = util.hpp; path = src/util.hpp; sourceTree = "<group>"; };
+		C335F8F53E0ACA39A4905CA76B0A8A9F /* Luffa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Luffa.h; sourceTree = "<group>"; };
+		C3726452495741374E98648D0333FB17 /* util.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = util.hpp; path = src/util.hpp; sourceTree = "<group>"; };
 		C45C28EEA7E1838E5A65EBA611956C28 /* relic_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_types.h; path = contrib/relic/include/relic_types.h; sourceTree = "<group>"; };
 		CA9548D75AF76E5A3E813BFE584F2A44 /* relic_conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_conf.h; path = "contrib/relic/relic-iphoneos-arm64/include/relic_conf.h"; sourceTree = "<group>"; };
 		CB39DE847812A9E2F37EB9B5ECA23330 /* relic_fb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_fb.h; path = contrib/relic/include/relic_fb.h; sourceTree = "<group>"; };
 		CBD8CDB763813C2A4D34E299E5761C64 /* relic_test.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_test.h; path = contrib/relic/include/relic_test.h; sourceTree = "<group>"; };
 		CBFDDE9334C7F03019E4FB73066FC6A7 /* relic_fp_low.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_fp_low.h; path = contrib/relic/include/low/relic_fp_low.h; sourceTree = "<group>"; };
+		CC0ACFDA845ACB8C91A6735E7F0C199B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CE522405375BC642C6FA93A691203987 /* NSData+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+Dash.m"; sourceTree = "<group>"; };
 		CF205E0C3D0110C897BDA0F560D28DFD /* secp256k1_dash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "secp256k1_dash-prefix.pch"; sourceTree = "<group>"; };
 		CF2A122608034743EF2E78E78137F58C /* field_10x26_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_10x26_impl.h; path = src/field_10x26_impl.h; sourceTree = "<group>"; };
-		CFC9171BAB51AF80293EA7620A04A053 /* extendedpublickey.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = extendedpublickey.hpp; path = src/extendedpublickey.hpp; sourceTree = "<group>"; };
-		D112812E674FFEDAE953A00BBFB1927E /* Groestl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Groestl.h; sourceTree = "<group>"; };
-		D794CA58367F9274EA5B4F21BBBE4C8A /* NSString+Bitcoin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+Bitcoin.h"; sourceTree = "<group>"; };
+		CFC9171BAB51AF80293EA7620A04A053 /* extendedpublickey.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = extendedpublickey.hpp; path = src/extendedpublickey.hpp; sourceTree = "<group>"; };
+		D242508B65BA881870CC974048DE88D0 /* DSKey+BIP38.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DSKey+BIP38.h"; sourceTree = "<group>"; };
+		D42B4000A1458CE1AD0D06E884B96562 /* ios-dash-crypto.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "ios-dash-crypto.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D781816A4886BE6FBB0DC07E0E9506EF /* DashCoreLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DashCoreLogging.h; sourceTree = "<group>"; };
 		D88A342C70E94DDDCBE73C72425DA0C2 /* bls-signatures-pod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "bls-signatures-pod.xcconfig"; sourceTree = "<group>"; };
 		D9802A8AAE8A1A806A07CA3700CFF290 /* secp256k1_recovery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = secp256k1_recovery.h; path = include/secp256k1_recovery.h; sourceTree = "<group>"; };
-		E040D91655970562A9D83035044EA66F /* ios-dashcore-lib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "ios-dashcore-lib.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		E113D70AB62411ADE116604CF0B7FC07 /* Skein.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Skein.h; sourceTree = "<group>"; };
+		DAE3F70AA648625169D2DCE048F653A0 /* Shavite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Shavite.h; sourceTree = "<group>"; };
 		E129C29214FFD23F598C8084403622DE /* main_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = main_impl.h; path = src/modules/recovery/main_impl.h; sourceTree = "<group>"; };
-		E363E8B5BC2D9576D00DF72C8E953881 /* NSString+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+Dash.h"; sourceTree = "<group>"; };
-		E5DD4BDA56A439B2FCBA8C3C41C88A9A /* Pods-ios-dashcore-lib_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ios-dashcore-lib_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E8EB543D968BDB9DC4244ACABF9885BE /* main_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = main_impl.h; path = src/modules/ecdh/main_impl.h; sourceTree = "<group>"; };
 		E90957C9B967E6DB9901A7E482F53B4E /* gmp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gmp.h; path = gmp/include/gmp.h; sourceTree = "<group>"; };
 		E9BA5D3A316D7C003FF84068DD0AD27C /* ecdsa_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa_impl.h; path = src/ecdsa_impl.h; sourceTree = "<group>"; };
-		ED31BE6340A981A5EE400A20BD47E314 /* ios-dashcore-lib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ios-dashcore-lib-dummy.m"; sourceTree = "<group>"; };
+		EDB621AA601F3F074730BF5BB3891B4C /* Simd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Simd.h; sourceTree = "<group>"; };
 		EDB69465F92412C4EB0A6D93A25F90C9 /* util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = util.h; path = src/util.h; sourceTree = "<group>"; };
 		EE31D5E565BB16218808958646926388 /* field.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field.h; path = src/field.h; sourceTree = "<group>"; };
 		F0E91ADFEAC34F0DD6F5558F375E5FC4 /* ecmult_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecmult_impl.h; path = src/ecmult_impl.h; sourceTree = "<group>"; };
 		F139B8C74418A556AC89AEB0FFC6110A /* relic_ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_ec.h; path = contrib/relic/include/relic_ec.h; sourceTree = "<group>"; };
 		F2D589AC6DB5F001ACA6F39E23C00B93 /* ecmult_gen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecmult_gen.h; path = src/ecmult_gen.h; sourceTree = "<group>"; };
-		F39A5EE2B7FCB6FD49606275D14DA272 /* DSKey+BIP38.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DSKey+BIP38.m"; sourceTree = "<group>"; };
-		F3F8EB38933B93142B8887176CA9EE4B /* NSData+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+Dash.m"; sourceTree = "<group>"; };
 		F7779B999639734508EB49547B9ACAD1 /* relic_fbx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_fbx.h; path = contrib/relic/include/relic_fbx.h; sourceTree = "<group>"; };
-		F8440EE87DCF2B6AFAECAAC3710DB99C /* libPods-ios-dashcore-lib_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-dashcore-lib_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A5F82FEDDA421D5CFAA5480529A7EA /* relic_core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_core.h; path = contrib/relic/include/relic_core.h; sourceTree = "<group>"; };
-		FCF16CF2768DCDA34307DE20714F2878 /* CubeHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CubeHash.h; sourceTree = "<group>"; };
-		FE77724615ECC56518D06481627E61E7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F9B14047BF025669911FA3F289CE64EB /* Pods-ios-dash-crypto_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios-dash-crypto_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2072BD1C70D4FF06BB39CD1CA1EA9BDE /* Frameworks */ = {
+		329E172252CCB5AD1667AD4939BC8FB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		518E705120A223FF018F8F2E9A29BD2A /* Frameworks */ = {
+		D1EB3A048592BD4170D7A943FD8DBE10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8454881228D29DE050EB6FC1EB63703C /* Frameworks */ = {
+		E9A36E692B989C8731252DFAE15CE74F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,42 +322,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15F57F9D5BB136E20BFB9C4FE7A0C31D /* Support Files */ = {
+		01850DA77006B44F74B16976E20888C6 /* Keys */ = {
 			isa = PBXGroup;
 			children = (
-				2AF4D5492B9E213C5B9F1337DCB02785 /* ios-dashcore-lib.xcconfig */,
-				ED31BE6340A981A5EE400A20BD47E314 /* ios-dashcore-lib-dummy.m */,
-				85EF74E46D6CCEBCCB589E2E8C141807 /* ios-dashcore-lib-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ios-dashcore-lib";
-			sourceTree = "<group>";
-		};
-		17A89C78B398A4D51F8C272861E7E9CD /* Keys */ = {
-			isa = PBXGroup;
-			children = (
-				8C2617BD7B73D234AAA0B49A74DBAF8E /* DSBLSKey.h */,
-				05567B84F9D68A3D24AD14B3E4902FE2 /* DSBLSKey.mm */,
-				532CB541CB3444574A54B94EF512B3B6 /* DSECDSAKey.h */,
-				242023AA9EFE89A6A3E11F157B28C8A6 /* DSECDSAKey.m */,
-				B174CD12632144A7D2441A1E6F3A9A6A /* DSKey.h */,
-				0B5B975BB0F8CE7753849BA36EB27B42 /* DSKey.m */,
-				A2A84FBCFCACBC2EBA6BE1EC4AB15B5A /* DSKey+BIP38.h */,
-				F39A5EE2B7FCB6FD49606275D14DA272 /* DSKey+BIP38.m */,
-				4148CAF8856075504E5875E831BCDFBE /* DSKeySequence.h */,
+				608732649EC1D94E87F57156BAB98793 /* DSBLSKey.h */,
+				118EA325DB24E7700F6D1F13316F7AA4 /* DSBLSKey.mm */,
+				337EDE8D2BD2F0D129970095962FEA09 /* DSECDSAKey.h */,
+				26CBE22911C33CF36763CC3390637F4C /* DSECDSAKey.m */,
+				2EDAD69DA3FC5BDB4F3ED7A2CD811E3C /* DSKey.h */,
+				7E436EE4CFCB1603145149CECA0C41CF /* DSKey.m */,
+				D242508B65BA881870CC974048DE88D0 /* DSKey+BIP38.h */,
+				060EF922F3DF4A15BB3029FF73B88AF8 /* DSKey+BIP38.m */,
+				9A55F5D0AFFFF8BAA9C2B0F7DFE6CECD /* DSKeySequence.h */,
 			);
 			name = Keys;
-			path = "ios-dashcore-lib/Keys";
+			path = "ios-dash-crypto/Keys";
 			sourceTree = "<group>";
 		};
-		61AF590B3A0FAB31514DE93945A2EF17 /* Products */ = {
+		0DE6C5B6F1937E8FA98F3217E70FD0F1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				53B4D725227C0CA7A2264C0A5432ACFA /* libios-dashcore-lib.a */,
-				F8440EE87DCF2B6AFAECAAC3710DB99C /* libPods-ios-dashcore-lib_Tests.a */,
-				962618C333B0D27F46AA161D67BCA5AD /* libsecp256k1_dash.a */,
+				09269C4013D5C276D47A6397BA2953F6 /* ios-dash-crypto.xcconfig */,
+				726F87D9812DC3896897F85938DCB441 /* ios-dash-crypto-dummy.m */,
+				86E34759DF7E410D28762FA64EBCC256 /* ios-dash-crypto-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ios-dash-crypto";
+			sourceTree = "<group>";
+		};
+		0EDA745FB19FC16245253246F81997BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F9862F146640A307BDC959E680F7FC7 /* libios-dash-crypto.a */,
+				7F3D6D31C1A70BEFFAB88D5BC71A0DEB /* libPods-ios-dash-crypto_Tests.a */,
+				4EFBE5821074E710443F475EEB8166BE /* libsecp256k1_dash.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		40260A286FD3626FC8287BD4640AADB8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C54DE2CBEF30D43EBF50306A62C5C09 /* Pods-ios-dash-crypto_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4A83FF97BE772B9F79BA051BFE325575 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D42B4000A1458CE1AD0D06E884B96562 /* ios-dash-crypto.podspec */,
+				CC0ACFDA845ACB8C91A6735E7F0C199B /* LICENSE */,
+				93DA18CA864D7B383E4F0F463732F843 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		60976D16FDC75201F468526034F0072E /* ios-dash-crypto */ = {
+			isa = PBXGroup;
+			children = (
+				69E80474BC1AF86447EB5CF19F6B2FF1 /* DSChainProtocol.h */,
+				A636C179EA54F045E07F9D8FDEAE5325 /* Categories */,
+				DEDDBA45709C66BED5DB08CA136CB634 /* crypto */,
+				01850DA77006B44F74B16976E20888C6 /* Keys */,
+				4A83FF97BE772B9F79BA051BFE325575 /* Pod */,
+				0DE6C5B6F1937E8FA98F3217E70FD0F1 /* Support Files */,
+			);
+			name = "ios-dash-crypto";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6511FB696C33C67ABA1F799B1CE048AC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60976D16FDC75201F468526034F0072E /* ios-dash-crypto */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		6B1312FF52BA27D4CBAC997A27482CF0 /* bls-signatures-pod */ = {
@@ -411,17 +450,8 @@
 				F60D9A30ABBB24EED13242BED1734673 /* Frameworks */,
 				C410428296F399A37225438E2EA4BC5B /* Support Files */,
 			);
+			name = "bls-signatures-pod";
 			path = "bls-signatures-pod";
-			sourceTree = "<group>";
-		};
-		71996FAB2CC3AD3145B4F7A9A98C0A91 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E040D91655970562A9D83035044EA66F /* ios-dashcore-lib.podspec */,
-				FE77724615ECC56518D06481627E61E7 /* LICENSE */,
-				7F2B8D9D92F6B60D41FBDC4B2A66C13E /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		8EFBEA6716471844F17E5CF520A3EB95 /* secp256k1_dash */ = {
@@ -471,7 +501,21 @@
 				EDB69465F92412C4EB0A6D93A25F90C9 /* util.h */,
 				DC8BB91D5A31A7F68F66D80A32B5AF77 /* Support Files */,
 			);
+			name = secp256k1_dash;
 			path = secp256k1_dash;
+			sourceTree = "<group>";
+		};
+		9C54DE2CBEF30D43EBF50306A62C5C09 /* Pods-ios-dash-crypto_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BB3E3E84AE0FB350DB55BA7B71588BBB /* Pods-ios-dash-crypto_Tests-acknowledgements.markdown */,
+				A64B8AC6DDB39DA68D5327EA2758EA0D /* Pods-ios-dash-crypto_Tests-acknowledgements.plist */,
+				B23614D8077BC026EB12459255DA5D53 /* Pods-ios-dash-crypto_Tests-dummy.m */,
+				F9B14047BF025669911FA3F289CE64EB /* Pods-ios-dash-crypto_Tests.debug.xcconfig */,
+				78EEDE0E8DF21CA72530D0374E8726DD /* Pods-ios-dash-crypto_Tests.release.xcconfig */,
+			);
+			name = "Pods-ios-dash-crypto_Tests";
+			path = "Target Support Files/Pods-ios-dash-crypto_Tests";
 			sourceTree = "<group>";
 		};
 		9ECCD09D960D9EE0C34CEE60B55E9626 /* Pods */ = {
@@ -483,38 +527,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		BC68CB1F298B620B230CE672E73B11D6 /* ios-dashcore-lib */ = {
+		A636C179EA54F045E07F9D8FDEAE5325 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				1E9690D89F17146FDFBA95CE1D899443 /* DSChainProtocol.h */,
-				D72D3780F39288E3BB42F4FCBA9C1658 /* Categories */,
-				F3AC0478BFD1FA45C6334A78713BEF92 /* crypto */,
-				17A89C78B398A4D51F8C272861E7E9CD /* Keys */,
-				71996FAB2CC3AD3145B4F7A9A98C0A91 /* Pod */,
-				15F57F9D5BB136E20BFB9C4FE7A0C31D /* Support Files */,
+				75AA9AB2CA04E8BE719A1A90E89852DF /* BigIntTypes.h */,
+				D781816A4886BE6FBB0DC07E0E9506EF /* DashCoreLogging.h */,
+				8F3FA441893492E030B30CC989488CD5 /* NSCoder+Dash.h */,
+				61DF12877FA0F2E54B0BFBC8ECE0C035 /* NSCoder+Dash.m */,
+				0B9F0182D52F40A37A6CF1340BF96FD6 /* NSData+Bitcoin.h */,
+				2243D3B4A5DA567ABFDB0F10E3A07D16 /* NSData+Bitcoin.m */,
+				285CB0F005D1AF14DB09D0EAD9F51FDA /* NSData+Dash.h */,
+				CE522405375BC642C6FA93A691203987 /* NSData+Dash.m */,
+				71BDF9C9679B2A3E7A11D75E40B00667 /* NSDate+Utils.h */,
+				7A9DC511A056C90EABB4E5213C25C264 /* NSDate+Utils.m */,
+				1D6F4E3972F48032CB31A7E0849CFD2A /* NSIndexPath+Dash.h */,
+				AED279D2082CCC2326DBE192DEE17EE3 /* NSIndexPath+Dash.m */,
+				03551713839F9D807A156B8DBA6333B2 /* NSMutableData+Dash.h */,
+				7F8493246617929F64BA9BA61C4FD0FA /* NSMutableData+Dash.m */,
+				7DE143B8EA5583D4209FC84A4D517845 /* NSString+Bitcoin.h */,
+				1DFEA4BE94C428F51A455A9442184832 /* NSString+Bitcoin.m */,
+				BE320B7460F7CED006AF74FC4C25B1C6 /* NSString+Dash.h */,
+				95FF5CE705277F868BF125698B3B16CF /* NSString+Dash.m */,
 			);
-			name = "ios-dashcore-lib";
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		BEF7928466CCA1F5B6CBDC41E51A5F3F /* x11 */ = {
-			isa = PBXGroup;
-			children = (
-				6E7786EAA3B61E84C059E4F6A04208D7 /* aes_helper.h */,
-				8BE76C205822CB9A8C819A776015868A /* Blake.h */,
-				1209993F2A3F2D10BFB11B758A7E382F /* Bmw.h */,
-				FCF16CF2768DCDA34307DE20714F2878 /* CubeHash.h */,
-				105D69FE13B794C97A1D58DDC79846BD /* Echo.h */,
-				D112812E674FFEDAE953A00BBFB1927E /* Groestl.h */,
-				36F91DD65D4237857FA47670BD70526D /* Jh.h */,
-				14392767663C70C7AF8B4F382D83099D /* Keccak.h */,
-				39CD46D04CB7925EF2FE6B8BAEDF8EEE /* Luffa.h */,
-				77DF4DC2C8A274D6B71D1153F97C997D /* Shavite.h */,
-				486918DCA6ADAA5102E5E19DE99E1AC1 /* Simd.h */,
-				E113D70AB62411ADE116604CF0B7FC07 /* Skein.h */,
-				3E74DC3ADFE26F4298BF714177386ADE /* sph_types.h */,
-			);
-			path = x11;
+			name = Categories;
+			path = "ios-dash-crypto/Categories";
 			sourceTree = "<group>";
 		};
 		C410428296F399A37225438E2EA4BC5B /* Support Files */ = {
@@ -526,71 +562,16 @@
 			path = "../Target Support Files/bls-signatures-pod";
 			sourceTree = "<group>";
 		};
-		C6C4696C317F61B1EEDB181F413E2CA2 /* Pods-ios-dashcore-lib_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				273D63B1BBC690BACC120C2FFAB3D9C4 /* Pods-ios-dashcore-lib_Tests-acknowledgements.markdown */,
-				E5DD4BDA56A439B2FCBA8C3C41C88A9A /* Pods-ios-dashcore-lib_Tests-acknowledgements.plist */,
-				37DAA028A6379DAC9DA22E18F5341466 /* Pods-ios-dashcore-lib_Tests-dummy.m */,
-				99B3EAA81D272C522450E19318A6C056 /* Pods-ios-dashcore-lib_Tests.debug.xcconfig */,
-				62F672C5462C6D0FF933B49D97B70624 /* Pods-ios-dashcore-lib_Tests.release.xcconfig */,
-			);
-			name = "Pods-ios-dashcore-lib_Tests";
-			path = "Target Support Files/Pods-ios-dashcore-lib_Tests";
-			sourceTree = "<group>";
-		};
-		CB780EEB2F17329A9F5B0D4E3ECF7C4F /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BC68CB1F298B620B230CE672E73B11D6 /* ios-dashcore-lib */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		CDAA02B5B57DAB8EF907F1EA3D80A0E3 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C6C4696C317F61B1EEDB181F413E2CA2 /* Pods-ios-dashcore-lib_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				CB780EEB2F17329A9F5B0D4E3ECF7C4F /* Development Pods */,
+				6511FB696C33C67ABA1F799B1CE048AC /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				9ECCD09D960D9EE0C34CEE60B55E9626 /* Pods */,
-				61AF590B3A0FAB31514DE93945A2EF17 /* Products */,
-				CDAA02B5B57DAB8EF907F1EA3D80A0E3 /* Targets Support Files */,
+				0EDA745FB19FC16245253246F81997BE /* Products */,
+				40260A286FD3626FC8287BD4640AADB8 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D72D3780F39288E3BB42F4FCBA9C1658 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				95823907E0A9410A2F4B9E88E29418D9 /* BigIntTypes.h */,
-				A2A4889F883657DF8F3578958982B645 /* DashCoreLogging.h */,
-				B5A3219392530FEA3D343DE4BBBB0A41 /* NSCoder+Dash.h */,
-				62F0DEE3E49A27F149D53700883C5D5E /* NSCoder+Dash.m */,
-				08874E51BC9D22B8DC2245672F99EC7F /* NSData+Bitcoin.h */,
-				8EC2C204012C5E6236DFA5882DEB667A /* NSData+Bitcoin.m */,
-				A46AFBE5C99C287BB3A0803481A87EBF /* NSData+Dash.h */,
-				F3F8EB38933B93142B8887176CA9EE4B /* NSData+Dash.m */,
-				9A303197106BEAC7C4A68779F1BA53F7 /* NSDate+Utils.h */,
-				119EC9CD38AE313653B23021D1FB68EC /* NSDate+Utils.m */,
-				5594F2942B9E28FED00CCB37CA47868D /* NSIndexPath+Dash.h */,
-				358CED81B720F4E345A31C1FBFEB17C9 /* NSIndexPath+Dash.m */,
-				8231B4E965C7E9E9E88E61273117F4CA /* NSMutableData+Dash.h */,
-				5CFF9BC1C473FD370C538FF306882C95 /* NSMutableData+Dash.m */,
-				D794CA58367F9274EA5B4F21BBBE4C8A /* NSString+Bitcoin.h */,
-				ABAF78796DB3B9ABB1DDD315B09DD41E /* NSString+Bitcoin.m */,
-				E363E8B5BC2D9576D00DF72C8E953881 /* NSString+Dash.h */,
-				02A9578CD290B6CB8BFC7BF0D6026570 /* NSString+Dash.m */,
-			);
-			name = Categories;
-			path = "ios-dashcore-lib/Categories";
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -611,13 +592,34 @@
 			path = "../Target Support Files/secp256k1_dash";
 			sourceTree = "<group>";
 		};
-		F3AC0478BFD1FA45C6334A78713BEF92 /* crypto */ = {
+		DEDDBA45709C66BED5DB08CA136CB634 /* crypto */ = {
 			isa = PBXGroup;
 			children = (
-				BEF7928466CCA1F5B6CBDC41E51A5F3F /* x11 */,
+				F31A63D09E2DAEA94A0540F0B83F8EEA /* x11 */,
 			);
 			name = crypto;
-			path = "ios-dashcore-lib/crypto";
+			path = "ios-dash-crypto/crypto";
+			sourceTree = "<group>";
+		};
+		F31A63D09E2DAEA94A0540F0B83F8EEA /* x11 */ = {
+			isa = PBXGroup;
+			children = (
+				718E0382EC918C1CF90BBBC2D17D1F3A /* aes_helper.h */,
+				7A26DA1449E9F7F5EA1BC963AFFC9C20 /* Blake.h */,
+				32EBB67EC3E69ED364F8AFB70092029B /* Bmw.h */,
+				7D5685C4DA1FC11D8403516555DF3AFD /* CubeHash.h */,
+				0BEDD06AC2D94AC2DBC61A75F4B19062 /* Echo.h */,
+				22660D3A90C078804A469809369733FA /* Groestl.h */,
+				886F75D16D94386F8AEB44EBAC613D26 /* Jh.h */,
+				03807D95E63B85CD4CB54B797E1AA0AA /* Keccak.h */,
+				C335F8F53E0ACA39A4905CA76B0A8A9F /* Luffa.h */,
+				DAE3F70AA648625169D2DCE048F653A0 /* Shavite.h */,
+				EDB621AA601F3F074730BF5BB3891B4C /* Simd.h */,
+				421AFDF06CCBB5C68F380D740BB49E6D /* Skein.h */,
+				50831E20DE6AB33138A4495E60656E1F /* sph_types.h */,
+			);
+			name = x11;
+			path = x11;
 			sourceTree = "<group>";
 		};
 		F60D9A30ABBB24EED13242BED1734673 /* Frameworks */ = {
@@ -633,127 +635,126 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1BDAF1F601AF703E77FA9A8A0B209CB7 /* Headers */ = {
+		8069D45B6D18978BA477A1106D66D9AD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA1075890DF0C79BF3FB59A9AA465211 /* aes_helper.h in Headers */,
-				C4E111CC2F8B90BBBA2798EEE23F3E98 /* BigIntTypes.h in Headers */,
-				C11ED85177404BB37376B1425CE6F725 /* Blake.h in Headers */,
-				7BAB6D760DDE142F78DE34F239EDE4DA /* Bmw.h in Headers */,
-				53651A582270B8A9774D422A71E8588E /* CubeHash.h in Headers */,
-				4B35787B4A34F37CAC1900F7D9F86E2A /* DashCoreLogging.h in Headers */,
-				F162470ECFCC205FF1B8ABC8C47CA6A8 /* DSBLSKey.h in Headers */,
-				1340B11EDDCB588DD4D6C38B28F8C129 /* DSChainProtocol.h in Headers */,
-				D58141263A8B2ABD1543C3526EB2AAB7 /* DSECDSAKey.h in Headers */,
-				33ECE93130A7C91706A196248A8EE628 /* DSKey+BIP38.h in Headers */,
-				D8CED79BDE33F2414878AF421E734426 /* DSKey.h in Headers */,
-				203855FC82673AEFD05F08AA72F81293 /* DSKeySequence.h in Headers */,
-				73EF159438299E4ECD6CEA02DEA8AEC8 /* Echo.h in Headers */,
-				3B86A639D85CE4E10B3A763F79125823 /* Groestl.h in Headers */,
-				C01C06FB73648BAC903D2B2E7031EA0B /* Jh.h in Headers */,
-				C95FAD9670BE569C02BCFBA1F25F3069 /* Keccak.h in Headers */,
-				691A55A2CD831070CC6AD7FCA04710E6 /* Luffa.h in Headers */,
-				1D6B6DB7CBFB1803A2CDCC45C4098F83 /* NSCoder+Dash.h in Headers */,
-				CAD8545AA9C29DAEDA24B8BB59792BBB /* NSData+Bitcoin.h in Headers */,
-				2D38CB80E7CFD177C1FFF648C3D178AC /* NSData+Dash.h in Headers */,
-				D8741F59AE605EA79E81844530726899 /* NSDate+Utils.h in Headers */,
-				C8B06B58F23C7572B55EA5CE0B817945 /* NSIndexPath+Dash.h in Headers */,
-				125A07BAA2AF1A7CE62DAA12A032AD83 /* NSMutableData+Dash.h in Headers */,
-				49BF795FB63A1DD39E607102414A4FE5 /* NSString+Bitcoin.h in Headers */,
-				4F726644413D487A999E97BE047434B9 /* NSString+Dash.h in Headers */,
-				3848BC62443025ADBD811692B93E4E76 /* Shavite.h in Headers */,
-				96B4721E8983825E7C8276F1283FC0CF /* Simd.h in Headers */,
-				B435FBE0F7A4E594913AD9886D4880C6 /* Skein.h in Headers */,
-				CE94AAAEDE2ACC4291A6DF4794CF3BBE /* sph_types.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90F435B08D34FCFAAA67E889BA428BDD /* Headers */ = {
+		83006A4DC28C30BEAB90FD41270EB198 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0EC96F476194A2DAC9DE72B90E2A778 /* basic-config.h in Headers */,
-				78FE49320ADCF70EBDDB61FBC709EE61 /* ecdsa.h in Headers */,
-				6BBECFA4896B91645150729982BBF87C /* ecdsa_impl.h in Headers */,
-				21BC05B7F2FD8DEE7B9CC049A92CF2C6 /* eckey.h in Headers */,
-				F9E7E641F97489C1D3FDFB3E00C0B5A0 /* eckey_impl.h in Headers */,
-				6A03E61F5804C37AC85133F98CBC0E8A /* ecmult.h in Headers */,
-				CE90AA2DE6100A7C29409A5D3A28380B /* ecmult_const.h in Headers */,
-				B30C9B591A9266C0725DD4AD17544390 /* ecmult_const_impl.h in Headers */,
-				0F401460B329C56675F7641B30254C6E /* ecmult_gen.h in Headers */,
-				C10B068D93A9E5CEF1634993DA9206CC /* ecmult_gen_impl.h in Headers */,
-				FDB0BDE18710D31E9937A7D4AB409017 /* ecmult_impl.h in Headers */,
-				7EB2E1D9B9201D70A132DF5F2AAB2FC5 /* field.h in Headers */,
-				F3BD8A1D5D80691DE0C9E4CB42824E28 /* field_10x26.h in Headers */,
-				0D4AFE236C54DAD84FCC1FE6D47C41DD /* field_10x26_impl.h in Headers */,
-				508B583C6D73427BAB9EF896F52F950B /* field_5x52.h in Headers */,
-				8C33C8BECFB97527BC869C35FC16AE83 /* field_5x52_asm_impl.h in Headers */,
-				45DB22971F96B41E0D1A866150D19E33 /* field_5x52_impl.h in Headers */,
-				BA66C48D2E4AEF8831352DB145A920E3 /* field_5x52_int128_impl.h in Headers */,
-				B0266156F13D008E31BD66C9888A1AD2 /* field_impl.h in Headers */,
-				227A180B3CDD20B78A9F5EFB77279A4C /* group.h in Headers */,
-				048AF00AB536ABF00DA1B24DD6F17A82 /* group_impl.h in Headers */,
-				E930A408109B0819349295FE43C202B5 /* hash.h in Headers */,
-				9362FA372ED3B80BB90B91D87694CC47 /* hash_impl.h in Headers */,
-				130787E4238A53F7A1D0C8856ADC706A /* main_impl.h in Headers */,
-				C942232D219F3F184E6BF60BAC68E271 /* main_impl.h in Headers */,
-				54D87AE3DEDEC3EF14001973A22047DC /* num.h in Headers */,
-				EC8C0F574EE1DE29B7BA8CD8C2EB1B1C /* num_gmp.h in Headers */,
-				58854E49D76FB74B30EC36343CB96ACD /* num_gmp_impl.h in Headers */,
-				BE976D72EBDB1C63D58C590CD0811845 /* num_impl.h in Headers */,
-				04FA8BDE654B06AECF149BAC7C4DAB33 /* scalar.h in Headers */,
-				C076DC8CFB8F2F334E019DC68EBBC041 /* scalar_4x64.h in Headers */,
-				D117C38A92027A18ECB3FD3C5D927B01 /* scalar_4x64_impl.h in Headers */,
-				77217AF609D1A0009FACB49811DE73F7 /* scalar_8x32.h in Headers */,
-				C7B998C19D4EE44BB95311669123EC95 /* scalar_8x32_impl.h in Headers */,
-				8AC12334C215970871FCF9E2AD1DCF01 /* scalar_impl.h in Headers */,
-				64F580290B2BE9FE9EEC52CA269F26A8 /* scalar_low.h in Headers */,
-				6D7661686FE9EB758364595198A86054 /* scalar_low_impl.h in Headers */,
-				F548835F97830BF5D5ECBFFF3E8EA03B /* secp256k1.h in Headers */,
-				A5BE998A96C01675C5A445206296E21C /* secp256k1_ecdh.h in Headers */,
-				0D03FFE3A3BE48DAFB6587F7619FF574 /* secp256k1_recovery.h in Headers */,
-				0F68250599D254DBCE2D1FC070D7AA83 /* util.h in Headers */,
+				7791E3BC940C6E4C1DFBD169FEF92CD7 /* basic-config.h in Headers */,
+				22DFA4E7DC4228CA6F3351CD90BF9602 /* ecdsa.h in Headers */,
+				EFBB686ABE53B19452C91F377E8379A7 /* ecdsa_impl.h in Headers */,
+				58A3793DED98BBD4F93C25DFBEF5B862 /* eckey.h in Headers */,
+				C68828815A87B84B667322D40C642A6E /* eckey_impl.h in Headers */,
+				C095BEA481910F60AE3C9B634E35F718 /* ecmult.h in Headers */,
+				E38BEEE55288A4CDB2C9A552C6AFD657 /* ecmult_const.h in Headers */,
+				A64789F8D1E695C0CACA3B987868A53E /* ecmult_const_impl.h in Headers */,
+				4089C37C31232E65670DFE304502793F /* ecmult_gen.h in Headers */,
+				36E7D8B70B6398DA362B7470A8FD0135 /* ecmult_gen_impl.h in Headers */,
+				33438DCF9E1C427B478BC3F006F31170 /* ecmult_impl.h in Headers */,
+				8F52CC790B000EEAF63AB1476950C9F0 /* field.h in Headers */,
+				BAE86CE45C961A70CBD54AD06A2ECF39 /* field_10x26.h in Headers */,
+				FE1AED1479A52CB305D048651808CAEE /* field_10x26_impl.h in Headers */,
+				4F093655C37097244CD8BFC92235956A /* field_5x52.h in Headers */,
+				E1A460AF4D95354D55F169472F13B0D5 /* field_5x52_asm_impl.h in Headers */,
+				FC906905A7EC64581DCE7D060AD7B44C /* field_5x52_impl.h in Headers */,
+				D19F3D9795E42F07E56552964AD725C8 /* field_5x52_int128_impl.h in Headers */,
+				C2DD015943A6C9E3543775DFFE21EBDE /* field_impl.h in Headers */,
+				017BE8B8288E04390CE57D25487CAC21 /* group.h in Headers */,
+				478D2F74B5982C25314CBA09C8A7A7B9 /* group_impl.h in Headers */,
+				FB9E4756C2069B22623C1D619880DD0B /* hash.h in Headers */,
+				C5CB8C19AEF157BE198A49946C364A97 /* hash_impl.h in Headers */,
+				39D419FAABE537003EC3EFD99A379897 /* main_impl.h in Headers */,
+				4886C767C08D967E59591C5E5BBE92DA /* main_impl.h in Headers */,
+				90E1024496E4CCAEE295FC0DE2BA984B /* num.h in Headers */,
+				0C07621D779F911D6898AF759A701AA3 /* num_gmp.h in Headers */,
+				23FBB9CA23861DE101A974DD46258C59 /* num_gmp_impl.h in Headers */,
+				A63A542844610E1679E78463BEA5C9FA /* num_impl.h in Headers */,
+				D09602769D4CDEB1AA5681C1AB6DE56F /* scalar.h in Headers */,
+				86594B96162AE78D61D1C9927820E82D /* scalar_4x64.h in Headers */,
+				DCD248B7843CBEDB7A048E476A4BFD36 /* scalar_4x64_impl.h in Headers */,
+				28D5E1B384EC2CC34EBE8B4AD2C352A0 /* scalar_8x32.h in Headers */,
+				B25AB55C2892E4BC60D6205FEC34D614 /* scalar_8x32_impl.h in Headers */,
+				C63128F7D075E2B95A0307753327EC1A /* scalar_impl.h in Headers */,
+				C5F6121AAE0103C77AC1D47C0D75230A /* scalar_low.h in Headers */,
+				060C1F240256116AFBB2E0D72C1D9724 /* scalar_low_impl.h in Headers */,
+				D42ADE7778B99256024F7FFEAACEB7F2 /* secp256k1.h in Headers */,
+				57A3C06B53E9CF998F8F5C472CFEE2A9 /* secp256k1_ecdh.h in Headers */,
+				6AFFE76EE09760E091730CC01E345640 /* secp256k1_recovery.h in Headers */,
+				48CE05326CCBE38D535F8625479A5D46 /* util.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D80783D2BD4F53D27E1CC0FD4A2E4E1D /* Headers */ = {
+		FCAA555EF71D49EB36B0EB2B184106B7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17673267608C04C3B0BAF49A5331EDCE /* aes_helper.h in Headers */,
+				CA7EA347066C03A7EEC68D618AC6D8B8 /* BigIntTypes.h in Headers */,
+				4C3C8BF61DD0A25DD965CE9F72AFC2B2 /* Blake.h in Headers */,
+				48BE23B019B3E9DA92A65E1B52E558C9 /* Bmw.h in Headers */,
+				327886DE3EE873F50793FF4D2690A787 /* CubeHash.h in Headers */,
+				EF553547546383C4D8BFA10CC2611711 /* DashCoreLogging.h in Headers */,
+				EC1493FA48126D5689BA38B5C765CD0B /* DSBLSKey.h in Headers */,
+				05098BB641FF52C1B115125DE575966F /* DSChainProtocol.h in Headers */,
+				8FDD691C46B24BD71391F45E8A38AF33 /* DSECDSAKey.h in Headers */,
+				D91127BA0489C20D22C150DD67EE25D4 /* DSKey+BIP38.h in Headers */,
+				E2E42525EFBFF16F12CDA8DB1BBE5BFD /* DSKey.h in Headers */,
+				B123C8FED538E75B582176DEA62A6499 /* DSKeySequence.h in Headers */,
+				899CE2C8613CE9FCF869A5A86F4F4AF8 /* Echo.h in Headers */,
+				1F0DCEBC29835A12D6200018FBF40530 /* Groestl.h in Headers */,
+				6F8C3E51467C5BF016B0D73E9E0C93A4 /* Jh.h in Headers */,
+				081D5834168A46F978DBD535D89ECD0D /* Keccak.h in Headers */,
+				705FFC5BC2C0DD25989C06D712B75239 /* Luffa.h in Headers */,
+				CCF6BAF088BD88A6009BFBFB4B4FC964 /* NSCoder+Dash.h in Headers */,
+				A2C9823A80652158DBDB2C69A3D55A08 /* NSData+Bitcoin.h in Headers */,
+				439B4FE99796F9DC5D56FD6057D9F57A /* NSData+Dash.h in Headers */,
+				F90C29CC44333C97D54B526585716A4B /* NSDate+Utils.h in Headers */,
+				3A283D6811C930B01D986586870E5B12 /* NSIndexPath+Dash.h in Headers */,
+				6AE67E18DE5215C406DD9F3C8DC6E56E /* NSMutableData+Dash.h in Headers */,
+				E4B944AE6A1340FCE2FEF7E4DBF2BA45 /* NSString+Bitcoin.h in Headers */,
+				ADD481F0D23A2C73E03ADF336C25E9AD /* NSString+Dash.h in Headers */,
+				3E1CC2FD09A057512BFBB2D77D71E071 /* Shavite.h in Headers */,
+				E0C26750B5139C27F738F82B31BD8B3E /* Simd.h in Headers */,
+				C1250C500A8618BE0C57B9CE36F008C9 /* Skein.h in Headers */,
+				185749B9C0961D3F298634DEB8ACDF41 /* sph_types.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		08B6280DCADC63ACB69A13442A95ECAE /* Pods-ios-dashcore-lib_Tests */ = {
+		0E078DB431AFFB5F9501B14B7D77CBD3 /* ios-dash-crypto */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BF7225A2207BC6236A8FA75B6899BBF /* Build configuration list for PBXNativeTarget "Pods-ios-dashcore-lib_Tests" */;
+			buildConfigurationList = A59A5F51B4044122F9F7618BD71348B6 /* Build configuration list for PBXNativeTarget "ios-dash-crypto" */;
 			buildPhases = (
-				D80783D2BD4F53D27E1CC0FD4A2E4E1D /* Headers */,
-				D3C94ECD15C316FE38A79A77C5B9CA73 /* Sources */,
-				2072BD1C70D4FF06BB39CD1CA1EA9BDE /* Frameworks */,
+				FCAA555EF71D49EB36B0EB2B184106B7 /* Headers */,
+				6F9CC4C801104C09D470B2603C2BC93F /* Sources */,
+				D1EB3A048592BD4170D7A943FD8DBE10 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F1536F95432FFFE56469A4BBBAFE3A82 /* PBXTargetDependency */,
-				9577B72DF9978DFD392300CE46C4A4B7 /* PBXTargetDependency */,
-				667EA8A3590A887EAD2E4199F85B38EB /* PBXTargetDependency */,
+				1C8A7970E9A2DF47E0C5C652FCFFA5B9 /* PBXTargetDependency */,
+				B9D07386DACBC4A8A276291619267507 /* PBXTargetDependency */,
 			);
-			name = "Pods-ios-dashcore-lib_Tests";
-			productName = "Pods-ios-dashcore-lib_Tests";
-			productReference = F8440EE87DCF2B6AFAECAAC3710DB99C /* libPods-ios-dashcore-lib_Tests.a */;
+			name = "ios-dash-crypto";
+			productName = "ios-dash-crypto";
+			productReference = 8F9862F146640A307BDC959E680F7FC7 /* libios-dash-crypto.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		374D3AC14C1DC8FDF7C394F9DA6ADF4A /* secp256k1_dash */ = {
+		B335D9CE8D8E9CE7A87A0885EDB9F3E9 /* secp256k1_dash */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C484B8003E3FD747A427330F4B123E55 /* Build configuration list for PBXNativeTarget "secp256k1_dash" */;
+			buildConfigurationList = BA9FDD96EFFA618E93D7CBCDA5CAFA70 /* Build configuration list for PBXNativeTarget "secp256k1_dash" */;
 			buildPhases = (
-				90F435B08D34FCFAAA67E889BA428BDD /* Headers */,
-				52914BA18F7331FDF2E584A09DC1CCBE /* Sources */,
-				518E705120A223FF018F8F2E9A29BD2A /* Frameworks */,
+				83006A4DC28C30BEAB90FD41270EB198 /* Headers */,
+				97217752331F660555E9A3A7A53ECD25 /* Sources */,
+				329E172252CCB5AD1667AD4939BC8FB3 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -761,26 +762,27 @@
 			);
 			name = secp256k1_dash;
 			productName = secp256k1_dash;
-			productReference = 962618C333B0D27F46AA161D67BCA5AD /* libsecp256k1_dash.a */;
+			productReference = 4EFBE5821074E710443F475EEB8166BE /* libsecp256k1_dash.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		3DACFD970E6C797C9E56D91994943CCE /* ios-dashcore-lib */ = {
+		C177652B9575F186AEAC8049A8612345 /* Pods-ios-dash-crypto_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BBA19E710E196029C050CEA639CACE41 /* Build configuration list for PBXNativeTarget "ios-dashcore-lib" */;
+			buildConfigurationList = FADC38D622B31FDA63FF5EF70B0A047A /* Build configuration list for PBXNativeTarget "Pods-ios-dash-crypto_Tests" */;
 			buildPhases = (
-				1BDAF1F601AF703E77FA9A8A0B209CB7 /* Headers */,
-				C683B0A92801898E5F3794E87214F985 /* Sources */,
-				8454881228D29DE050EB6FC1EB63703C /* Frameworks */,
+				8069D45B6D18978BA477A1106D66D9AD /* Headers */,
+				6146C113CA2EB4AD867BD49D26B12347 /* Sources */,
+				E9A36E692B989C8731252DFAE15CE74F /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8863A641A0A86E2AD8E078C79DCE9BE5 /* PBXTargetDependency */,
-				1003C6F87D672A373B9C9E7E2ECA656A /* PBXTargetDependency */,
+				6868C57A558D565120C2AAE1E3450FF7 /* PBXTargetDependency */,
+				583A4DE7E68FF3DD398102CE9A7F0FC3 /* PBXTargetDependency */,
+				C60C38B3C29C3907B50D95F582A34D0D /* PBXTargetDependency */,
 			);
-			name = "ios-dashcore-lib";
-			productName = "ios-dashcore-lib";
-			productReference = 53B4D725227C0CA7A2264C0A5432ACFA /* libios-dashcore-lib.a */;
+			name = "Pods-ios-dash-crypto_Tests";
+			productName = "Pods-ios-dash-crypto_Tests";
+			productReference = 7F3D6D31C1A70BEFFAB88D5BC71A0DEB /* libPods-ios-dash-crypto_Tests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -790,104 +792,128 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 61AF590B3A0FAB31514DE93945A2EF17 /* Products */;
+			productRefGroup = 0EDA745FB19FC16245253246F81997BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4AE84B88A4FBE6CD3921FDCEF49392B4 /* bls-signatures-pod */,
-				3DACFD970E6C797C9E56D91994943CCE /* ios-dashcore-lib */,
-				08B6280DCADC63ACB69A13442A95ECAE /* Pods-ios-dashcore-lib_Tests */,
-				374D3AC14C1DC8FDF7C394F9DA6ADF4A /* secp256k1_dash */,
+				0E078DB431AFFB5F9501B14B7D77CBD3 /* ios-dash-crypto */,
+				C177652B9575F186AEAC8049A8612345 /* Pods-ios-dash-crypto_Tests */,
+				B335D9CE8D8E9CE7A87A0885EDB9F3E9 /* secp256k1_dash */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		52914BA18F7331FDF2E584A09DC1CCBE /* Sources */ = {
+		6146C113CA2EB4AD867BD49D26B12347 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEE78A7DEA3D9C84FCFEDD6409232C6B /* secp256k1.c in Sources */,
-				99DD822EEC47C86B8EABFC5DF70ABF97 /* secp256k1_dash-dummy.m in Sources */,
+				62DEA987AD99F52D6877F7F1E1B34985 /* Pods-ios-dash-crypto_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C683B0A92801898E5F3794E87214F985 /* Sources */ = {
+		6F9CC4C801104C09D470B2603C2BC93F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74BE9D6F3D2B70A697F6404BB5E7F7A1 /* DSBLSKey.mm in Sources */,
-				988317E92F654FF859043D51227B2879 /* DSECDSAKey.m in Sources */,
-				2EB0CB5005DE39CD9C8381C502CF6242 /* DSKey+BIP38.m in Sources */,
-				1E33DD2BE3D6C434E699EF93C698C364 /* DSKey.m in Sources */,
-				CD6A3A06584D8FE2896D92E285E4B62A /* ios-dashcore-lib-dummy.m in Sources */,
-				AE8B613AA1A27173DDC1E9454385CEDC /* NSCoder+Dash.m in Sources */,
-				3521D203F53E7A896C14FBB8A86B7C08 /* NSData+Bitcoin.m in Sources */,
-				47499AC196D8DF07F38B0D441F5764E6 /* NSData+Dash.m in Sources */,
-				8B8A5B89803CE97FD5BB0EF816E37CC3 /* NSDate+Utils.m in Sources */,
-				7E2E74F209D883CA5C5EC13DCD1C8CB0 /* NSIndexPath+Dash.m in Sources */,
-				B78181E1208A947E0C6BA52EB617E809 /* NSMutableData+Dash.m in Sources */,
-				3ACDA76B0A812B55A502A2ABC52C5849 /* NSString+Bitcoin.m in Sources */,
-				C8090C73930F7B9F724B0C1ABBDB7E0E /* NSString+Dash.m in Sources */,
+				4A6BC80C46D6C1EF71CAFD946D11ACB7 /* DSBLSKey.mm in Sources */,
+				CE0169C639332D6A555EE221704AF4F3 /* DSECDSAKey.m in Sources */,
+				20AF188F521B7245B0334B2F67EB7C42 /* DSKey+BIP38.m in Sources */,
+				721CB21B1385DBF213A36DAA52E657B6 /* DSKey.m in Sources */,
+				DDFFE915745B941C4C5DBA2D0A007CB5 /* ios-dash-crypto-dummy.m in Sources */,
+				70C41F886C0F2543446545FFD1D44EF4 /* NSCoder+Dash.m in Sources */,
+				19660695687BA655696663D0475B11CB /* NSData+Bitcoin.m in Sources */,
+				35E6113237786DBD7BA55E636E575937 /* NSData+Dash.m in Sources */,
+				6EC3921C09979ADFEAF4303DF540D0A8 /* NSDate+Utils.m in Sources */,
+				BD51052ADF01197F3C269BB95AC143CE /* NSIndexPath+Dash.m in Sources */,
+				3B5E265A58F903249BEEDCA4B22F0AEE /* NSMutableData+Dash.m in Sources */,
+				432AE635936179750F31798765259C8D /* NSString+Bitcoin.m in Sources */,
+				53E3D99553C911AECD054FAF7AAC59FD /* NSString+Dash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3C94ECD15C316FE38A79A77C5B9CA73 /* Sources */ = {
+		97217752331F660555E9A3A7A53ECD25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3594F93C77138FC7907431ECA105CC15 /* Pods-ios-dashcore-lib_Tests-dummy.m in Sources */,
+				A52FC47858CBB01F2F7D2CA29EF5CA34 /* secp256k1.c in Sources */,
+				61694932EAB4716B6744D48928562DD5 /* secp256k1_dash-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1003C6F87D672A373B9C9E7E2ECA656A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = secp256k1_dash;
-			target = 374D3AC14C1DC8FDF7C394F9DA6ADF4A /* secp256k1_dash */;
-			targetProxy = 32BFA0BEFD0B5A1E5AA0402D15C45BD8 /* PBXContainerItemProxy */;
-		};
-		667EA8A3590A887EAD2E4199F85B38EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = secp256k1_dash;
-			target = 374D3AC14C1DC8FDF7C394F9DA6ADF4A /* secp256k1_dash */;
-			targetProxy = 5B6CA1966A6A8CCEACB7DA0D7EC7231E /* PBXContainerItemProxy */;
-		};
-		8863A641A0A86E2AD8E078C79DCE9BE5 /* PBXTargetDependency */ = {
+		1C8A7970E9A2DF47E0C5C652FCFFA5B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "bls-signatures-pod";
 			target = 4AE84B88A4FBE6CD3921FDCEF49392B4 /* bls-signatures-pod */;
-			targetProxy = DF53E3F6AADD85BF658ED1665F167B45 /* PBXContainerItemProxy */;
+			targetProxy = F2264C4E72D9D32A9D51D629A8FB5DFF /* PBXContainerItemProxy */;
 		};
-		9577B72DF9978DFD392300CE46C4A4B7 /* PBXTargetDependency */ = {
+		583A4DE7E68FF3DD398102CE9A7F0FC3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "ios-dashcore-lib";
-			target = 3DACFD970E6C797C9E56D91994943CCE /* ios-dashcore-lib */;
-			targetProxy = 573C9D936222DA5177FC973D81821051 /* PBXContainerItemProxy */;
+			name = "ios-dash-crypto";
+			target = 0E078DB431AFFB5F9501B14B7D77CBD3 /* ios-dash-crypto */;
+			targetProxy = FB5128C60BB068C4E694DD632A470864 /* PBXContainerItemProxy */;
 		};
-		F1536F95432FFFE56469A4BBBAFE3A82 /* PBXTargetDependency */ = {
+		6868C57A558D565120C2AAE1E3450FF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "bls-signatures-pod";
 			target = 4AE84B88A4FBE6CD3921FDCEF49392B4 /* bls-signatures-pod */;
-			targetProxy = 9A57E87845473CCB73C20E992AAF9FDC /* PBXContainerItemProxy */;
+			targetProxy = B73BC1B1D2C97BEACC23583C111AD068 /* PBXContainerItemProxy */;
+		};
+		B9D07386DACBC4A8A276291619267507 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = secp256k1_dash;
+			target = B335D9CE8D8E9CE7A87A0885EDB9F3E9 /* secp256k1_dash */;
+			targetProxy = 7AC3716013B7F05A05350CA864024BD5 /* PBXContainerItemProxy */;
+		};
+		C60C38B3C29C3907B50D95F582A34D0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = secp256k1_dash;
+			target = B335D9CE8D8E9CE7A87A0885EDB9F3E9 /* secp256k1_dash */;
+			targetProxy = 62C7076CF8FCC08797EBCD8E2CC34768 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		18571316BD2AFEFD7E37A97925E2DB43 /* Release */ = {
+		1BDF94912883E0D6056E2C362F520766 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09269C4013D5C276D47A6397BA2953F6 /* ios-dash-crypto.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ios-dash-crypto/ios-dash-crypto-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ios_dash_crypto;
+				PRODUCT_NAME = "ios-dash-crypto";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BE3CEF3A10D72710F983CD4534D2465 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8427A466ADD6E89806F4D7E8DD6F5BD3 /* secp256k1_dash.xcconfig */;
 			buildSettings = {
@@ -926,11 +952,33 @@
 			};
 			name = Release;
 		};
+		2F15B20CBAE7EA5CD3BB880E6664A4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8427A466ADD6E89806F4D7E8DD6F5BD3 /* secp256k1_dash.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/secp256k1_dash/secp256k1_dash-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = secp256k1_dash;
+				PRODUCT_NAME = secp256k1_dash;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		3048B0C5C704DFFF688DA57F5380ED58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -980,41 +1028,17 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		374776FCCAB939C3217B27D205B94D85 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AF4D5492B9E213C5B9F1337DCB02785 /* ios-dashcore-lib.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/ios-dashcore-lib/ios-dashcore-lib-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = ios_dashcore_lib;
-				PRODUCT_NAME = "ios-dashcore-lib";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		5B0C8287D755FD95091CF35D87FB8B2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1075,32 +1099,32 @@
 			};
 			name = Debug;
 		};
-		D039402E3DC7A2372136EA748795FBA7 /* Debug */ = {
+		62099047DD97CCF288C317D8F3A38C3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8427A466ADD6E89806F4D7E8DD6F5BD3 /* secp256k1_dash.xcconfig */;
+			baseConfigurationReference = 78EEDE0E8DF21CA72530D0374E8726DD /* Pods-ios-dash-crypto_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/secp256k1_dash/secp256k1_dash-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = secp256k1_dash;
-				PRODUCT_NAME = secp256k1_dash;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		E9A17D44E3BF5B516A752881FC4CD41B /* Debug */ = {
+		D840C7DA76720F4AEBE823628625C72D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99B3EAA81D272C522450E19318A6C056 /* Pods-ios-dashcore-lib_Tests.debug.xcconfig */;
+			baseConfigurationReference = F9B14047BF025669911FA3F289CE64EB /* Pods-ios-dash-crypto_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1134,53 +1158,29 @@
 			};
 			name = Debug;
 		};
-		ED2693F06A6D05722A5E6F48FB8F542A /* Release */ = {
+		FD159CEE16125B07A00E974646FA13E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AF4D5492B9E213C5B9F1337DCB02785 /* ios-dashcore-lib.xcconfig */;
+			baseConfigurationReference = 09269C4013D5C276D47A6397BA2953F6 /* ios-dash-crypto.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/ios-dashcore-lib/ios-dashcore-lib-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/ios-dash-crypto/ios-dash-crypto-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = ios_dashcore_lib;
-				PRODUCT_NAME = "ios-dashcore-lib";
+				PRODUCT_MODULE_NAME = ios_dash_crypto;
+				PRODUCT_NAME = "ios-dash-crypto";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
-		};
-		FFA31990B61B225813564922558D9FF1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62F672C5462C6D0FF933B49D97B70624 /* Pods-ios-dashcore-lib_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1194,11 +1194,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BF7225A2207BC6236A8FA75B6899BBF /* Build configuration list for PBXNativeTarget "Pods-ios-dashcore-lib_Tests" */ = {
+		A59A5F51B4044122F9F7618BD71348B6 /* Build configuration list for PBXNativeTarget "ios-dash-crypto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9A17D44E3BF5B516A752881FC4CD41B /* Debug */,
-				FFA31990B61B225813564922558D9FF1 /* Release */,
+				FD159CEE16125B07A00E974646FA13E2 /* Debug */,
+				1BDF94912883E0D6056E2C362F520766 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1212,20 +1212,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBA19E710E196029C050CEA639CACE41 /* Build configuration list for PBXNativeTarget "ios-dashcore-lib" */ = {
+		BA9FDD96EFFA618E93D7CBCDA5CAFA70 /* Build configuration list for PBXNativeTarget "secp256k1_dash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				374776FCCAB939C3217B27D205B94D85 /* Debug */,
-				ED2693F06A6D05722A5E6F48FB8F542A /* Release */,
+				2F15B20CBAE7EA5CD3BB880E6664A4ED /* Debug */,
+				2BE3CEF3A10D72710F983CD4534D2465 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C484B8003E3FD747A427330F4B123E55 /* Build configuration list for PBXNativeTarget "secp256k1_dash" */ = {
+		FADC38D622B31FDA63FF5EF70B0A047A /* Build configuration list for PBXNativeTarget "Pods-ios-dash-crypto_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D039402E3DC7A2372136EA748795FBA7 /* Debug */,
-				18571316BD2AFEFD7E37A97925E2DB43 /* Release */,
+				D840C7DA76720F4AEBE823628625C72D /* Debug */,
+				62099047DD97CCF288C317D8F3A38C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

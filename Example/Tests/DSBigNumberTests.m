@@ -1,4 +1,4 @@
-//  
+//
 //  Created by Sam Westrich
 //  Copyright © 2019 Dash Core Group. All rights reserved.
 //
@@ -17,8 +17,8 @@
 
 #import <XCTest/XCTest.h>
 
-#import <ios-dashcore-lib/BigIntTypes.h>
-#import <ios-dashcore-lib/NSData+Bitcoin.h>
+#import <ios-dash-crypto/BigIntTypes.h>
+#import <ios-dash-crypto/NSData+Bitcoin.h>
 
 @interface DSBigNumberTests : XCTestCase
 
@@ -31,20 +31,20 @@
     NSUInteger b = 5;
     UInt256 bigA = uint256_from_long(a);
     UInt256 bigB = uint256_from_long(b);
-    XCTAssert(uint256_sup(bigA, bigB),@"A in uint 256 needs to be bigger than B");
-    
+    XCTAssert(uint256_sup(bigA, bigB), @"A in uint 256 needs to be bigger than B");
+
     UInt256 bigC = ((UInt256) { .u64 = { 0, 1, 0, 0 } });
-    XCTAssert(uint256_sup(bigC, bigA),@"C in uint 256 needs to be bigger than A");
-    
+    XCTAssert(uint256_sup(bigC, bigA), @"C in uint 256 needs to be bigger than A");
+
     uint64_t d = 1 << 30;
     UInt256 bigD = uint256_from_long(d);
     UInt256 bigDLeftShifted = uInt256ShiftLeft(bigD, 34);
-    XCTAssert(uint256_eq(bigC, bigDLeftShifted),@"C and D should be equal");
-    
+    XCTAssert(uint256_eq(bigC, bigDLeftShifted), @"C and D should be equal");
+
     uint32_t e = 1 << 30;
     UInt256 bigE = uint256_from_int(e);
     UInt256 bigELeftShifted = uInt256ShiftLeft(bigE, 34);
-    XCTAssert(uint256_eq(bigELeftShifted, bigDLeftShifted),@"D and E should be equal");
+    XCTAssert(uint256_eq(bigELeftShifted, bigDLeftShifted), @"D and E should be equal");
 }
 
 @end

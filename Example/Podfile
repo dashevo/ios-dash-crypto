@@ -1,7 +1,7 @@
-target 'ios-dashcore-lib_Tests' do
+target 'ios-dash-crypto_Tests' do
   
   platform :ios, '10.0'
   
-  pod 'ios-dashcore-lib', :path => '../'
+  pod 'ios-dash-crypto', :path => '../'
   
 end
