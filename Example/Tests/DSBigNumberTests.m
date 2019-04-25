@@ -17,8 +17,8 @@
 
 #import <XCTest/XCTest.h>
 
-#import <ios-dash-core-lib/BigIntTypes.h>
-#import <ios-dash-core-lib/NSData+Bitcoin.h>
+#import <ios-dashcore-lib/BigIntTypes.h>
+#import <ios-dashcore-lib/NSData+Bitcoin.h>
 
 @interface DSBigNumberTests : XCTestCase
 

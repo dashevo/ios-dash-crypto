@@ -1,12 +1,12 @@
 PODS:
   - bls-signatures-pod (0.2.9)
-  - ios-dash-core-lib (0.1.0):
+  - ios-dashcore-lib (0.1.0):
     - bls-signatures-pod (= 0.2.9)
     - secp256k1_dash (= 0.1.2)
   - secp256k1_dash (0.1.2)
 
 DEPENDENCIES:
-  - ios-dash-core-lib (from `../`)
+  - ios-dashcore-lib (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -14,14 +14,14 @@ SPEC REPOS:
     - secp256k1_dash
 
 EXTERNAL SOURCES:
-  ios-dash-core-lib:
+  ios-dashcore-lib:
     :path: "../"
 
 SPEC CHECKSUMS:
   bls-signatures-pod: 56adce76843f10f484ff996c33aee36cfd98ae5e
-  ios-dash-core-lib: 61231a110088dbe514f77e347ad17adf606a6dd6
+  ios-dashcore-lib: 48e4ef5d50929990f514821e01b1f9db382c8fc2
   secp256k1_dash: 7fdbc23e3e8a27d522ec211b874d97fb091c2b23
 
-PODFILE CHECKSUM: 6516b81cacc6ec5d724d8d6fa355dfde9272c49a
+PODFILE CHECKSUM: 2a70e2cbd44f261742ea98d54a4e541aa61cb558
 
 COCOAPODS: 1.6.1

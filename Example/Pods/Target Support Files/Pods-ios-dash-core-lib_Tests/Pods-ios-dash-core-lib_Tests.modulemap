@@ -1,6 +1,0 @@
-framework module Pods_ios_dash_core_lib_Tests {
-  umbrella header "Pods-ios-dash-core-lib_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -17,7 +17,7 @@
                BlueprintIdentifier = "6003F589195388D20070C39A"
                BuildableName = "ios-dash-core-lib_Example.app"
                BlueprintName = "ios-dash-core-lib_Example"
-               ReferencedContainer = "container:ios-dash-core-lib.xcodeproj">
+               ReferencedContainer = "container:ios-dashcore-lib.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6003F5AD195388D20070C39A"
-               BuildableName = "ios-dash-core-lib_Tests.xctest"
-               BlueprintName = "ios-dash-core-lib_Tests"
-               ReferencedContainer = "container:ios-dash-core-lib.xcodeproj">
+               BuildableName = "ios-dashcore-lib_Tests.xctest"
+               BlueprintName = "ios-dashcore-lib_Tests"
+               ReferencedContainer = "container:ios-dashcore-lib.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "6003F589195388D20070C39A"
             BuildableName = "ios-dash-core-lib_Example.app"
             BlueprintName = "ios-dash-core-lib_Example"
-            ReferencedContainer = "container:ios-dash-core-lib.xcodeproj">
+            ReferencedContainer = "container:ios-dashcore-lib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,7 +68,7 @@
             BlueprintIdentifier = "6003F589195388D20070C39A"
             BuildableName = "ios-dash-core-lib_Example.app"
             BlueprintName = "ios-dash-core-lib_Example"
-            ReferencedContainer = "container:ios-dash-core-lib.xcodeproj">
+            ReferencedContainer = "container:ios-dashcore-lib.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -87,7 +87,7 @@
             BlueprintIdentifier = "6003F589195388D20070C39A"
             BuildableName = "ios-dash-core-lib_Example.app"
             BlueprintName = "ios-dash-core-lib_Example"
-            ReferencedContainer = "container:ios-dash-core-lib.xcodeproj">
+            ReferencedContainer = "container:ios-dashcore-lib.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
