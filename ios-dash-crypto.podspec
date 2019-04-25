@@ -9,16 +9,16 @@
 Pod::Spec.new do |s|
   s.name             = 'ios-dash-crypto'
   s.version          = '0.1.0'
-  s.summary          = 'Dash iOS Core Library'
+  s.summary          = 'iOS library with Dash cryptographic primitives'
 
   s.description      = <<-DESC
 Contains BigInt, X11 implementation, secp256k1 and BLS signatures dependencies, DSKey implementation and blockchain-related categories on Foundation objects
                        DESC
 
-  s.homepage         = 'https://github.com/Andrew Podkovyrin/ios-dash-crypto'
+  s.homepage         = 'https://github.com/dashevo/ios-dash-crypto'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Andrew Podkovyrin' => 'podkovyrin@gmail.com' }
-  s.source           = { :git => 'https://github.com/Andrew Podkovyrin/ios-dash-crypto.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/dashevo/ios-dash-crypto.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/dahspay'
 
   s.ios.deployment_target = '10.0'
