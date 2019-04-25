@@ -195,7 +195,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n\npushd ..\necho \"Reformatting code with clang-format\"\npwd\nfor SUBDIR in ios-dash-core-lib\ndo\nfind \"$SUBDIR\" -name '*.h' -print0 | xargs -0 clang-format -i -style=file\nfind \"$SUBDIR\" -name '*.m' -print0 | xargs -0 clang-format -i -style=file\nfind \"$SUBDIR\" -name '*.mm' -print0 | xargs -0 clang-format -i -style=file\ndone\npopd\n";
+			shellScript = "#!/bin/bash\n\necho \"Reformatting code with clang-format...\"\n\nif which clang-format > /dev/null; then\npushd ..\ngit status --porcelain | grep -e \"^ \\\\?[AM]\" | grep -E '(.*\\.h|.*\\.m|.*\\.mm)$' | xargs clang-format -i -style=file\npopd\nelse\necho \"error: clang-format not installed, run \\`brew install clang-format\\`\"\nfi\n";
 		};
 		C99B52972F4D49720B8DD360 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
