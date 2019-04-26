@@ -15,21 +15,23 @@
 //  limitations under the License.
 //
 
-#import "NSCoder+Dash.h"
+#import <Foundation/Foundation.h>
 
 #import "BigIntTypes.h"
-#import "NSData+Dash.h"
 
-@implementation NSCoder (Dash)
+@interface NSData (Dash)
 
-- (void)encodeUInt256:(UInt256)value forKey:(NSString *)string {
-    [self encodeObject:[NSData dataWithUInt256:value] forKey:string];
-}
-
-- (UInt256)decodeUInt256ForKey:(NSString *)string {
-    NSData *data = [self decodeObjectOfClass:[NSData class] forKey:string];
-    UInt256 r = *(UInt256 *)data.bytes;
-    return r;
-}
+- (UInt256)x11;
+- (UInt512)blake512;
+- (UInt512)bmw512;
+- (UInt512)groestl512;
+- (UInt512)skein512;
+- (UInt512)jh512;
+- (UInt512)keccak512;
+- (UInt512)luffa512;
+- (UInt512)cubehash512;
+- (UInt512)shavite512;
+- (UInt512)simd512;
+- (UInt512)echo512;
 
 @end

@@ -28,7 +28,7 @@
 
 #import "NSString+Bitcoin.h"
 
-#import "NSData+Bitcoin.h"
+#import "NSData+Dash.h"
 #import "NSMutableData+Dash.h"
 
 static const UniChar base58chars[] = {

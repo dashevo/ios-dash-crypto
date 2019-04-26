@@ -18,7 +18,7 @@
 #import <XCTest/XCTest.h>
 
 #import <ios-dash-crypto/BigIntTypes.h>
-#import <ios-dash-crypto/NSData+Bitcoin.h>
+#import <ios-dash-crypto/NSData+Dash.h>
 
 @interface DSBigNumberTests : XCTestCase
 

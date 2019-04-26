@@ -20,88 +20,88 @@
 
 /* Begin PBXBuildFile section */
 		017BE8B8288E04390CE57D25487CAC21 /* group.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E44A1F51BBB8A00B0C1A18A63F5BA1D /* group.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		05098BB641FF52C1B115125DE575966F /* DSChainProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E80474BC1AF86447EB5CF19F6B2FF1 /* DSChainProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		01DEFCE0AC45BEC75155C169CA5464E0 /* Skein.h in Headers */ = {isa = PBXBuildFile; fileRef = 421AFDF06CCBB5C68F380D740BB49E6D /* Skein.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		060C1F240256116AFBB2E0D72C1D9724 /* scalar_low_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 462B9AF61EC065677150386A7859EE3A /* scalar_low_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		081D5834168A46F978DBD535D89ECD0D /* Keccak.h in Headers */ = {isa = PBXBuildFile; fileRef = 03807D95E63B85CD4CB54B797E1AA0AA /* Keccak.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0C07621D779F911D6898AF759A701AA3 /* num_gmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A4809F6795E4A8230CB4061C00B88C /* num_gmp.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		17673267608C04C3B0BAF49A5331EDCE /* aes_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 718E0382EC918C1CF90BBBC2D17D1F3A /* aes_helper.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		185749B9C0961D3F298634DEB8ACDF41 /* sph_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 50831E20DE6AB33138A4495E60656E1F /* sph_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		19660695687BA655696663D0475B11CB /* NSData+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243D3B4A5DA567ABFDB0F10E3A07D16 /* NSData+Bitcoin.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		1F0DCEBC29835A12D6200018FBF40530 /* Groestl.h in Headers */ = {isa = PBXBuildFile; fileRef = 22660D3A90C078804A469809369733FA /* Groestl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		20AF188F521B7245B0334B2F67EB7C42 /* DSKey+BIP38.m in Sources */ = {isa = PBXBuildFile; fileRef = 060EF922F3DF4A15BB3029FF73B88AF8 /* DSKey+BIP38.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		0D6F7CD9D9AE7EF5AB9BD27435627B89 /* Groestl.h in Headers */ = {isa = PBXBuildFile; fileRef = 22660D3A90C078804A469809369733FA /* Groestl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		21221A326FC7B7CF79B9A936365E8438 /* DSBLSKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 608732649EC1D94E87F57156BAB98793 /* DSBLSKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		22DFA4E7DC4228CA6F3351CD90BF9602 /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE68AE960EC8CE6BD31B4B70509581B /* ecdsa.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		23FBB9CA23861DE101A974DD46258C59 /* num_gmp_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 56A54397CB70588E77E23478CB307E29 /* num_gmp_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		259F39BD46581FCA8094E5C97BD8B0D6 /* NSIndexPath+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = DFACA202919AC8261045F0018B0C523B /* NSIndexPath+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2839C289217A11E5EEEF83E27A7AF1FD /* BigIntTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 829934DD3B630836D0D26E0A101FAC27 /* BigIntTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		28D5E1B384EC2CC34EBE8B4AD2C352A0 /* scalar_8x32.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D4B9C58C22C2D0883F2D949789B0FCB /* scalar_8x32.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		327886DE3EE873F50793FF4D2690A787 /* CubeHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D5685C4DA1FC11D8403516555DF3AFD /* CubeHash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F98190A5D69407939110CBA505CA0FD /* NSData+X11.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD560918E8E8DD0EDBBD950BF81E8FC /* NSData+X11.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
 		33438DCF9E1C427B478BC3F006F31170 /* ecmult_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = F0E91ADFEAC34F0DD6F5558F375E5FC4 /* ecmult_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		35E6113237786DBD7BA55E636E575937 /* NSData+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = CE522405375BC642C6FA93A691203987 /* NSData+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
 		36E7D8B70B6398DA362B7470A8FD0135 /* ecmult_gen_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E65160D204C3768F1CEC751597514F0 /* ecmult_gen_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		39D419FAABE537003EC3EFD99A379897 /* main_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = E129C29214FFD23F598C8084403622DE /* main_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3A283D6811C930B01D986586870E5B12 /* NSIndexPath+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D6F4E3972F48032CB31A7E0849CFD2A /* NSIndexPath+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3B5E265A58F903249BEEDCA4B22F0AEE /* NSMutableData+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8493246617929F64BA9BA61C4FD0FA /* NSMutableData+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		3E1CC2FD09A057512BFBB2D77D71E071 /* Shavite.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE3F70AA648625169D2DCE048F653A0 /* Shavite.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3ADF9DBB99E9234C150E972FDFA3EA30 /* DSChainProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E80474BC1AF86447EB5CF19F6B2FF1 /* DSChainProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4089C37C31232E65670DFE304502793F /* ecmult_gen.h in Headers */ = {isa = PBXBuildFile; fileRef = F2D589AC6DB5F001ACA6F39E23C00B93 /* ecmult_gen.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		432AE635936179750F31798765259C8D /* NSString+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEA4BE94C428F51A455A9442184832 /* NSString+Bitcoin.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		439B4FE99796F9DC5D56FD6057D9F57A /* NSData+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = 285CB0F005D1AF14DB09D0EAD9F51FDA /* NSData+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		42D5BBF47FD35421864F8C16412AC6FC /* CubeHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D5685C4DA1FC11D8403516555DF3AFD /* CubeHash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4361B4B64B72CA42E140AB6A18C2801F /* NSData+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = 08DADE0309653EBCE5B17ECFF04BB16E /* NSData+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		478D2F74B5982C25314CBA09C8A7A7B9 /* group_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FDA07146A6D6985493826EB466630AB /* group_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4886C767C08D967E59591C5E5BBE92DA /* main_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EB543D968BDB9DC4244ACABF9885BE /* main_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		48BE23B019B3E9DA92A65E1B52E558C9 /* Bmw.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EBB67EC3E69ED364F8AFB70092029B /* Bmw.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		48CE05326CCBE38D535F8625479A5D46 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB69465F92412C4EB0A6D93A25F90C9 /* util.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4A6BC80C46D6C1EF71CAFD946D11ACB7 /* DSBLSKey.mm in Sources */ = {isa = PBXBuildFile; fileRef = 118EA325DB24E7700F6D1F13316F7AA4 /* DSBLSKey.mm */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		4C3C8BF61DD0A25DD965CE9F72AFC2B2 /* Blake.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A26DA1449E9F7F5EA1BC963AFFC9C20 /* Blake.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4CB7DDF51A649AA3F6B7733F58D290CC /* NSString+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B2CE4C1A01916E2A33EB13AA3F6DACD /* NSString+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4F093655C37097244CD8BFC92235956A /* field_5x52.h in Headers */ = {isa = PBXBuildFile; fileRef = 4538BEADCC9FE38BFDB014A462BA47BC /* field_5x52.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		53E3D99553C911AECD054FAF7AAC59FD /* NSString+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FF5CE705277F868BF125698B3B16CF /* NSString+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
 		57A3C06B53E9CF998F8F5C472CFEE2A9 /* secp256k1_ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = A55B037AC3A977749881DE8AD9A5740F /* secp256k1_ecdh.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		58A3793DED98BBD4F93C25DFBEF5B862 /* eckey.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E84E48F66D15142B2847602AC8957EA /* eckey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5F1EC0256A64A05AE70D798727FDD3C1 /* NSString+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8D532B6259E81B8FC336969EA77AB9 /* NSString+Bitcoin.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
 		61694932EAB4716B6744D48928562DD5 /* secp256k1_dash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C1C706E2EA7AADD6A0550C60675F7A /* secp256k1_dash-dummy.m */; };
 		62DEA987AD99F52D6877F7F1E1B34985 /* Pods-ios-dash-crypto_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B23614D8077BC026EB12459255DA5D53 /* Pods-ios-dash-crypto_Tests-dummy.m */; };
-		6AE67E18DE5215C406DD9F3C8DC6E56E /* NSMutableData+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = 03551713839F9D807A156B8DBA6333B2 /* NSMutableData+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6AFFE76EE09760E091730CC01E345640 /* secp256k1_recovery.h in Headers */ = {isa = PBXBuildFile; fileRef = D9802A8AAE8A1A806A07CA3700CFF290 /* secp256k1_recovery.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6EC3921C09979ADFEAF4303DF540D0A8 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DC511A056C90EABB4E5213C25C264 /* NSDate+Utils.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		6F8C3E51467C5BF016B0D73E9E0C93A4 /* Jh.h in Headers */ = {isa = PBXBuildFile; fileRef = 886F75D16D94386F8AEB44EBAC613D26 /* Jh.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		705FFC5BC2C0DD25989C06D712B75239 /* Luffa.h in Headers */ = {isa = PBXBuildFile; fileRef = C335F8F53E0ACA39A4905CA76B0A8A9F /* Luffa.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		70C41F886C0F2543446545FFD1D44EF4 /* NSCoder+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DF12877FA0F2E54B0BFBC8ECE0C035 /* NSCoder+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		721CB21B1385DBF213A36DAA52E657B6 /* DSKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E436EE4CFCB1603145149CECA0C41CF /* DSKey.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		6B8C272F4F4CFEB9646399469AEC91B8 /* sph_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 50831E20DE6AB33138A4495E60656E1F /* sph_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7261F1CF3F0E66DAB60882FD3714AC04 /* DSKey+BIP38.h in Headers */ = {isa = PBXBuildFile; fileRef = D242508B65BA881870CC974048DE88D0 /* DSKey+BIP38.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		75BB735569C648EBDD01C6F20FB00EE4 /* DSECDSAKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CBE22911C33CF36763CC3390637F4C /* DSECDSAKey.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
 		7791E3BC940C6E4C1DFBD169FEF92CD7 /* basic-config.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DB92C782F675A6CAB00A9050D23BAAC /* basic-config.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7887BEB21A3E111E7BD8686BC9F73E94 /* Echo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BEDD06AC2D94AC2DBC61A75F4B19062 /* Echo.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		86594B96162AE78D61D1C9927820E82D /* scalar_4x64.h in Headers */ = {isa = PBXBuildFile; fileRef = B5539E0DE78DE43FF48B8757D752763B /* scalar_4x64.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		899CE2C8613CE9FCF869A5A86F4F4AF8 /* Echo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BEDD06AC2D94AC2DBC61A75F4B19062 /* Echo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		86A86167A3E4FF11CD21D1EC1569503E /* aes_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 718E0382EC918C1CF90BBBC2D17D1F3A /* aes_helper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		88BEC79719F8C916EDCE8B248EF319EE /* NSCoder+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4AAB5E5567C3F212F40BCFE92CCBEC /* NSCoder+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		8ACC51422DBB947A45B061446A93AA0B /* DSECDSAKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 337EDE8D2BD2F0D129970095962FEA09 /* DSECDSAKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8F52CC790B000EEAF63AB1476950C9F0 /* field.h in Headers */ = {isa = PBXBuildFile; fileRef = EE31D5E565BB16218808958646926388 /* field.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8FDD691C46B24BD71391F45E8A38AF33 /* DSECDSAKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 337EDE8D2BD2F0D129970095962FEA09 /* DSECDSAKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		90E1024496E4CCAEE295FC0DE2BA984B /* num.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B597382B69D9492CFFE5B549B57011F /* num.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A2C9823A80652158DBDB2C69A3D55A08 /* NSData+Bitcoin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B9F0182D52F40A37A6CF1340BF96FD6 /* NSData+Bitcoin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9122C1900833EE2AA50FB1BC7565E302 /* NSMutableData+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = EC6EDAB10DDCC8E59F270B4F0D0421BE /* NSMutableData+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		93EFCF8A3B369E0CF90010C56252F5EF /* Blake.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A26DA1449E9F7F5EA1BC963AFFC9C20 /* Blake.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9C7411B9FA8CEDE40EC0844C2A872BBE /* DSKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EDAD69DA3FC5BDB4F3ED7A2CD811E3C /* DSKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A06C7515E4C8C569973DA11789083AEF /* NSData+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2244E27BF26F96A9965CC0BA62C7F7 /* NSData+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		A33F769AEB17CD69F972C2958C8C3395 /* DashCoreLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 17A5C309BB4D2BCF562B2E363F77AB99 /* DashCoreLogging.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A52FC47858CBB01F2F7D2CA29EF5CA34 /* secp256k1.c in Sources */ = {isa = PBXBuildFile; fileRef = 9531D1B951A7E33CF4737CD57C54C5F9 /* secp256k1.c */; };
 		A63A542844610E1679E78463BEA5C9FA /* num_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A2C19F0306257054C5757397BC3CEC8A /* num_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A64789F8D1E695C0CACA3B987868A53E /* ecmult_const_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CA04F536618B3D369C6465F109BC6F /* ecmult_const_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		ADD481F0D23A2C73E03ADF336C25E9AD /* NSString+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = BE320B7460F7CED006AF74FC4C25B1C6 /* NSString+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B123C8FED538E75B582176DEA62A6499 /* DSKeySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A55F5D0AFFFF8BAA9C2B0F7DFE6CECD /* DSKeySequence.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A7D05D8B510DC41851E48677EF3DCA07 /* Simd.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB621AA601F3F074730BF5BB3891B4C /* Simd.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ADE728F4DCA3D483EB2B7D7D497576EC /* NSDate+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC364708DE9004C2EF09DF65B6E75BE /* NSDate+Utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AE32073E97FE4329C1922E6F44FCB3CC /* DSKey+BIP38.m in Sources */ = {isa = PBXBuildFile; fileRef = 060EF922F3DF4A15BB3029FF73B88AF8 /* DSKey+BIP38.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		AEB3484038B0A2BB68F8874B27C69A62 /* Luffa.h in Headers */ = {isa = PBXBuildFile; fileRef = C335F8F53E0ACA39A4905CA76B0A8A9F /* Luffa.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B21E7861A9FB0AD9748D5852E7943BAE /* NSString+Bitcoin.h in Headers */ = {isa = PBXBuildFile; fileRef = 02D36CF1765B1FE3678770ED1902AE15 /* NSString+Bitcoin.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B25AB55C2892E4BC60D6205FEC34D614 /* scalar_8x32_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = C07CC7461E64810494FEC2CA57B5056E /* scalar_8x32_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B703695840FDCB9497E39359FBBD2AD3 /* NSData+X11.h in Headers */ = {isa = PBXBuildFile; fileRef = 284652538EDBFD46269F85E112ED31AA /* NSData+X11.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B827BDD9185ADCD8C00C75FFAA1513CC /* NSCoder+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = CA575C5EE21F6E3A3345827FAC0AF07D /* NSCoder+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BAE86CE45C961A70CBD54AD06A2ECF39 /* field_10x26.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C187FCA627E05DA4939786038836A9E /* field_10x26.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BD51052ADF01197F3C269BB95AC143CE /* NSIndexPath+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = AED279D2082CCC2326DBE192DEE17EE3 /* NSIndexPath+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		BC385303E889ED54533A3C24DCB50D63 /* DSKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E436EE4CFCB1603145149CECA0C41CF /* DSKey.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		BD654862076B2DC3212F9B9AABE647D4 /* NSString+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = C0710A6D4A0ED73F7B5B0B515EA68F3B /* NSString+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
 		C095BEA481910F60AE3C9B634E35F718 /* ecmult.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E199CB3F9BBC759B503B8F2ECEF3F01 /* ecmult.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C1250C500A8618BE0C57B9CE36F008C9 /* Skein.h in Headers */ = {isa = PBXBuildFile; fileRef = 421AFDF06CCBB5C68F380D740BB49E6D /* Skein.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C182768DA5A3ED07D0C4EEFCA16D7935 /* NSIndexPath+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = 23795C913A05CC825FEA730AD0A34131 /* NSIndexPath+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
 		C2DD015943A6C9E3543775DFFE21EBDE /* field_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C69C4AB4B154BA4D509E71ACC8CCE16 /* field_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C5CB8C19AEF157BE198A49946C364A97 /* hash_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A07DED90778CF73EAF1422BF705D5F63 /* hash_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C5F6121AAE0103C77AC1D47C0D75230A /* scalar_low.h in Headers */ = {isa = PBXBuildFile; fileRef = 910C1EA8A216C5BBDFD03B54F527030B /* scalar_low.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C63128F7D075E2B95A0307753327EC1A /* scalar_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D4D5EE534EE4804DF81C33222B9FC2 /* scalar_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C68828815A87B84B667322D40C642A6E /* eckey_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8734F9468524805616FFFA96EC723F1B /* eckey_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CA7EA347066C03A7EEC68D618AC6D8B8 /* BigIntTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 75AA9AB2CA04E8BE719A1A90E89852DF /* BigIntTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CCF6BAF088BD88A6009BFBFB4B4FC964 /* NSCoder+Dash.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F3FA441893492E030B30CC989488CD5 /* NSCoder+Dash.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CE0169C639332D6A555EE221704AF4F3 /* DSECDSAKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CBE22911C33CF36763CC3390637F4C /* DSECDSAKey.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		CA27F22C87DF7DB72C6B7A9F75B21A3A /* Shavite.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE3F70AA648625169D2DCE048F653A0 /* Shavite.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CBBA3B1428CE3D4315DD4C79AA94C28B /* DSBLSKey.mm in Sources */ = {isa = PBXBuildFile; fileRef = 118EA325DB24E7700F6D1F13316F7AA4 /* DSBLSKey.mm */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		CE8683B6457A2CD9FFEEF8884CBA06F9 /* DSKeySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A55F5D0AFFFF8BAA9C2B0F7DFE6CECD /* DSKeySequence.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D09602769D4CDEB1AA5681C1AB6DE56F /* scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E80390878AAB0CB2EF1C6D8E01BAFC /* scalar.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D19F3D9795E42F07E56552964AD725C8 /* field_5x52_int128_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F472D2B175508B9ED56E6F2782F2F52 /* field_5x52_int128_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D3D76CD7DB5DC9371CB822A56755C215 /* Bmw.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EBB67EC3E69ED364F8AFB70092029B /* Bmw.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D42ADE7778B99256024F7FFEAACEB7F2 /* secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C59F4023BD56F4C2190862E0C7257C4 /* secp256k1.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D91127BA0489C20D22C150DD67EE25D4 /* DSKey+BIP38.h in Headers */ = {isa = PBXBuildFile; fileRef = D242508B65BA881870CC974048DE88D0 /* DSKey+BIP38.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DC7FEE956A622E22DDA09EAF8BB2D80C /* Jh.h in Headers */ = {isa = PBXBuildFile; fileRef = 886F75D16D94386F8AEB44EBAC613D26 /* Jh.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DCD248B7843CBEDB7A048E476A4BFD36 /* scalar_4x64_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F722BB3BFB5D2714603E7D57514792 /* scalar_4x64_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DDFFE915745B941C4C5DBA2D0A007CB5 /* ios-dash-crypto-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F87D9812DC3896897F85938DCB441 /* ios-dash-crypto-dummy.m */; };
-		E0C26750B5139C27F738F82B31BD8B3E /* Simd.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB621AA601F3F074730BF5BB3891B4C /* Simd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E1A460AF4D95354D55F169472F13B0D5 /* field_5x52_asm_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 01AF639F103CB9AA77CA7971DA96136D /* field_5x52_asm_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E2E42525EFBFF16F12CDA8DB1BBE5BFD /* DSKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EDAD69DA3FC5BDB4F3ED7A2CD811E3C /* DSKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E1B64F1C7D696C0EC8079522D34C2C6A /* ios-dash-crypto-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F87D9812DC3896897F85938DCB441 /* ios-dash-crypto-dummy.m */; };
+		E2D96CAC9F7B5E517F7B2127A5C914A5 /* Keccak.h in Headers */ = {isa = PBXBuildFile; fileRef = 03807D95E63B85CD4CB54B797E1AA0AA /* Keccak.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E38BEEE55288A4CDB2C9A552C6AFD657 /* ecmult_const.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D44DC25FB318F0484B9D7F67EA7562 /* ecmult_const.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E4B944AE6A1340FCE2FEF7E4DBF2BA45 /* NSString+Bitcoin.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DE143B8EA5583D4209FC84A4D517845 /* NSString+Bitcoin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EC1493FA48126D5689BA38B5C765CD0B /* DSBLSKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 608732649EC1D94E87F57156BAB98793 /* DSBLSKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EF553547546383C4D8BFA10CC2611711 /* DashCoreLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = D781816A4886BE6FBB0DC07E0E9506EF /* DashCoreLogging.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E41533B7C0820C39C6202BE92063C1B6 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F765F50DB06C4FA8C9CBC2D4EA697F65 /* NSDate+Utils.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
 		EFBB686ABE53B19452C91F377E8379A7 /* ecdsa_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BA5D3A316D7C003FF84068DD0AD27C /* ecdsa_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F90C29CC44333C97D54B526585716A4B /* NSDate+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 71BDF9C9679B2A3E7A11D75E40B00667 /* NSDate+Utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F730CA355146E15D1787B8E5B68AA918 /* NSMutableData+Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = 81981EF5E6879439D30C7AF33209919F /* NSMutableData+Dash.m */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
 		FB9E4756C2069B22623C1D619880DD0B /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 37FFA638871DA9E000CE7E9912133340 /* hash.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FC906905A7EC64581DCE7D060AD7B44C /* field_5x52_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9DC0B777B21D84D0D89C3ECDD31E05 /* field_5x52_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FE1AED1479A52CB305D048651808CAEE /* field_10x26_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = CF2A122608034743EF2E78E78137F58C /* field_10x26_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -147,15 +147,16 @@
 
 /* Begin PBXFileReference section */
 		01AF639F103CB9AA77CA7971DA96136D /* field_5x52_asm_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_5x52_asm_impl.h; path = src/field_5x52_asm_impl.h; sourceTree = "<group>"; };
-		03551713839F9D807A156B8DBA6333B2 /* NSMutableData+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+Dash.h"; sourceTree = "<group>"; };
+		02D36CF1765B1FE3678770ED1902AE15 /* NSString+Bitcoin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+Bitcoin.h"; sourceTree = "<group>"; };
 		03807D95E63B85CD4CB54B797E1AA0AA /* Keccak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Keccak.h; sourceTree = "<group>"; };
 		03BD96EAB60930C04D6F9824670C816A /* chaincode.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = chaincode.hpp; path = src/chaincode.hpp; sourceTree = "<group>"; };
 		04CA04F536618B3D369C6465F109BC6F /* ecmult_const_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecmult_const_impl.h; path = src/ecmult_const_impl.h; sourceTree = "<group>"; };
 		060EF922F3DF4A15BB3029FF73B88AF8 /* DSKey+BIP38.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DSKey+BIP38.m"; sourceTree = "<group>"; };
+		08DADE0309653EBCE5B17ECFF04BB16E /* NSData+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+Dash.h"; sourceTree = "<group>"; };
 		08DE9B885FF6701EEC370C3BAEAC9EF2 /* privatekey.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = privatekey.hpp; path = src/privatekey.hpp; sourceTree = "<group>"; };
 		09135310BB7B352B43B897DC7578F3CB /* relic_err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_err.h; path = contrib/relic/include/relic_err.h; sourceTree = "<group>"; };
 		09269C4013D5C276D47A6397BA2953F6 /* ios-dash-crypto.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ios-dash-crypto.xcconfig"; sourceTree = "<group>"; };
-		0B9F0182D52F40A37A6CF1340BF96FD6 /* NSData+Bitcoin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+Bitcoin.h"; sourceTree = "<group>"; };
+		0AD560918E8E8DD0EDBBD950BF81E8FC /* NSData+X11.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+X11.m"; sourceTree = "<group>"; };
 		0BEDD06AC2D94AC2DBC61A75F4B19062 /* Echo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Echo.h; sourceTree = "<group>"; };
 		0D9764B5005EC2953B915CCAD18D70AA /* relic_bn_low.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_bn_low.h; path = contrib/relic/include/low/relic_bn_low.h; sourceTree = "<group>"; };
 		0DB92C782F675A6CAB00A9050D23BAAC /* basic-config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "basic-config.h"; path = "src/basic-config.h"; sourceTree = "<group>"; };
@@ -165,15 +166,15 @@
 		132331FAA7ACE87A9C9C71260785713A /* extendedprivatekey.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = extendedprivatekey.hpp; path = src/extendedprivatekey.hpp; sourceTree = "<group>"; };
 		14E80390878AAB0CB2EF1C6D8E01BAFC /* scalar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar.h; path = src/scalar.h; sourceTree = "<group>"; };
 		1777C11D2785C9D536D0BF50622B2C4E /* relic_ed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_ed.h; path = contrib/relic/include/relic_ed.h; sourceTree = "<group>"; };
+		17A5C309BB4D2BCF562B2E363F77AB99 /* DashCoreLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DashCoreLogging.h; sourceTree = "<group>"; };
 		1D2152D9C06C474E38EB3F0D7947700E /* relic_fp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_fp.h; path = contrib/relic/include/relic_fp.h; sourceTree = "<group>"; };
-		1D6F4E3972F48032CB31A7E0849CFD2A /* NSIndexPath+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Dash.h"; sourceTree = "<group>"; };
-		1DFEA4BE94C428F51A455A9442184832 /* NSString+Bitcoin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Bitcoin.m"; sourceTree = "<group>"; };
-		2243D3B4A5DA567ABFDB0F10E3A07D16 /* NSData+Bitcoin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+Bitcoin.m"; sourceTree = "<group>"; };
 		22660D3A90C078804A469809369733FA /* Groestl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Groestl.h; sourceTree = "<group>"; };
+		23795C913A05CC825FEA730AD0A34131 /* NSIndexPath+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Dash.m"; sourceTree = "<group>"; };
 		24F722BB3BFB5D2714603E7D57514792 /* scalar_4x64_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_4x64_impl.h; path = src/scalar_4x64_impl.h; sourceTree = "<group>"; };
 		260AFCD2FCF0066733AB6211D6DD1DC7 /* relic_dv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_dv.h; path = contrib/relic/include/relic_dv.h; sourceTree = "<group>"; };
 		26CBE22911C33CF36763CC3390637F4C /* DSECDSAKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DSECDSAKey.m; sourceTree = "<group>"; };
-		285CB0F005D1AF14DB09D0EAD9F51FDA /* NSData+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+Dash.h"; sourceTree = "<group>"; };
+		284652538EDBFD46269F85E112ED31AA /* NSData+X11.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+X11.h"; sourceTree = "<group>"; };
+		2B8D532B6259E81B8FC336969EA77AB9 /* NSString+Bitcoin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Bitcoin.m"; sourceTree = "<group>"; };
 		2C0C7A9EAABA408E4A9059C3CC0E33ED /* relic_pc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_pc.h; path = contrib/relic/include/relic_pc.h; sourceTree = "<group>"; };
 		2D4B9C58C22C2D0883F2D949789B0FCB /* scalar_8x32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_8x32.h; path = src/scalar_8x32.h; sourceTree = "<group>"; };
 		2EDAD69DA3FC5BDB4F3ED7A2CD811E3C /* DSKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSKey.h; sourceTree = "<group>"; };
@@ -199,7 +200,6 @@
 		5EE4D83DBE9FD90138A3E05BD9E11488 /* publickey.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = publickey.hpp; path = src/publickey.hpp; sourceTree = "<group>"; };
 		608732649EC1D94E87F57156BAB98793 /* DSBLSKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSBLSKey.h; sourceTree = "<group>"; };
 		61A520020D4B2764BB41105F1FBFC0DC /* relic_ep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_ep.h; path = contrib/relic/include/relic_ep.h; sourceTree = "<group>"; };
-		61DF12877FA0F2E54B0BFBC8ECE0C035 /* NSCoder+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+Dash.m"; sourceTree = "<group>"; };
 		65BB40BE384C3813E04C68FA1D333419 /* relic_pool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_pool.h; path = contrib/relic/include/relic_pool.h; sourceTree = "<group>"; };
 		65F586F8EB93B22C30ED2289892A3E41 /* relic_cp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_cp.h; path = contrib/relic/include/relic_cp.h; sourceTree = "<group>"; };
 		6743E68CEC55193C9FAA6FCC14628775 /* librelic_ios.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = librelic_ios.a; path = artefacts/librelic_ios.a; sourceTree = "<group>"; };
@@ -209,22 +209,19 @@
 		6DA2A7859F4BE09F1861E724A1C17E0D /* relic_bc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_bc.h; path = contrib/relic/include/relic_bc.h; sourceTree = "<group>"; };
 		6EE68AE960EC8CE6BD31B4B70509581B /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = src/ecdsa.h; sourceTree = "<group>"; };
 		718E0382EC918C1CF90BBBC2D17D1F3A /* aes_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aes_helper.h; sourceTree = "<group>"; };
-		71BDF9C9679B2A3E7A11D75E40B00667 /* NSDate+Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utils.h"; sourceTree = "<group>"; };
 		726F87D9812DC3896897F85938DCB441 /* ios-dash-crypto-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ios-dash-crypto-dummy.m"; sourceTree = "<group>"; };
 		728A17B6528E4F44737901C6F884BC09 /* bls.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = bls.hpp; path = src/bls.hpp; sourceTree = "<group>"; };
 		735AD478A8F93E09AADB775ACAC47882 /* relic_fpx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_fpx.h; path = contrib/relic/include/relic_fpx.h; sourceTree = "<group>"; };
-		75AA9AB2CA04E8BE719A1A90E89852DF /* BigIntTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BigIntTypes.h; sourceTree = "<group>"; };
 		7681ADAD908E9E76464CE9E29A45110F /* relic_pp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_pp.h; path = contrib/relic/include/relic_pp.h; sourceTree = "<group>"; };
 		76E995B4123C8A9BE9239F1A8CC84969 /* relic_fb_low.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_fb_low.h; path = contrib/relic/include/low/relic_fb_low.h; sourceTree = "<group>"; };
 		78EEDE0E8DF21CA72530D0374E8726DD /* Pods-ios-dash-crypto_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios-dash-crypto_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7A26DA1449E9F7F5EA1BC963AFFC9C20 /* Blake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Blake.h; sourceTree = "<group>"; };
-		7A9DC511A056C90EABB4E5213C25C264 /* NSDate+Utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utils.m"; sourceTree = "<group>"; };
 		7B597382B69D9492CFFE5B549B57011F /* num.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = num.h; path = src/num.h; sourceTree = "<group>"; };
 		7D5685C4DA1FC11D8403516555DF3AFD /* CubeHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CubeHash.h; sourceTree = "<group>"; };
-		7DE143B8EA5583D4209FC84A4D517845 /* NSString+Bitcoin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+Bitcoin.h"; sourceTree = "<group>"; };
 		7E436EE4CFCB1603145149CECA0C41CF /* DSKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DSKey.m; sourceTree = "<group>"; };
 		7F3D6D31C1A70BEFFAB88D5BC71A0DEB /* libPods-ios-dash-crypto_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ios-dash-crypto_Tests.a"; path = "libPods-ios-dash-crypto_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F8493246617929F64BA9BA61C4FD0FA /* NSMutableData+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+Dash.m"; sourceTree = "<group>"; };
+		81981EF5E6879439D30C7AF33209919F /* NSMutableData+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+Dash.m"; sourceTree = "<group>"; };
+		829934DD3B630836D0D26E0A101FAC27 /* BigIntTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BigIntTypes.h; sourceTree = "<group>"; };
 		83C6DAD765B530913177C1F3BED45831 /* signature.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = signature.hpp; path = src/signature.hpp; sourceTree = "<group>"; };
 		8427A466ADD6E89806F4D7E8DD6F5BD3 /* secp256k1_dash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = secp256k1_dash.xcconfig; sourceTree = "<group>"; };
 		86E34759DF7E410D28762FA64EBCC256 /* ios-dash-crypto-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ios-dash-crypto-prefix.pch"; sourceTree = "<group>"; };
@@ -233,14 +230,14 @@
 		886F75D16D94386F8AEB44EBAC613D26 /* Jh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Jh.h; sourceTree = "<group>"; };
 		8C69C4AB4B154BA4D509E71ACC8CCE16 /* field_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_impl.h; path = src/field_impl.h; sourceTree = "<group>"; };
 		8E84E48F66D15142B2847602AC8957EA /* eckey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = eckey.h; path = src/eckey.h; sourceTree = "<group>"; };
-		8F3FA441893492E030B30CC989488CD5 /* NSCoder+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSCoder+Dash.h"; sourceTree = "<group>"; };
 		8F9862F146640A307BDC959E680F7FC7 /* libios-dash-crypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libios-dash-crypto.a"; path = "libios-dash-crypto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		910C1EA8A216C5BBDFD03B54F527030B /* scalar_low.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_low.h; path = src/scalar_low.h; sourceTree = "<group>"; };
 		9280D069804472B6236F08367C03EEA0 /* relic_epx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_epx.h; path = contrib/relic/include/relic_epx.h; sourceTree = "<group>"; };
 		93DA18CA864D7B383E4F0F463732F843 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		9531D1B951A7E33CF4737CD57C54C5F9 /* secp256k1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = secp256k1.c; path = src/secp256k1.c; sourceTree = "<group>"; };
-		95FF5CE705277F868BF125698B3B16CF /* NSString+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Dash.m"; sourceTree = "<group>"; };
+		9A4AAB5E5567C3F212F40BCFE92CCBEC /* NSCoder+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+Dash.m"; sourceTree = "<group>"; };
 		9A55F5D0AFFFF8BAA9C2B0F7DFE6CECD /* DSKeySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSKeySequence.h; sourceTree = "<group>"; };
+		9B2CE4C1A01916E2A33EB13AA3F6DACD /* NSString+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+Dash.h"; sourceTree = "<group>"; };
 		9B5DD0713DD8480EAB7574184866231B /* relic_label.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_label.h; path = contrib/relic/include/relic_label.h; sourceTree = "<group>"; };
 		9C59F4023BD56F4C2190862E0C7257C4 /* secp256k1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = secp256k1.h; path = include/secp256k1.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -252,46 +249,49 @@
 		A6C1C706E2EA7AADD6A0550C60675F7A /* secp256k1_dash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "secp256k1_dash-dummy.m"; sourceTree = "<group>"; };
 		AB077D257B7FA3B605F9D5FE9F20BF5C /* relic_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_util.h; path = contrib/relic/include/relic_util.h; sourceTree = "<group>"; };
 		AE54663EF3ABB783F75E57A666DB9ADD /* relic_arch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_arch.h; path = contrib/relic/include/relic_arch.h; sourceTree = "<group>"; };
-		AED279D2082CCC2326DBE192DEE17EE3 /* NSIndexPath+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Dash.m"; sourceTree = "<group>"; };
+		AF2244E27BF26F96A9965CC0BA62C7F7 /* NSData+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+Dash.m"; sourceTree = "<group>"; };
 		B041B4699234BD271573CD5FC167079F /* relic_trace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_trace.h; path = contrib/relic/include/relic_trace.h; sourceTree = "<group>"; };
 		B23614D8077BC026EB12459255DA5D53 /* Pods-ios-dash-crypto_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ios-dash-crypto_Tests-dummy.m"; sourceTree = "<group>"; };
 		B5539E0DE78DE43FF48B8757D752763B /* scalar_4x64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_4x64.h; path = src/scalar_4x64.h; sourceTree = "<group>"; };
 		B89BEC9628BD96333054312439679DEB /* relic_bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_bn.h; path = contrib/relic/include/relic_bn.h; sourceTree = "<group>"; };
 		BB3E3E84AE0FB350DB55BA7B71588BBB /* Pods-ios-dash-crypto_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ios-dash-crypto_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BCC41E8060AFCA56F2E82221865E3D39 /* relic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic.h; path = contrib/relic/include/relic.h; sourceTree = "<group>"; };
-		BE320B7460F7CED006AF74FC4C25B1C6 /* NSString+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+Dash.h"; sourceTree = "<group>"; };
 		BF9DC0B777B21D84D0D89C3ECDD31E05 /* field_5x52_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_5x52_impl.h; path = src/field_5x52_impl.h; sourceTree = "<group>"; };
+		C0710A6D4A0ED73F7B5B0B515EA68F3B /* NSString+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Dash.m"; sourceTree = "<group>"; };
 		C07CC7461E64810494FEC2CA57B5056E /* scalar_8x32_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_8x32_impl.h; path = src/scalar_8x32_impl.h; sourceTree = "<group>"; };
 		C0E8E9C841800C378F79F3921E6502D1 /* relic_dv_low.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_dv_low.h; path = contrib/relic/include/low/relic_dv_low.h; sourceTree = "<group>"; };
 		C13E47CEF0677DB5C840CBE6AB49F2F4 /* relic_eb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_eb.h; path = contrib/relic/include/relic_eb.h; sourceTree = "<group>"; };
 		C335F8F53E0ACA39A4905CA76B0A8A9F /* Luffa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Luffa.h; sourceTree = "<group>"; };
 		C3726452495741374E98648D0333FB17 /* util.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = util.hpp; path = src/util.hpp; sourceTree = "<group>"; };
 		C45C28EEA7E1838E5A65EBA611956C28 /* relic_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_types.h; path = contrib/relic/include/relic_types.h; sourceTree = "<group>"; };
+		CA575C5EE21F6E3A3345827FAC0AF07D /* NSCoder+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSCoder+Dash.h"; sourceTree = "<group>"; };
 		CA9548D75AF76E5A3E813BFE584F2A44 /* relic_conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_conf.h; path = "contrib/relic/relic-iphoneos-arm64/include/relic_conf.h"; sourceTree = "<group>"; };
 		CB39DE847812A9E2F37EB9B5ECA23330 /* relic_fb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_fb.h; path = contrib/relic/include/relic_fb.h; sourceTree = "<group>"; };
 		CBD8CDB763813C2A4D34E299E5761C64 /* relic_test.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_test.h; path = contrib/relic/include/relic_test.h; sourceTree = "<group>"; };
 		CBFDDE9334C7F03019E4FB73066FC6A7 /* relic_fp_low.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_fp_low.h; path = contrib/relic/include/low/relic_fp_low.h; sourceTree = "<group>"; };
 		CC0ACFDA845ACB8C91A6735E7F0C199B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		CE522405375BC642C6FA93A691203987 /* NSData+Dash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+Dash.m"; sourceTree = "<group>"; };
 		CF205E0C3D0110C897BDA0F560D28DFD /* secp256k1_dash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "secp256k1_dash-prefix.pch"; sourceTree = "<group>"; };
 		CF2A122608034743EF2E78E78137F58C /* field_10x26_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_10x26_impl.h; path = src/field_10x26_impl.h; sourceTree = "<group>"; };
 		CFC9171BAB51AF80293EA7620A04A053 /* extendedpublickey.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = extendedpublickey.hpp; path = src/extendedpublickey.hpp; sourceTree = "<group>"; };
 		D242508B65BA881870CC974048DE88D0 /* DSKey+BIP38.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DSKey+BIP38.h"; sourceTree = "<group>"; };
 		D42B4000A1458CE1AD0D06E884B96562 /* ios-dash-crypto.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "ios-dash-crypto.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D781816A4886BE6FBB0DC07E0E9506EF /* DashCoreLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DashCoreLogging.h; sourceTree = "<group>"; };
 		D88A342C70E94DDDCBE73C72425DA0C2 /* bls-signatures-pod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "bls-signatures-pod.xcconfig"; sourceTree = "<group>"; };
 		D9802A8AAE8A1A806A07CA3700CFF290 /* secp256k1_recovery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = secp256k1_recovery.h; path = include/secp256k1_recovery.h; sourceTree = "<group>"; };
 		DAE3F70AA648625169D2DCE048F653A0 /* Shavite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Shavite.h; sourceTree = "<group>"; };
+		DFACA202919AC8261045F0018B0C523B /* NSIndexPath+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Dash.h"; sourceTree = "<group>"; };
 		E129C29214FFD23F598C8084403622DE /* main_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = main_impl.h; path = src/modules/recovery/main_impl.h; sourceTree = "<group>"; };
 		E8EB543D968BDB9DC4244ACABF9885BE /* main_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = main_impl.h; path = src/modules/ecdh/main_impl.h; sourceTree = "<group>"; };
 		E90957C9B967E6DB9901A7E482F53B4E /* gmp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gmp.h; path = gmp/include/gmp.h; sourceTree = "<group>"; };
 		E9BA5D3A316D7C003FF84068DD0AD27C /* ecdsa_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa_impl.h; path = src/ecdsa_impl.h; sourceTree = "<group>"; };
+		EC6EDAB10DDCC8E59F270B4F0D0421BE /* NSMutableData+Dash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+Dash.h"; sourceTree = "<group>"; };
 		EDB621AA601F3F074730BF5BB3891B4C /* Simd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Simd.h; sourceTree = "<group>"; };
 		EDB69465F92412C4EB0A6D93A25F90C9 /* util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = util.h; path = src/util.h; sourceTree = "<group>"; };
 		EE31D5E565BB16218808958646926388 /* field.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field.h; path = src/field.h; sourceTree = "<group>"; };
+		EEC364708DE9004C2EF09DF65B6E75BE /* NSDate+Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utils.h"; sourceTree = "<group>"; };
 		F0E91ADFEAC34F0DD6F5558F375E5FC4 /* ecmult_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecmult_impl.h; path = src/ecmult_impl.h; sourceTree = "<group>"; };
 		F139B8C74418A556AC89AEB0FFC6110A /* relic_ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_ec.h; path = contrib/relic/include/relic_ec.h; sourceTree = "<group>"; };
 		F2D589AC6DB5F001ACA6F39E23C00B93 /* ecmult_gen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecmult_gen.h; path = src/ecmult_gen.h; sourceTree = "<group>"; };
+		F765F50DB06C4FA8C9CBC2D4EA697F65 /* NSDate+Utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utils.m"; sourceTree = "<group>"; };
 		F7779B999639734508EB49547B9ACAD1 /* relic_fbx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_fbx.h; path = contrib/relic/include/relic_fbx.h; sourceTree = "<group>"; };
 		F9A5F82FEDDA421D5CFAA5480529A7EA /* relic_core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relic_core.h; path = contrib/relic/include/relic_core.h; sourceTree = "<group>"; };
 		F9B14047BF025669911FA3F289CE64EB /* Pods-ios-dash-crypto_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios-dash-crypto_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -378,11 +378,37 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		4D12D958A3182DDC1C47D876EA35F1AE /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				829934DD3B630836D0D26E0A101FAC27 /* BigIntTypes.h */,
+				17A5C309BB4D2BCF562B2E363F77AB99 /* DashCoreLogging.h */,
+				CA575C5EE21F6E3A3345827FAC0AF07D /* NSCoder+Dash.h */,
+				9A4AAB5E5567C3F212F40BCFE92CCBEC /* NSCoder+Dash.m */,
+				08DADE0309653EBCE5B17ECFF04BB16E /* NSData+Dash.h */,
+				AF2244E27BF26F96A9965CC0BA62C7F7 /* NSData+Dash.m */,
+				284652538EDBFD46269F85E112ED31AA /* NSData+X11.h */,
+				0AD560918E8E8DD0EDBBD950BF81E8FC /* NSData+X11.m */,
+				EEC364708DE9004C2EF09DF65B6E75BE /* NSDate+Utils.h */,
+				F765F50DB06C4FA8C9CBC2D4EA697F65 /* NSDate+Utils.m */,
+				DFACA202919AC8261045F0018B0C523B /* NSIndexPath+Dash.h */,
+				23795C913A05CC825FEA730AD0A34131 /* NSIndexPath+Dash.m */,
+				EC6EDAB10DDCC8E59F270B4F0D0421BE /* NSMutableData+Dash.h */,
+				81981EF5E6879439D30C7AF33209919F /* NSMutableData+Dash.m */,
+				02D36CF1765B1FE3678770ED1902AE15 /* NSString+Bitcoin.h */,
+				2B8D532B6259E81B8FC336969EA77AB9 /* NSString+Bitcoin.m */,
+				9B2CE4C1A01916E2A33EB13AA3F6DACD /* NSString+Dash.h */,
+				C0710A6D4A0ED73F7B5B0B515EA68F3B /* NSString+Dash.m */,
+			);
+			name = Categories;
+			path = "ios-dash-crypto/Categories";
+			sourceTree = "<group>";
+		};
 		60976D16FDC75201F468526034F0072E /* ios-dash-crypto */ = {
 			isa = PBXGroup;
 			children = (
 				69E80474BC1AF86447EB5CF19F6B2FF1 /* DSChainProtocol.h */,
-				A636C179EA54F045E07F9D8FDEAE5325 /* Categories */,
+				4D12D958A3182DDC1C47D876EA35F1AE /* Categories */,
 				DEDDBA45709C66BED5DB08CA136CB634 /* crypto */,
 				01850DA77006B44F74B16976E20888C6 /* Keys */,
 				4A83FF97BE772B9F79BA051BFE325575 /* Pod */,
@@ -527,32 +553,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A636C179EA54F045E07F9D8FDEAE5325 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				75AA9AB2CA04E8BE719A1A90E89852DF /* BigIntTypes.h */,
-				D781816A4886BE6FBB0DC07E0E9506EF /* DashCoreLogging.h */,
-				8F3FA441893492E030B30CC989488CD5 /* NSCoder+Dash.h */,
-				61DF12877FA0F2E54B0BFBC8ECE0C035 /* NSCoder+Dash.m */,
-				0B9F0182D52F40A37A6CF1340BF96FD6 /* NSData+Bitcoin.h */,
-				2243D3B4A5DA567ABFDB0F10E3A07D16 /* NSData+Bitcoin.m */,
-				285CB0F005D1AF14DB09D0EAD9F51FDA /* NSData+Dash.h */,
-				CE522405375BC642C6FA93A691203987 /* NSData+Dash.m */,
-				71BDF9C9679B2A3E7A11D75E40B00667 /* NSDate+Utils.h */,
-				7A9DC511A056C90EABB4E5213C25C264 /* NSDate+Utils.m */,
-				1D6F4E3972F48032CB31A7E0849CFD2A /* NSIndexPath+Dash.h */,
-				AED279D2082CCC2326DBE192DEE17EE3 /* NSIndexPath+Dash.m */,
-				03551713839F9D807A156B8DBA6333B2 /* NSMutableData+Dash.h */,
-				7F8493246617929F64BA9BA61C4FD0FA /* NSMutableData+Dash.m */,
-				7DE143B8EA5583D4209FC84A4D517845 /* NSString+Bitcoin.h */,
-				1DFEA4BE94C428F51A455A9442184832 /* NSString+Bitcoin.m */,
-				BE320B7460F7CED006AF74FC4C25B1C6 /* NSString+Dash.h */,
-				95FF5CE705277F868BF125698B3B16CF /* NSString+Dash.m */,
-			);
-			name = Categories;
-			path = "ios-dash-crypto/Categories";
-			sourceTree = "<group>";
-		};
 		C410428296F399A37225438E2EA4BC5B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -690,39 +690,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCAA555EF71D49EB36B0EB2B184106B7 /* Headers */ = {
+		DEA2218FA73DF81DD191331C95404133 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17673267608C04C3B0BAF49A5331EDCE /* aes_helper.h in Headers */,
-				CA7EA347066C03A7EEC68D618AC6D8B8 /* BigIntTypes.h in Headers */,
-				4C3C8BF61DD0A25DD965CE9F72AFC2B2 /* Blake.h in Headers */,
-				48BE23B019B3E9DA92A65E1B52E558C9 /* Bmw.h in Headers */,
-				327886DE3EE873F50793FF4D2690A787 /* CubeHash.h in Headers */,
-				EF553547546383C4D8BFA10CC2611711 /* DashCoreLogging.h in Headers */,
-				EC1493FA48126D5689BA38B5C765CD0B /* DSBLSKey.h in Headers */,
-				05098BB641FF52C1B115125DE575966F /* DSChainProtocol.h in Headers */,
-				8FDD691C46B24BD71391F45E8A38AF33 /* DSECDSAKey.h in Headers */,
-				D91127BA0489C20D22C150DD67EE25D4 /* DSKey+BIP38.h in Headers */,
-				E2E42525EFBFF16F12CDA8DB1BBE5BFD /* DSKey.h in Headers */,
-				B123C8FED538E75B582176DEA62A6499 /* DSKeySequence.h in Headers */,
-				899CE2C8613CE9FCF869A5A86F4F4AF8 /* Echo.h in Headers */,
-				1F0DCEBC29835A12D6200018FBF40530 /* Groestl.h in Headers */,
-				6F8C3E51467C5BF016B0D73E9E0C93A4 /* Jh.h in Headers */,
-				081D5834168A46F978DBD535D89ECD0D /* Keccak.h in Headers */,
-				705FFC5BC2C0DD25989C06D712B75239 /* Luffa.h in Headers */,
-				CCF6BAF088BD88A6009BFBFB4B4FC964 /* NSCoder+Dash.h in Headers */,
-				A2C9823A80652158DBDB2C69A3D55A08 /* NSData+Bitcoin.h in Headers */,
-				439B4FE99796F9DC5D56FD6057D9F57A /* NSData+Dash.h in Headers */,
-				F90C29CC44333C97D54B526585716A4B /* NSDate+Utils.h in Headers */,
-				3A283D6811C930B01D986586870E5B12 /* NSIndexPath+Dash.h in Headers */,
-				6AE67E18DE5215C406DD9F3C8DC6E56E /* NSMutableData+Dash.h in Headers */,
-				E4B944AE6A1340FCE2FEF7E4DBF2BA45 /* NSString+Bitcoin.h in Headers */,
-				ADD481F0D23A2C73E03ADF336C25E9AD /* NSString+Dash.h in Headers */,
-				3E1CC2FD09A057512BFBB2D77D71E071 /* Shavite.h in Headers */,
-				E0C26750B5139C27F738F82B31BD8B3E /* Simd.h in Headers */,
-				C1250C500A8618BE0C57B9CE36F008C9 /* Skein.h in Headers */,
-				185749B9C0961D3F298634DEB8ACDF41 /* sph_types.h in Headers */,
+				86A86167A3E4FF11CD21D1EC1569503E /* aes_helper.h in Headers */,
+				2839C289217A11E5EEEF83E27A7AF1FD /* BigIntTypes.h in Headers */,
+				93EFCF8A3B369E0CF90010C56252F5EF /* Blake.h in Headers */,
+				D3D76CD7DB5DC9371CB822A56755C215 /* Bmw.h in Headers */,
+				42D5BBF47FD35421864F8C16412AC6FC /* CubeHash.h in Headers */,
+				A33F769AEB17CD69F972C2958C8C3395 /* DashCoreLogging.h in Headers */,
+				21221A326FC7B7CF79B9A936365E8438 /* DSBLSKey.h in Headers */,
+				3ADF9DBB99E9234C150E972FDFA3EA30 /* DSChainProtocol.h in Headers */,
+				8ACC51422DBB947A45B061446A93AA0B /* DSECDSAKey.h in Headers */,
+				7261F1CF3F0E66DAB60882FD3714AC04 /* DSKey+BIP38.h in Headers */,
+				9C7411B9FA8CEDE40EC0844C2A872BBE /* DSKey.h in Headers */,
+				CE8683B6457A2CD9FFEEF8884CBA06F9 /* DSKeySequence.h in Headers */,
+				7887BEB21A3E111E7BD8686BC9F73E94 /* Echo.h in Headers */,
+				0D6F7CD9D9AE7EF5AB9BD27435627B89 /* Groestl.h in Headers */,
+				DC7FEE956A622E22DDA09EAF8BB2D80C /* Jh.h in Headers */,
+				E2D96CAC9F7B5E517F7B2127A5C914A5 /* Keccak.h in Headers */,
+				AEB3484038B0A2BB68F8874B27C69A62 /* Luffa.h in Headers */,
+				B827BDD9185ADCD8C00C75FFAA1513CC /* NSCoder+Dash.h in Headers */,
+				4361B4B64B72CA42E140AB6A18C2801F /* NSData+Dash.h in Headers */,
+				B703695840FDCB9497E39359FBBD2AD3 /* NSData+X11.h in Headers */,
+				ADE728F4DCA3D483EB2B7D7D497576EC /* NSDate+Utils.h in Headers */,
+				259F39BD46581FCA8094E5C97BD8B0D6 /* NSIndexPath+Dash.h in Headers */,
+				9122C1900833EE2AA50FB1BC7565E302 /* NSMutableData+Dash.h in Headers */,
+				B21E7861A9FB0AD9748D5852E7943BAE /* NSString+Bitcoin.h in Headers */,
+				4CB7DDF51A649AA3F6B7733F58D290CC /* NSString+Dash.h in Headers */,
+				CA27F22C87DF7DB72C6B7A9F75B21A3A /* Shavite.h in Headers */,
+				A7D05D8B510DC41851E48677EF3DCA07 /* Simd.h in Headers */,
+				01DEFCE0AC45BEC75155C169CA5464E0 /* Skein.h in Headers */,
+				6B8C272F4F4CFEB9646399469AEC91B8 /* sph_types.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,8 +733,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A59A5F51B4044122F9F7618BD71348B6 /* Build configuration list for PBXNativeTarget "ios-dash-crypto" */;
 			buildPhases = (
-				FCAA555EF71D49EB36B0EB2B184106B7 /* Headers */,
-				6F9CC4C801104C09D470B2603C2BC93F /* Sources */,
+				DEA2218FA73DF81DD191331C95404133 /* Headers */,
+				8957820B1942833D0B27D34E6FDC8918 /* Sources */,
 				D1EB3A048592BD4170D7A943FD8DBE10 /* Frameworks */,
 			);
 			buildRules = (
@@ -823,23 +823,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F9CC4C801104C09D470B2603C2BC93F /* Sources */ = {
+		8957820B1942833D0B27D34E6FDC8918 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A6BC80C46D6C1EF71CAFD946D11ACB7 /* DSBLSKey.mm in Sources */,
-				CE0169C639332D6A555EE221704AF4F3 /* DSECDSAKey.m in Sources */,
-				20AF188F521B7245B0334B2F67EB7C42 /* DSKey+BIP38.m in Sources */,
-				721CB21B1385DBF213A36DAA52E657B6 /* DSKey.m in Sources */,
-				DDFFE915745B941C4C5DBA2D0A007CB5 /* ios-dash-crypto-dummy.m in Sources */,
-				70C41F886C0F2543446545FFD1D44EF4 /* NSCoder+Dash.m in Sources */,
-				19660695687BA655696663D0475B11CB /* NSData+Bitcoin.m in Sources */,
-				35E6113237786DBD7BA55E636E575937 /* NSData+Dash.m in Sources */,
-				6EC3921C09979ADFEAF4303DF540D0A8 /* NSDate+Utils.m in Sources */,
-				BD51052ADF01197F3C269BB95AC143CE /* NSIndexPath+Dash.m in Sources */,
-				3B5E265A58F903249BEEDCA4B22F0AEE /* NSMutableData+Dash.m in Sources */,
-				432AE635936179750F31798765259C8D /* NSString+Bitcoin.m in Sources */,
-				53E3D99553C911AECD054FAF7AAC59FD /* NSString+Dash.m in Sources */,
+				CBBA3B1428CE3D4315DD4C79AA94C28B /* DSBLSKey.mm in Sources */,
+				75BB735569C648EBDD01C6F20FB00EE4 /* DSECDSAKey.m in Sources */,
+				AE32073E97FE4329C1922E6F44FCB3CC /* DSKey+BIP38.m in Sources */,
+				BC385303E889ED54533A3C24DCB50D63 /* DSKey.m in Sources */,
+				E1B64F1C7D696C0EC8079522D34C2C6A /* ios-dash-crypto-dummy.m in Sources */,
+				88BEC79719F8C916EDCE8B248EF319EE /* NSCoder+Dash.m in Sources */,
+				A06C7515E4C8C569973DA11789083AEF /* NSData+Dash.m in Sources */,
+				2F98190A5D69407939110CBA505CA0FD /* NSData+X11.m in Sources */,
+				E41533B7C0820C39C6202BE92063C1B6 /* NSDate+Utils.m in Sources */,
+				C182768DA5A3ED07D0C4EEFCA16D7935 /* NSIndexPath+Dash.m in Sources */,
+				F730CA355146E15D1787B8E5B68AA918 /* NSMutableData+Dash.m in Sources */,
+				5F1EC0256A64A05AE70D798727FDD3C1 /* NSString+Bitcoin.m in Sources */,
+				BD654862076B2DC3212F9B9AABE647D4 /* NSString+Dash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,7 @@
 
 #import "DSBLSKey.h"
 
-#import "NSData+Bitcoin.h"
+#import "NSData+Dash.h"
 #import "NSIndexPath+Dash.h"
 #import "NSMutableData+Dash.h"
 #import "NSString+Dash.h"
